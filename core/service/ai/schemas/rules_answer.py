@@ -65,7 +65,7 @@ class RulesAnswer(BaseModel):
         parts = [self.answer.strip()]
         if self.citations:
             parts.append("Cited rules:\n" + _bullets(
-                f"LRR {c.rule_id}" + (f" — {c.relevance}" if c.relevance else "")
+                f"LRR {c.rule_id}" + (f" · {c.relevance}" if c.relevance else "")
                 for c in self.citations
             ))
         if self.rule_basis:

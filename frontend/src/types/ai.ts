@@ -7,6 +7,8 @@ import type {
   jobResultSchema,
   jobStatusSchema,
   jobStatusValueSchema,
+  ruleCitationSchema,
+  rulePassageSchema,
   rulesAnswerSchema,
   strategicPlanSchema,
   tacticalMoveSchema,
@@ -22,6 +24,8 @@ export type FeatureType = z.infer<typeof featureTypeSchema>
 export type JobStatusValue = z.infer<typeof jobStatusValueSchema>
 
 export type RulesAnswer = z.infer<typeof rulesAnswerSchema>
+export type RuleCitation = z.infer<typeof ruleCitationSchema>
+export type RulePassage = z.infer<typeof rulePassageSchema>
 export type StrategicPlan = z.infer<typeof strategicPlanSchema>
 export type TacticalMove = z.infer<typeof tacticalMoveSchema>
 

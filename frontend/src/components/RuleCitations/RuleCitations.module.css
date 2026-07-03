@@ -1,0 +1,84 @@
+.citations {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--console-border);
+  padding-top: 0.75rem;
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-cyan-dim);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+}
+
+.chip {
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  background: var(--console-surface);
+  border: 1px solid var(--accent-cyan-dim);
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.chip:hover:not(:disabled),
+.chip[aria-expanded='true'] {
+  color: var(--void);
+  background: var(--accent-cyan);
+}
+
+.chip:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.relevance {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.ruleText {
+  flex-basis: 100%;
+  margin: 0.15rem 0 0.25rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text-primary);
+  background: var(--screen-bg);
+  border-left: 2px solid var(--accent-cyan);
+}
+
+.attribution {
+  margin: 0.6rem 0 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.ungrounded {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.82rem;
+  color: var(--accent-amber);
+  background: var(--console-surface);
+  border: 1px solid var(--accent-amber);
+  border-radius: 3px;
+}

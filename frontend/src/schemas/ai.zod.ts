@@ -20,13 +20,34 @@ export const jobStatusValueSchema = z.enum([
 
 // --- Structured result schemas (mirror the pydantic models) ------------------
 
+// A citation to a specific Living Rules Reference rule. The exact quoted text is
+// NOT here — it is looked up from the job result's `passages` by rule_id (so the
+// text always comes from our index, never the model).
+export const ruleCitationSchema = z.object({
+  rule_id: z.string(),
+  relevance: z.string().default(''),
+})
+
 export const rulesAnswerSchema = z.object({
   answer: z.string(),
   assumptions: z.array(z.string()).default([]),
   rule_basis: z.array(z.string()).default([]),
   caveats: z.array(z.string()).default([]),
+  citations: z.array(ruleCitationSchema).default([]),
+  grounded: z.boolean().default(false),
   needs_exact_text: z.boolean().default(false),
 })
+
+// A retrieved rules-reference passage carried in the rules job payload, so the
+// UI can show the exact cited rule text with no second request.
+export const rulePassageSchema = z
+  .object({
+    rule_id: z.string(),
+    topic: z.string().default(''),
+    text: z.string().default(''),
+    score: z.number().optional(),
+  })
+  .loose()
 
 export const strategicPlanSchema = z.object({
   summary: z.string(),
@@ -92,6 +113,9 @@ export const jobResultSchema = z
     strategy: z.string().optional(),
     calc_results: z.string().optional(),
     structured: z.unknown().optional(),
+    // Grounded Rules Q&A (Phase 2): the retrieved LRR passages the answer cited,
+    // so citations can expand to exact rule text without another request.
+    passages: z.array(rulePassageSchema).optional(),
     ...demoFields,
   })
   .loose()

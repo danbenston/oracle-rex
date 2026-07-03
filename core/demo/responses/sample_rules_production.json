@@ -1,6 +1,6 @@
 {
   "question": "How does production capacity work?",
-  "answer": "Production capacity is the total number of units a single unit with the Production ability (usually a Space Dock) can build during one PRODUCTION step. Each producing unit has a Production value (e.g., Space Dock I produces up to the planet's resource value + a bonus, Space Dock II is higher). You add up the resources of the units you build (their cost) and that total cannot exceed your available resources, while the COUNT of units cannot exceed the producing unit's production value. Fighters and infantry are produced two per cost, but each still counts toward the production-capacity unit count.",
+  "answer": "Production capacity is the maximum number of units a producing unit (usually a Space Dock) can build in one PRODUCTION step, set by that unit's Production value. You pay resources equal to the combined cost of what you build (not exceeding your available resources), and the number of units built cannot exceed the production value.\n\nCited rules:\n- LRR 16.1 · Capacity limits the fighters and ground forces a ship can transport\n- LRR 16.2 · Combined ship capacity caps fighters/ground in a system\n- LRR 68 · A unit's Production value sets how many units it can build\n\nRule basis:\n- Production ability\n- Space Dock production values\n- Fighters/infantry are produced two per resource but each counts toward the unit-count limit\n\nAssumptions:\n- You are asking about producing at a Space Dock during a tactical action's Production step.\n\nCaveats:\n- Some technologies, faction abilities, and the 'Sarween Tools' style effects modify production or cost.\n- Producing at a Space Dock blockaded by enemy ships is restricted.",
   "structured": {
     "answer": "Production capacity is the maximum number of units a producing unit (usually a Space Dock) can build in one PRODUCTION step, set by that unit's Production value. You pay resources equal to the combined cost of what you build (not exceeding your available resources), and the number of units built cannot exceed the production value.",
     "assumptions": [
@@ -15,6 +15,71 @@
       "Some technologies, faction abilities, and the 'Sarween Tools' style effects modify production or cost.",
       "Producing at a Space Dock blockaded by enemy ships is restricted."
     ],
-    "needs_exact_text": false
-  }
+    "needs_exact_text": false,
+    "citations": [
+      {
+        "rule_id": "16.1",
+        "relevance": "Capacity limits the fighters and ground forces a ship can transport"
+      },
+      {
+        "rule_id": "16.2",
+        "relevance": "Combined ship capacity caps fighters/ground in a system"
+      },
+      {
+        "rule_id": "68",
+        "relevance": "A unit's Production value sets how many units it can build"
+      }
+    ],
+    "grounded": true
+  },
+  "passages": [
+    {
+      "rule_id": "16",
+      "topic": "Capacity (Attribute)",
+      "text": "Capacity is an attribute of some units that is presented on faction sheets and unit upgrade technology cards.",
+      "score": 7.557
+    },
+    {
+      "rule_id": "68.2",
+      "topic": "Production (Unit ability)",
+      "text": "When a player produces ships by using “Production,” that player must place them in the active system.",
+      "score": 7.557
+    },
+    {
+      "rule_id": "16.1",
+      "topic": "Capacity (Attribute)",
+      "text": "A unit’s capacity value indicates the maximum combined number of fighters and ground forces that it can transport.",
+      "score": 7.546
+    },
+    {
+      "rule_id": "16.4",
+      "topic": "Capacity (Attribute)",
+      "text": "Fighters and ground forces are not assigned to specific ships, except while they are being transported.",
+      "score": 7.54
+    },
+    {
+      "rule_id": "68.3",
+      "topic": "Production (Unit ability)",
+      "text": "When a player produces ground forces, that player must place those unit on planets that contain a unit that used its “Production” ability.",
+      "score": 7.492
+    },
+    {
+      "rule_id": "68",
+      "topic": "Production (Unit ability)",
+      "text": "During the “Production” step of a tactical action, the active player can resolve the “Production” ability of each of their units that are in the active system to produce units.",
+      "score": 7.463
+    },
+    {
+      "rule_id": "16.2",
+      "topic": "Capacity (Attribute)",
+      "text": "The combined capacity values of a player’s ships in a system determine the number of fighters and ground forces that player can have in that system’s space area.",
+      "score": 7.429
+    },
+    {
+      "rule_id": "68.4",
+      "topic": "Production (Unit ability)",
+      "text": "If a player uses the “Production” ability of a unit in a space area of a system to produce ground forces, those ground forces may either be placed on a planet the player controls in that system or in the space area of that system.",
+      "score": 7.264
+    }
+  ]
 }

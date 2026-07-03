@@ -245,9 +245,26 @@ already practices:
     the grounded prompt renders correctly with 8 real passages.
   - *Exit:* flag on locally, citations validated deterministically; live check
     outstanding.
-- **Phase 3 — frontend citations UX.** RulesPanel citations + expand +
-  grounded/ungrounded states; demo cache regenerated; vitest + build green.
-  *Exit:* deployed behind the flag; flag on in prod.
+- **Phase 3 — frontend citations UX. DONE 2026-07-03.** What landed:
+  - zod/types extended: `ruleCitationSchema`, `citations`/`grounded` on
+    `rulesAnswerSchema`, `rulePassageSchema` + `passages` on `jobResultSchema`;
+    `RuleCitation`/`RulePassage` types exported.
+  - `components/RuleCitations/`: cited rules as chips (`LRR 58.4 · Movement`),
+    tap to expand the exact rule text from the job payload's `passages` (no second
+    request), relevance note, LRR attribution line; ungrounded answers show a
+    visible "answered from general knowledge" note instead of looking
+    authoritative. Wired into `JobResultView` for the rules feature.
+  - Demo cache regenerated (`core/demo/responses/sample_rules_*.json`) through the
+    real retrieval so demo users see grounded citations with zero provider calls.
+  - Tests: `RuleCitations.test.tsx` (chips/expand/ungrounded/disabled) + citation
+    assertions in `RulesPanel.test.tsx`; **frontend 83 tests + tsc + eslint +
+    build green**, backend 167 green. Fixed a pre-existing stale `App.test.tsx`
+    (grok 4.20 → 4.3, from the earlier model-retirement commit).
+  - Verified in-browser (Django + Vite): the retreat demo renders the cited
+    78.7/78.4 chips, expands to the verbatim STEP-5 RETREAT rule text, shows the
+    LRR 2.0 attribution, no console errors.
+  - *Exit:* citations UX live behind `RULES_RAG_ENABLED` (default on). Prod deploy
+    verification outstanding (owner).
 - **Phase 4 — answer evals + docs.** promptfoo config + runbook; README section
   ("grounded answers with LRR citations" is a headline feature — screenshot);
   record Tier B baseline. *Exit:* documented gate used for one real prompt

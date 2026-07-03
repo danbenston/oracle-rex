@@ -1,6 +1,6 @@
 {
   "question": "Explain how tactical actions work like I'm new to TI.",
-  "answer": "A tactical action is the main thing you do on your turn. Here is the simple version:\n\n1. Activate a system: place one of your command tokens from your tactic pool onto any system that does not already have your token. That system is now 'active'.\n2. Move ships: move your ships from adjacent systems into the active system (respecting their movement value). Ships can carry ground forces and fighters using capacity.\n3. Space combat: if enemy ships are there, you fight until one side is gone or retreats.\n4. Invade: drop ground forces onto planets and fight any defenders to take the planet.\n5. Produce: if you have a Space Dock in the active system, you may build new units.\n\nYou can only activate a system you do not already have a token in, so spreading your tokens lets you act in more places. When your tactic pool is empty, you can't take more tactical actions until you refill it (usually with the Leadership strategy card).",
+  "answer": "A tactical action is your main turn action. You: (1) activate a system by placing a command token from your tactic pool on it; (2) move ships into that active system; (3) resolve space combat if enemies are present; (4) invade planets with ground forces; (5) produce units if you have a Space Dock there. You can't activate a system you already have a token in, and you stop taking tactical actions when your tactic pool is empty.\n\nCited rules:\n- LRR 89.1 · Step 1 - activate a system with a command token\n- LRR 89.2 · Step 2 - move ships into the active system\n- LRR 89.5 · Step 5 - produce units at your space docks\n\nRule basis:\n- Tactical action steps: Activation, Movement, Space Combat, Invasion, Production\n- Command tokens and the tactic pool\n\nAssumptions:\n- You want the beginner-friendly overview, not every edge case.\n\nCaveats:\n- Many faction abilities, technologies, and action cards add exceptions to these steps.\n- Refill your tactic pool mainly via the Leadership strategy card.",
   "structured": {
     "answer": "A tactical action is your main turn action. You: (1) activate a system by placing a command token from your tactic pool on it; (2) move ships into that active system; (3) resolve space combat if enemies are present; (4) invade planets with ground forces; (5) produce units if you have a Space Dock there. You can't activate a system you already have a token in, and you stop taking tactical actions when your tactic pool is empty.",
     "assumptions": [
@@ -14,6 +14,71 @@
       "Many faction abilities, technologies, and action cards add exceptions to these steps.",
       "Refill your tactic pool mainly via the Leadership strategy card."
     ],
-    "needs_exact_text": false
-  }
+    "needs_exact_text": false,
+    "citations": [
+      {
+        "rule_id": "89.1",
+        "relevance": "Step 1 - activate a system with a command token"
+      },
+      {
+        "rule_id": "89.2",
+        "relevance": "Step 2 - move ships into the active system"
+      },
+      {
+        "rule_id": "89.5",
+        "relevance": "Step 5 - produce units at your space docks"
+      }
+    ],
+    "grounded": true
+  },
+  "passages": [
+    {
+      "rule_id": "67",
+      "topic": "Producing Units",
+      "text": "The primary way that a player produces new units is by resolving the “Production” abilities of existing units during a tactical action. However, other game effects also allow players to produce units.",
+      "score": 9.99
+    },
+    {
+      "rule_id": "89",
+      "topic": "Tactical Action",
+      "text": "The tactical action is the primary method by which players produce units, move ships, and extend their dominion within the galaxy. To perform a tactical action, the active player performs the following steps:",
+      "score": 9.136
+    },
+    {
+      "rule_id": "89.4",
+      "topic": "Tactical Action",
+      "text": "STEP 4—INVASION: The active player may use their “Bombardment” abilities, commit units to land on planets, and resolve ground combat against other players’ units.",
+      "score": 9.124
+    },
+    {
+      "rule_id": "89.5",
+      "topic": "Tactical Action",
+      "text": "STEP 5—PRODUCTION: The active player may resolve each of their unit’s “Production” abilities in the active system. (a) The active player may do this even if they did not move units or land ground forces during this tactical action.",
+      "score": 8.978
+    },
+    {
+      "rule_id": "89.3",
+      "topic": "Tactical Action",
+      "text": "STEP 3—SPACE COMBAT: If two players have ships in the active system, those players must resolve a space combat. (a) If the active player is the only player with ships in the system, they skip this step.",
+      "score": 8.943
+    },
+    {
+      "rule_id": "89.1",
+      "topic": "Tactical Action",
+      "text": "STEP 1—ACTIVATION: The active player must activate a system that does not contain one of their command tokens. (a) To activate a system, the active player places a command token from their tactic pool in that system. That system is the active system. (b) Other players’ command tokens do not prevent a player from activating a system.",
+      "score": 8.734
+    },
+    {
+      "rule_id": "89.2",
+      "topic": "Tactical Action",
+      "text": "STEP 2—MOVEMENT: The active player may move any number of ships that have a sufficient move value from any number of systems that do not contain one of their command tokens into the active system, following the rules for movement. (a) Ships that have capacity values can transport ground forces and fighters when moving. (b) The player may choose to not move any ships. (c) After the “Move Ships” step, all players can use the “Space Cannon” abilities of their units in the active system.",
+      "score": 8.332
+    },
+    {
+      "rule_id": "58",
+      "topic": "Movement",
+      "text": "A player can move their ships by resolving a tactical action during the action phase. Additionally, some abilities can move a unit outside of the tactical action.",
+      "score": 7.364
+    }
+  ]
 }
