@@ -1,0 +1,5 @@
+# promptfoo run artifacts (HTML/JSON reports, cache) are uncommitted — the
+# committed record of a run is the human summary in BASELINES.md.
+output/
+.promptfoo/
+promptfoo-errors.log

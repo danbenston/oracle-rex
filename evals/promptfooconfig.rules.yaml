@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+#
+# Rules Q&A answer-quality eval. Runs the REAL pipeline (see
+# providers/oracle_rex_provider.py) against the case set and asserts pipeline
+# facts, not just text. Opt-in and token-costing — run before/after a
+# rules_chat_vN bump, a persona change, or adopting/retiring a model. Never in
+# per-commit CI. See README.md for env + commands + cost.
+
+description: "Oracle Rex — Rules Q&A answer quality"
+
+# The custom provider builds the prompt in code from the test vars, so this
+# passthrough is all promptfoo needs; the rendered string is ignored in favor of
+# context.vars inside call_api.
+prompts:
+  - "{{question}}"
+
+providers:
+  # Default: the server-held Gemini free-tier model — same cost ceiling as the
+  # live demo. Its key is injected server-side (GEMINI_API_KEY), so no BYOK key
+  # is passed for this provider.
+  - id: file://providers/oracle_rex_provider.py
+    label: gemini-rules
+    config:
+      feature: rules
+      model: gemini-3.1-flash-lite
+      # persona: default   # override here (or per-case) for the persona matrix
+
+  # --- Matrix days (deliberate, occasional; each costs BYOK tokens) ---------
+  # Uncomment to compare providers/models. Each needs its provider key in the
+  # environment (OPENAI_API_KEY / XAI_API_KEY / ANTHROPIC_API_KEY).
+  # - id: file://providers/oracle_rex_provider.py
+  #   label: gpt-5.4-nano-rules
+  #   config: { feature: rules, model: gpt-5.4-nano }
+  # - id: file://providers/oracle_rex_provider.py
+  #   label: claude-haiku-rules
+  #   config: { feature: rules, model: claude-haiku-4-5 }
+
+defaultTest:
+  # Structural contract applied to every case: valid JSON, RulesAnswer
+  # validates, non-empty answer, prompt-version stamped. Free once the response
+  # exists.
+  assert:
+    - type: python
+      value: file://asserts/pipeline_schema.py
+  options:
+    # Model-graded asserts (llm-rubric) use the cheap Gemini model as grader, not
+    # the promptfoo default (OpenAI gpt-4). The Google provider reads GOOGLE_API_KEY
+    # (set it to the same value as GEMINI_API_KEY).
+    provider:
+      id: google:gemini-3.1-flash-lite
+
+tests: file://cases/rules.yaml

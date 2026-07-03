@@ -1,0 +1,103 @@
+# Rules Q&A eval cases (promptfoo external tests file).
+#
+# STARTER SET. The RAG epic (rules_rag_grounding.md) will own the single curated
+# question list at core/data/eval/rules_golden.json; when it lands, these cases
+# get regenerated from it (one question source in the repo). Until then this is
+# a 10-case starter of community-classic rules questions.
+#
+# Every case also runs the structural schema assert from defaultTest in
+# promptfooconfig.rules.yaml (valid JSON, RulesAnswer validates, non-empty
+# answer, prompt-version stamped). The per-case asserts below are key-fact
+# checks. They are intentionally light and HEURISTIC: LLM prose varies, so an
+# icontains on the question's core noun mainly catches off-topic / empty /
+# refusal answers, and a not-icontains guards a specific wrong claim. Tune them
+# against the first real run — read the delta, not the absolute score.
+#
+# Pre-RAG note: RulesAnswer has no citations yet, so there are no citation
+# assertions here. The RAG epic's Phase 4 adds cited-rule_id checks and
+# grounded/ungrounded assertions on this same file.
+
+- description: "Retreat requires surviving ships to move"
+  vars:
+    question: "During space combat, if all of my ships are destroyed, can I still retreat that combat?"
+  metadata:
+    smoke: true
+  assert:
+    - type: icontains
+      value: "retreat"
+    # A retreat needs ships to move to an adjacent system; with none left you
+    # cannot. Guard against the model asserting the opposite.
+    - type: not-icontains
+      value: "you can retreat"
+    - type: llm-rubric
+      value: >
+        Directly answers whether a player can retreat when none of their ships
+        survive the combat, gives the correct answer (they cannot), and does not
+        invent rules.
+
+- description: "Space cannon offense timing"
+  vars:
+    question: "When exactly does Space Cannon Offense happen during a tactical action, relative to the combat rounds?"
+  metadata:
+    smoke: true
+  assert:
+    - type: icontains
+      value: "space cannon"
+
+- description: "Excess fighters removed when capacity is exceeded"
+  vars:
+    question: "At the end of a space combat I have more fighters than my remaining ships' capacity. What happens to the excess fighters?"
+  assert:
+    - type: icontains
+      value: "capacity"
+
+- description: "Sustain Damage usage and timing"
+  vars:
+    question: "How and when can a unit use Sustain Damage during combat, and what does it do?"
+  assert:
+    - type: icontains
+      value: "sustain"
+
+- description: "Nebula move and defense effects"
+  vars:
+    question: "What are the rules for a Nebula system: can ships move into it, and does it affect combat?"
+  metadata:
+    smoke: true
+  assert:
+    - type: icontains
+      value: "nebula"
+
+- description: "Transactions are with neighbors"
+  vars:
+    question: "Who can I make a transaction with, and how often, during a round?"
+  assert:
+    - type: icontains
+      value: "neighbor"
+
+- description: "Anti-Fighter Barrage timing and targets"
+  vars:
+    question: "When does Anti-Fighter Barrage happen and which units can it hit?"
+  assert:
+    - type: icontains
+      value: "fighter"
+
+- description: "Objective scoring limits per phase"
+  vars:
+    question: "How many objectives can I score in a single status phase, and does that differ for secret objectives?"
+  assert:
+    - type: icontains
+      value: "objective"
+
+- description: "Custodians token on Mecatol Rex"
+  vars:
+    question: "What do I have to do to land ground forces on Mecatol Rex the first time, and what does it cost?"
+  assert:
+    - type: icontains
+      value: "mecatol"
+
+- description: "Production value and fighter/infantry cost"
+  vars:
+    question: "How does a unit's Production value limit what I can build, and how do fighters and infantry count against it?"
+  assert:
+    - type: icontains
+      value: "production"
