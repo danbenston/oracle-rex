@@ -60,14 +60,18 @@ def _persona(payload):
 
 
 def _run_rules(payload, api_key, model):
-    answer = service.get_rules_response(
+    result = service.get_rules_result(
         payload.get("question", ""), api_key, model, _max_tokens(payload),
         persona=_persona(payload),
     )
+    answer = result.answer
     return {
         "question": payload.get("question", ""),
         "answer": answer.to_display_text(),
         "structured": answer.model_dump(),
+        # Retrieved rule passages (rule_id/topic/text/score) so the frontend can
+        # render exact cited text without a second request. Empty when ungrounded.
+        "passages": result.passages,
     }
 
 

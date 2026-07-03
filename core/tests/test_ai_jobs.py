@@ -55,7 +55,8 @@ class TestRunAiJob(TestCase):
     def test_completed_job_stores_result(self):
         job = self._make_job()
         answer = RulesAnswer(answer="Yes, under these conditions.")
-        with patch.object(jobs.service, "get_rules_response", return_value=answer):
+        result = jobs.service.RulesResult(answer=answer, passages=[])
+        with patch.object(jobs.service, "get_rules_result", return_value=result):
             status = jobs.run_ai_job(str(job.id), encrypt_key("key"))
 
         job.refresh_from_db()
@@ -63,6 +64,7 @@ class TestRunAiJob(TestCase):
         self.assertEqual(job.status, AIJob.Status.COMPLETED)
         self.assertEqual(job.result_payload_json["answer"], "Yes, under these conditions.")
         self.assertIn("structured", job.result_payload_json)
+        self.assertIn("passages", job.result_payload_json)
         self.assertIsNotNone(job.started_at)
         self.assertIsNotNone(job.completed_at)
 
@@ -70,11 +72,11 @@ class TestRunAiJob(TestCase):
         job = self._make_job()
         captured = {}
 
-        def fake(question, api_key, model, max_tokens=None, persona=None):
+        def fake(question, api_key, model=None, max_tokens=None, persona=None):
             captured["api_key"] = api_key
-            return RulesAnswer(answer="ok")
+            return jobs.service.RulesResult(answer=RulesAnswer(answer="ok"), passages=[])
 
-        with patch.object(jobs.service, "get_rules_response", side_effect=fake):
+        with patch.object(jobs.service, "get_rules_result", side_effect=fake):
             jobs.run_ai_job(str(job.id), encrypt_key("sk-live-xyz"))
 
         self.assertEqual(captured["api_key"], "sk-live-xyz")
@@ -82,7 +84,7 @@ class TestRunAiJob(TestCase):
     def test_timeout_error_maps_to_timeout_status(self):
         job = self._make_job()
         with patch.object(
-            jobs.service, "get_rules_response", side_effect=ProviderTimeoutError()
+            jobs.service, "get_rules_result", side_effect=ProviderTimeoutError()
         ):
             jobs.run_ai_job(str(job.id), encrypt_key("key"))
 
@@ -94,7 +96,7 @@ class TestRunAiJob(TestCase):
     def test_malformed_error_maps_to_validation_failed(self):
         job = self._make_job()
         with patch.object(
-            jobs.service, "get_rules_response", side_effect=MalformedResponseError()
+            jobs.service, "get_rules_result", side_effect=MalformedResponseError()
         ):
             jobs.run_ai_job(str(job.id), encrypt_key("key"))
 
@@ -104,7 +106,7 @@ class TestRunAiJob(TestCase):
     def test_invalid_key_maps_to_failed(self):
         job = self._make_job()
         with patch.object(
-            jobs.service, "get_rules_response", side_effect=InvalidAPIKeyError()
+            jobs.service, "get_rules_result", side_effect=InvalidAPIKeyError()
         ):
             jobs.run_ai_job(str(job.id), encrypt_key("bad"))
 
@@ -180,7 +182,7 @@ class TestJobEndpoints(TestCase):
         job = AIJob.objects.get(pk=body["job_id"])
         self.assertEqual(job.feature_type, AIJob.FeatureType.RULES)
         self.assertEqual(job.model_name, "gpt-5.4")
-        self.assertEqual(job.prompt_version, "rules_chat_v1")
+        self.assertEqual(job.prompt_version, "rules_chat_v3")
 
         # Key is encrypted into the enqueue arg, and never stored on the row.
         mock_enqueue.assert_called_once()

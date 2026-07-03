@@ -130,13 +130,26 @@ TAC_CALC_REASONING_EFFORT = "medium"    # probability / combat arithmetic
 # are derived from the same value so they stay coherent.
 DEFAULT_REQUEST_TIMEOUT = float(os.environ.get("AI_REQUEST_TIMEOUT", "180"))
 
+# --- Rules retrieval (RAG) -------------------------------------------------
+
+# Grounded Rules Q&A: retrieve Living Rules Reference passages and answer from
+# them with real citations. Default ON; set RULES_RAG_ENABLED=0 to fall back to
+# the pre-RAG recall path in one env var (the prompt stays rules_chat_v2 then).
+RULES_RAG_ENABLED = os.environ.get("RULES_RAG_ENABLED", "1").lower() not in (
+    "0", "false", "no", "",
+)
+# Number of passages to retrieve and place in the prompt. The Phase 1 eval shows
+# recall@8 = 1.0 on the golden set, so 8 keeps every answer's evidence in context
+# while staying cheap on input tokens.
+RULES_RETRIEVAL_K = int(os.environ.get("RULES_RETRIEVAL_K", "8"))
+
 # --- Prompt versions (per feature) ----------------------------------------
 
 # Stamped onto every AIJob so logs/admin show which prompt produced a result.
 # Bump the version when a prompt's wording changes materially; this seeds the
 # optional prompt-versioning feature without extra plumbing.
 PROMPT_VERSIONS = {
-    "rules": "rules_chat_v1",
+    "rules": "rules_chat_v3",
     "strategy": "strategic_plan_v1",
     "move": "tactical_move_v1",
     "tac_calc": "tactical_calculator_v3",
@@ -145,6 +158,10 @@ PROMPT_VERSIONS = {
 
 def prompt_version_for(feature_type: str) -> str:
     """Return the current prompt version string for a feature, or ''."""
+    if feature_type == "rules":
+        # The rules prompt has two forms; stamp the one actually used so a job's
+        # provenance is honest about whether it was grounded.
+        return "rules_chat_v3" if RULES_RAG_ENABLED else "rules_chat_v2"
     return PROMPT_VERSIONS.get(feature_type, "")
 
 

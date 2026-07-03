@@ -30,7 +30,13 @@ services:
     # @vitejs/plugin-react) live in devDependencies, so without it a
     # production/omit-dev install builds a degraded bundle whose manifest is
     # missing the src/main.tsx entry → django-vite 500s on every page.
-    buildCommand: "pip install -r requirements.txt && npm --prefix frontend ci --include=dev && npm --prefix frontend run build && python manage.py collectstatic --noinput && python manage.py migrate --noinput"
+    # `build_rules_index` rebuilds the LRR FTS5 retrieval index from the vendored
+    # corpus (like collectstatic — the index file is gitignored and rebuilt each
+    # deploy). Grounded Rules Q&A degrades to ungrounded recall if it's missing,
+    # so this is what actually turns grounding on in prod.
+    # NOTE: the live web service uses its DASHBOARD build command, not this file,
+    # unless Blueprint sync is on — add the same `build_rules_index` step there.
+    buildCommand: "pip install -r requirements.txt && npm --prefix frontend ci --include=dev && npm --prefix frontend run build && python manage.py collectstatic --noinput && python manage.py migrate --noinput && python manage.py build_rules_index"
     startCommand: "gunicorn oracle-rex.wsgi:application"
     envVars:
       - key: AI_JOB_BACKEND

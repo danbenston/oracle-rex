@@ -216,11 +216,35 @@ already practices:
   - *Exit met:* eval green with committed baseline; retrieval is deterministic
     and free; no pipeline/app change yet (that's Phase 2). Embeddings (Phase 5)
     are not justified — lexical + aliases already hit recall@8 = 1.0.
-- **Phase 2 — pipeline integration.** `rules_chat_v3`, schema extension,
-  service wiring, post-hoc citation validation, job payload passages, feature
-  flag. Mocked tests for: grounded path, out-of-corpus path, citation-drop
-  warning, fallback_from_text. One manual live check per provider path
-  (Gemini server-key + one BYOK). *Exit:* flag on locally, citations real.
+- **Phase 2 — pipeline integration. DONE 2026-07-03 (live check pending).**
+  What landed:
+  - `RulesAnswer` extended (additive): `citations: list[RuleCitation]`
+    (`{rule_id, relevance}`) + `grounded: bool`; `to_display_text()` renders
+    `LRR 58.4 — <relevance>` lines; `fallback_from_text()` sets grounded=False.
+  - `rules_chat_v3` (`build_messages(question, passages)`): renders a delimited,
+    rule-numbered RULES REFERENCE block + an answer-from-passages / cite-real-
+    numbers / out-of-corpus→grounded=false contract; keeps the pre-RAG
+    (`rules_chat_v2`) form when no passages, so `RULES_RAG_ENABLED=0` is a
+    one-flag rollback. Personas unchanged.
+  - Service: new `get_rules_result()` retrieves k=`RULES_RETRIEVAL_K` (8)
+    passages, builds v3 messages, and runs post-hoc citation validation — any
+    cited `rule_id` not in the retrieved set is dropped with a logged warning,
+    and `grounded` is derived from the surviving citations (not the model's
+    self-report). Retrieval failure (e.g. index not built) degrades gracefully to
+    ungrounded recall. `get_rules_response()` kept as a thin answer-only wrapper.
+  - `core/jobs.py` threads the retrieved `passages` into the rules job payload;
+    `PROMPT_VERSIONS["rules"]` → `rules_chat_v3` (flag-aware stamp).
+  - `RULES_RAG_ENABLED` (default on) + `RULES_RETRIEVAL_K` in config; deploy
+    builds the index (`build_rules_index` added to render.yaml buildCommand).
+  - Tests `core/tests/test_rules_rag.py` (12): grounded, citation-drop-with-
+    warning, out-of-corpus ungrounded, grounded-override, fallback, flag-off,
+    missing-index degrade, real-index integration, job-payload passages, backward
+    compat. Full backend suite **167 green**.
+  - **PENDING (owner, needs keys):** one live check per provider path (Gemini
+    server key + one BYOK) that real citations come back. Verified offline that
+    the grounded prompt renders correctly with 8 real passages.
+  - *Exit:* flag on locally, citations validated deterministically; live check
+    outstanding.
 - **Phase 3 — frontend citations UX.** RulesPanel citations + expand +
   grounded/ungrounded states; demo cache regenerated; vitest + build green.
   *Exit:* deployed behind the flag; flag on in prod.
