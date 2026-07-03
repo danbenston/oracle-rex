@@ -152,6 +152,73 @@ class TtsParserConfigValidatorTests(TestCase):
         self.assertNotIn(4225, HOME_SYSTEM_IDS)
 
 
+class LrrCorpusValidatorTests(TestCase):
+    """The vendored Living Rules Reference corpus is well-formed."""
+
+    def _corpus(self):
+        """A minimal valid corpus fixture the negative tests can mutate."""
+        return {
+            "provenance": {"source": "LRR", "version": "2.0", "source_url": "http://x"},
+            "chunks": [
+                {"rule_id": "58", "topic": "Movement", "parent_topic": None,
+                 "kind": "topic_intro", "text": "A player can move their ships.",
+                 "related": ["Adjacency"]},
+                {"rule_id": "58.3", "topic": "Movement", "parent_topic": "58",
+                 "kind": "rule", "text": "A ship's move value...", "related": []},
+                {"rule_id": "6", "topic": "Adjacency", "parent_topic": None,
+                 "kind": "topic_intro", "text": "Two systems are adjacent...",
+                 "related": []},
+            ],
+        }
+
+    def _run_with(self, corpus):
+        with patch.object(validators.json, "load", return_value=corpus):
+            return validators.validate_lrr_corpus()
+
+    def test_real_corpus_clean(self):
+        self.assertEqual(validators.validate_lrr_corpus(), [])
+
+    def test_fixture_clean(self):
+        self.assertEqual(self._run_with(self._corpus()), [])
+
+    def test_catches_empty_text(self):
+        corpus = self._corpus()
+        corpus["chunks"][1]["text"] = "   "
+        self.assertTrue(any("empty text" in i for i in self._run_with(corpus)))
+
+    def test_catches_duplicate_rule_id(self):
+        corpus = self._corpus()
+        corpus["chunks"][1]["rule_id"] = "58"  # collide with the topic intro
+        self.assertTrue(any("duplicate" in i.lower() for i in self._run_with(corpus)))
+
+    def test_catches_invalid_rule_id(self):
+        corpus = self._corpus()
+        corpus["chunks"][1]["rule_id"] = "58.a"
+        self.assertTrue(any("invalid rule_id" in i for i in self._run_with(corpus)))
+
+    def test_catches_unresolved_related(self):
+        corpus = self._corpus()
+        corpus["chunks"][0]["related"] = ["No Such Topic"]
+        self.assertTrue(any("unresolved related" in i for i in self._run_with(corpus)))
+
+    def test_catches_orphan_subrule(self):
+        corpus = self._corpus()
+        corpus["chunks"][1]["parent_topic"] = "999"
+        self.assertTrue(any("unknown parent_topic" in i for i in self._run_with(corpus)))
+
+    def test_related_resolves_ignoring_qualifier(self):
+        # "Combat" must resolve to the topic "Combat (Attribute)".
+        corpus = self._corpus()
+        corpus["chunks"].append(
+            {"rule_id": "18", "topic": "Combat (Attribute)", "parent_topic": None,
+             "kind": "topic_intro", "text": "Combat is an attribute.", "related": []})
+        corpus["chunks"][0]["related"] = ["Combat"]
+        self.assertEqual(self._run_with(corpus), [])
+
+    def test_included_in_run_all(self):
+        self.assertIn("lrr_corpus", validators.run_all_validations())
+
+
 class DataRoundTripTests(TestCase):
     """The data is correct once loaded into the DB by reset_database()."""
 

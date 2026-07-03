@@ -20,3 +20,13 @@ env/
 
 # Stray root npm lockfile (the real one lives in frontend/)
 /package-lock.json
+
+# LRR FTS5 retrieval index — a build artifact rebuilt from the committed
+# lrr_rules.json by `manage.py build_rules_index` (like collectstatic). Not committed.
+core/data/index/
+
+# Living Rules Reference source PDF (Asmodee/FFG IP — never committed). The
+# vendored, parsed core/data/source/lrr/lrr_rules.json IS committed; the PDF is
+# ingested locally by scripts/ingest_lrr.py. See .features/rules_rag_grounding.md.
+*.pdf
+lrr*.pdf

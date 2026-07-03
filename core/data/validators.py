@@ -36,6 +36,7 @@ against the source are:
 """
 
 import json
+import re
 from collections import OrderedDict
 from pathlib import Path
 
@@ -51,6 +52,9 @@ from core.util.default_data.default_systems import DEFAULT_SYSTEMS
 _DATA_DIR = Path(__file__).resolve().parent
 SOURCE_TILES_PATH = _DATA_DIR / "source" / "milty_draft_tiles.json"
 SOURCE_FACTIONS_PATH = _DATA_DIR / "source" / "milty_draft_factions.json"
+# Vendored Living Rules Reference corpus for grounded Rules Q&A (produced by
+# scripts/ingest_lrr.py from the official LRR PDF; the PDF is not committed).
+LRR_RULES_PATH = _DATA_DIR / "source" / "lrr" / "lrr_rules.json"
 # core/ -> project root -> static/images/systems
 SYSTEM_IMAGE_DIR = _DATA_DIR.parent.parent / "static" / "images" / "systems"
 
@@ -352,6 +356,70 @@ def validate_tts_parser_config():
     return issues
 
 
+_RULE_ID_RE = re.compile(r"^\d+(\.\d+)?$")
+
+
+def _norm_topic_name(name):
+    """Topic name -> comparison key: lowercased, parenthetical qualifier dropped
+    (so a related reference "Combat" resolves to the topic "Combat (Attribute)").
+    """
+    return name.split("(")[0].strip().lower()
+
+
+def validate_lrr_corpus():
+    """The vendored Living Rules Reference corpus is well-formed.
+
+    Checks (all cheap, all deterministic): the file loads with provenance; every
+    chunk has a valid, unique ``rule_id`` and non-empty ``text``; every sub-rule
+    points at a topic that exists; and every ``related`` reference resolves to a
+    known topic name. Numbering need not be contiguous -- the LRR itself skips
+    numbers (e.g. Movement has no 58.1) and renders a few sub-rules next to
+    ALL-CAPS sub-headers, so gaps are faithful, not errors.
+    """
+    issues = []
+    if not LRR_RULES_PATH.exists():
+        return [f"LRR corpus missing: {LRR_RULES_PATH} (run scripts/ingest_lrr.py)"]
+
+    with open(LRR_RULES_PATH, encoding="utf-8") as fh:
+        data = json.load(fh)
+
+    prov = data.get("provenance") or {}
+    for field in ("source", "version", "source_url"):
+        if not prov.get(field):
+            issues.append(f"LRR provenance missing {field!r}")
+
+    chunks = data.get("chunks") or []
+    if not chunks:
+        return issues + ["LRR corpus has no chunks"]
+
+    topic_ids = {c["rule_id"] for c in chunks if c.get("kind") == "topic_intro"}
+    topic_names = {_norm_topic_name(c["topic"]) for c in chunks if c.get("kind") == "topic_intro"}
+
+    seen = set()
+    for c in chunks:
+        rid = c.get("rule_id", "")
+        if not _RULE_ID_RE.match(str(rid)):
+            issues.append(f"LRR chunk has invalid rule_id: {rid!r}")
+        if rid in seen:
+            issues.append(f"LRR duplicate rule_id: {rid!r}")
+        seen.add(rid)
+        if not (c.get("text") or "").strip():
+            issues.append(f"LRR chunk {rid!r} has empty text")
+        if not (c.get("topic") or "").strip():
+            issues.append(f"LRR chunk {rid!r} has empty topic")
+        # Sub-rules must point at a real topic intro.
+        if c.get("kind") == "rule":
+            parent = c.get("parent_topic")
+            if parent not in topic_ids:
+                issues.append(f"LRR sub-rule {rid!r} has unknown parent_topic {parent!r}")
+        # Every related reference must resolve to a known topic name.
+        for ref in c.get("related") or []:
+            if _norm_topic_name(ref) not in topic_names:
+                issues.append(f"LRR topic {rid!r} has unresolved related reference: {ref!r}")
+
+    return issues
+
+
 def run_all_validations():
     """Run every validator. Returns an ordered ``{check_name: [issues]}`` dict."""
     return OrderedDict(
@@ -361,5 +429,6 @@ def run_all_validations():
             ("faction_source_parity", validate_factions_against_milty_source()),
             ("tile_images", validate_tile_images()),
             ("tts_parser_config", validate_tts_parser_config()),
+            ("lrr_corpus", validate_lrr_corpus()),
         ]
     )
