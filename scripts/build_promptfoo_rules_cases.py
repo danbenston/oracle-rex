@@ -46,7 +46,11 @@ def build_cases(golden: dict) -> list[dict]:
                 "description": f"{c['id']}: {c['question']}",
                 "vars": {
                     "question": c["question"],
-                    "expected_rule_ids": list(c["expected_rule_ids"]),
+                    # Space-joined string, NOT a YAML list: promptfoo expands a
+                    # list-valued var into a Cartesian product of test cases (and
+                    # unwraps a single-element list to a bare string), which would
+                    # shred "1.19" into characters. cited_rules.py splits this back.
+                    "expected_rule_ids": " ".join(c["expected_rule_ids"]),
                     # In-corpus golden questions expect a grounded answer; a case
                     # may set "grounded": false to assert the ungrounded path.
                     "grounded_expected": bool(c.get("grounded", True)),

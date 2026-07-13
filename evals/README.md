@@ -45,8 +45,10 @@ mocks can't — the actual model behavior behind each prompt version.
   python manage.py build_rules_index
   ```
 
-- **Pinned promptfoo version:** `promptfoo@0.121.17`. Pin it on every invocation
-  so runs are reproducible.
+- **Pinned promptfoo version:** `promptfoo@0.118.0`. Pin it on every invocation
+  so runs are reproducible. (Pinned here because `0.121+` requires Node
+  `^20.20.0 || >=22.22.0`; `0.118.0` needs only Node `>=18`, matching this repo's
+  Node `22.14.0`. Bump both together if you move Node forward.)
 
 ### Keys (environment)
 
@@ -93,20 +95,18 @@ From the **repo root** (so `.venv` and `.env` resolve):
 
 ```powershell
 # Rules Q&A, default Gemini provider
-npx promptfoo@0.121.17 eval -c evals/promptfooconfig.rules.yaml
+npx promptfoo@0.118.0 eval -c evals/promptfooconfig.rules.yaml
 
 # Open the last run in the local web viewer
-npx promptfoo@0.121.17 view
+npx promptfoo@0.118.0 view
 ```
 
-### Cheap iteration (smoke subset)
+### Cheap iteration (a few cases)
 
-While editing a prompt, run only the cases tagged `smoke: true` (3 of them):
+While editing a prompt, run just the first few cases to keep token cost trivial:
 
 ```powershell
-npx promptfoo@0.121.17 eval -c evals/promptfooconfig.rules.yaml --filter-metadata smoke=true
-# or just the first N cases:
-npx promptfoo@0.121.17 eval -c evals/promptfooconfig.rules.yaml --filter-first-n 3
+npx promptfoo@0.118.0 eval -c evals/promptfooconfig.rules.yaml --filter-first-n 3
 ```
 
 Run the **full** set before merging a prompt change.
@@ -127,7 +127,7 @@ Run the **full** set before merging a prompt change.
 Outputs stay uncommitted. Write one when you want to diff a run:
 
 ```powershell
-npx promptfoo@0.121.17 eval -c evals/promptfooconfig.rules.yaml -o evals/output/rules-$(Get-Date -Format yyyyMMdd).json
+npx promptfoo@0.118.0 eval -c evals/promptfooconfig.rules.yaml -o evals/output/rules-$(Get-Date -Format yyyyMMdd).json
 ```
 
 ## What the assertions check
