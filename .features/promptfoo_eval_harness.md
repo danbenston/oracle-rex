@@ -1,10 +1,14 @@
 # Feature: promptfoo eval harness (answer-quality gate for the AI features)
 
-_Status: planned (2026-07-01). Companion to `rules_rag_grounding.md` — that
-epic's Phase 4 ("Tier B answer evals") **is** this harness applied to the rules
-feature; this doc owns the shared infrastructure and extends coverage to the
-other AI features where evals earn their token cost. Either doc can land
-first; whichever is second consumes the other's pieces._
+_Status: shared infrastructure + the rules step DONE (2026-07-03, branch
+`epic/promptfoo-and-rag`) — provider adapter, structural assert, rules config,
+runbook. Now being applied as the RAG epic's Phase 4 (Tier B rules answer evals):
+rules cases sourced from `core/data/eval/rules_golden.json`, cited-rule_id +
+grounded assertions. Committed baseline still pending one live Gemini run (needs a
+key). Coverage for the other AI features (strategy/move/calc) is later. Companion
+to `rules_rag_grounding.md` — that epic's Phase 4 ("Tier B answer evals") **is**
+this harness applied to the rules feature; either doc can land first; whichever is
+second consumes the other's pieces._
 
 ## Objective
 

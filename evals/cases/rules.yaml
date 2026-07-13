@@ -1,103 +1,247 @@
-# Rules Q&A eval cases (promptfoo external tests file).
+# GENERATED FILE — do not edit by hand.
+# Source: core/data/eval/rules_golden.json (the single curated question list
+# shared with the Tier A retrieval eval). Regenerate with:
+#     python scripts/build_promptfoo_rules_cases.py
 #
-# STARTER SET. The RAG epic (rules_rag_grounding.md) will own the single curated
-# question list at core/data/eval/rules_golden.json; when it lands, these cases
-# get regenerated from it (one question source in the repo). Until then this is
-# a 10-case starter of community-classic rules questions.
-#
-# Every case also runs the structural schema assert from defaultTest in
-# promptfooconfig.rules.yaml (valid JSON, RulesAnswer validates, non-empty
-# answer, prompt-version stamped). The per-case asserts below are key-fact
-# checks. They are intentionally light and HEURISTIC: LLM prose varies, so an
-# icontains on the question's core noun mainly catches off-topic / empty /
-# refusal answers, and a not-icontains guards a specific wrong claim. Tune them
-# against the first real run — read the delta, not the absolute score.
-#
-# Pre-RAG note: RulesAnswer has no citations yet, so there are no citation
-# assertions here. The RAG epic's Phase 4 adds cited-rule_id checks and
-# grounded/ungrounded assertions on this same file.
+# Assertions live in defaultTest in promptfooconfig.rules.yaml (structural
+# pipeline_schema + cited_rules); each case here carries only its question and
+# the expected LRR rule_ids the grounded answer should cite.
 
-- description: "Retreat requires surviving ships to move"
+- description: 'timing-window-tie: What happens if two players have abilities that
+    trigger at the same timing window?'
   vars:
-    question: "During space combat, if all of my ships are destroyed, can I still retreat that combat?"
-  metadata:
-    smoke: true
-  assert:
-    - type: icontains
-      value: "retreat"
-    # A retreat needs ships to move to an adjacent system; with none left you
-    # cannot. Guard against the model asserting the opposite.
-    - type: not-icontains
-      value: "you can retreat"
-    - type: llm-rubric
-      value: >
-        Directly answers whether a player can retreat when none of their ships
-        survive the combat, gives the correct answer (they cannot), and does not
-        invent rules.
-
-- description: "Space cannon offense timing"
+    question: What happens if two players have abilities that trigger at the same
+      timing window?
+    expected_rule_ids:
+    - '1.19'
+    grounded_expected: true
+- description: 'retreat-no-ships: Can I retreat from space combat if I have no ships
+    left?'
   vars:
-    question: "When exactly does Space Cannon Offense happen during a tactical action, relative to the combat rounds?"
-  metadata:
-    smoke: true
-  assert:
-    - type: icontains
-      value: "space cannon"
-
-- description: "Excess fighters removed when capacity is exceeded"
+    question: Can I retreat from space combat if I have no ships left?
+    expected_rule_ids:
+    - '78.7'
+    grounded_expected: true
+- description: 'production-capacity: How does production capacity work?'
   vars:
-    question: "At the end of a space combat I have more fighters than my remaining ships' capacity. What happens to the excess fighters?"
-  assert:
-    - type: icontains
-      value: "capacity"
-
-- description: "Sustain Damage usage and timing"
+    question: How does production capacity work?
+    expected_rule_ids:
+    - '16.1'
+    grounded_expected: true
+- description: 'tactical-action-newbie: Explain how tactical actions work like I''m
+    new to TI.'
   vars:
-    question: "How and when can a unit use Sustain Damage during combat, and what does it do?"
-  assert:
-    - type: icontains
-      value: "sustain"
-
-- description: "Nebula move and defense effects"
+    question: Explain how tactical actions work like I'm new to TI.
+    expected_rule_ids:
+    - '89'
+    grounded_expected: true
+- description: 'announce-retreat: When during space combat do I announce a retreat?'
   vars:
-    question: "What are the rules for a Nebula system: can ships move into it, and does it affect combat?"
-  metadata:
-    smoke: true
-  assert:
-    - type: icontains
-      value: "nebula"
-
-- description: "Transactions are with neighbors"
+    question: When during space combat do I announce a retreat?
+    expected_rule_ids:
+    - '78.4'
+    grounded_expected: true
+- description: 'excess-fighters: At the end of a space combat I have more fighters
+    than my remaining capacity. What happens to the excess?'
   vars:
-    question: "Who can I make a transaction with, and how often, during a round?"
-  assert:
-    - type: icontains
-      value: "neighbor"
-
-- description: "Anti-Fighter Barrage timing and targets"
+    question: At the end of a space combat I have more fighters than my remaining
+      capacity. What happens to the excess?
+    expected_rule_ids:
+    - '16.3'
+    grounded_expected: true
+- description: 'sustain-damage-use: How and when can a unit use Sustain Damage?'
   vars:
-    question: "When does Anti-Fighter Barrage happen and which units can it hit?"
-  assert:
-    - type: icontains
-      value: "fighter"
-
-- description: "Objective scoring limits per phase"
+    question: How and when can a unit use Sustain Damage?
+    expected_rule_ids:
+    - '87'
+    - '87.4'
+    grounded_expected: true
+- description: 'nebula-rules: Can ships move into a nebula, and does it affect combat?'
   vars:
-    question: "How many objectives can I score in a single status phase, and does that differ for secret objectives?"
-  assert:
-    - type: icontains
-      value: "objective"
-
-- description: "Custodians token on Mecatol Rex"
+    question: Can ships move into a nebula, and does it affect combat?
+    expected_rule_ids:
+    - '59.1'
+    - '59.3'
+    grounded_expected: true
+- description: 'transaction-neighbors: Who can I make a transaction with, and how
+    often per turn?'
   vars:
-    question: "What do I have to do to land ground forces on Mecatol Rex the first time, and what does it cost?"
-  assert:
-    - type: icontains
-      value: "mecatol"
-
-- description: "Production value and fighter/infantry cost"
+    question: Who can I make a transaction with, and how often per turn?
+    expected_rule_ids:
+    - '94.1'
+    grounded_expected: true
+- description: 'afb-timing: When does Anti-Fighter Barrage happen and what can it
+    hit?'
   vars:
-    question: "How does a unit's Production value limit what I can build, and how do fighters and infantry count against it?"
-  assert:
-    - type: icontains
-      value: "production"
+    question: When does Anti-Fighter Barrage happen and what can it hit?
+    expected_rule_ids:
+    - '78.3'
+    - '10.2'
+    grounded_expected: true
+- description: 'objectives-per-status: How many objectives can I score in a single
+    status phase?'
+  vars:
+    question: How many objectives can I score in a single status phase?
+    expected_rule_ids:
+    - '61.6'
+    grounded_expected: true
+- description: 'custodians-mecatol: What do I have to do to land ground forces on
+    Mecatol Rex the first time?'
+  vars:
+    question: What do I have to do to land ground forces on Mecatol Rex the first
+      time?
+    expected_rule_ids:
+    - '27.2'
+    grounded_expected: true
+- description: 'production-limit: How does a unit''s Production value limit what I
+    can build?'
+  vars:
+    question: How does a unit's Production value limit what I can build?
+    expected_rule_ids:
+    - '68.1'
+    grounded_expected: true
+- description: 'assign-hits-space: How do I assign and resolve hits during space combat?'
+  vars:
+    question: How do I assign and resolve hits during space combat?
+    expected_rule_ids:
+    - '78.6'
+    grounded_expected: true
+- description: 'ground-combat: How does ground combat work during an invasion?'
+  vars:
+    question: How does ground combat work during an invasion?
+    expected_rule_ids:
+    - '42'
+    grounded_expected: true
+- description: 'bombardment-planetary-shield: Can I bombard a planet that has Planetary
+    Shield?'
+  vars:
+    question: Can I bombard a planet that has Planetary Shield?
+    expected_rule_ids:
+    - '65'
+    grounded_expected: true
+- description: 'space-cannon-offense-timing: When exactly can PDS use Space Cannon
+    Offense during a tactical action?'
+  vars:
+    question: When exactly can PDS use Space Cannon Offense during a tactical action?
+    expected_rule_ids:
+    - '77'
+    - '58.7'
+    grounded_expected: true
+- description: 'tactical-action-steps: What are the steps of a tactical action, in
+    order?'
+  vars:
+    question: What are the steps of a tactical action, in order?
+    expected_rule_ids:
+    - '89'
+    grounded_expected: true
+- description: 'command-tokens-pools: How do command tokens work across the three
+    pools?'
+  vars:
+    question: How do command tokens work across the three pools?
+    expected_rule_ids:
+    - '20.1'
+    - '20.2'
+    grounded_expected: true
+- description: 'commodities-conversion: How do commodities turn into trade goods?'
+  vars:
+    question: How do commodities turn into trade goods?
+    expected_rule_ids:
+    - '21.6'
+    grounded_expected: true
+- description: 'move-through-enemy: Can I move my ships through a system that contains
+    enemy ships?'
+  vars:
+    question: Can I move my ships through a system that contains enemy ships?
+    expected_rule_ids:
+    - '58.4'
+    grounded_expected: true
+- description: 'wormhole-adjacency: How do wormholes create adjacency between systems?'
+  vars:
+    question: How do wormholes create adjacency between systems?
+    expected_rule_ids:
+    - '6.1'
+    grounded_expected: true
+- description: 'fleet-pool-limit: What limits how many ships I can have in a system?'
+  vars:
+    question: What limits how many ships I can have in a system?
+    expected_rule_ids:
+    - '76.2'
+    - '37.1'
+    - '37.3'
+    grounded_expected: true
+- description: 'elimination: When is a player eliminated from the game?'
+  vars:
+    question: When is a player eliminated from the game?
+    expected_rule_ids:
+    - '33.1'
+    grounded_expected: true
+- description: 'agenda-voting: How does voting work during the agenda phase?'
+  vars:
+    question: How does voting work during the agenda phase?
+    expected_rule_ids:
+    - '8.5'
+    grounded_expected: true
+- description: 'initiative-order: How is initiative order determined?'
+  vars:
+    question: How is initiative order determined?
+    expected_rule_ids:
+    - '48.2'
+    grounded_expected: true
+- description: 'secret-objectives: Can I score another player''s secret objective?'
+  vars:
+    question: Can I score another player's secret objective?
+    expected_rule_ids:
+    - '61.19'
+    grounded_expected: true
+- description: 'deploy-mechs: How do Deploy abilities work for mechs?'
+  vars:
+    question: How do Deploy abilities work for mechs?
+    expected_rule_ids:
+    - '55.3'
+    grounded_expected: true
+- description: 'structures-per-planet: How many PDS and space docks can I have on
+    a single planet?'
+  vars:
+    question: How many PDS and space docks can I have on a single planet?
+    expected_rule_ids:
+    - '85.4'
+    - '85.5'
+    grounded_expected: true
+- description: 'sustain-damage-timing: When exactly do I decide to use Sustain Damage
+    relative to assigning hits?'
+  vars:
+    question: When exactly do I decide to use Sustain Damage relative to assigning
+      hits?
+    expected_rule_ids:
+    - '87'
+    grounded_expected: true
+- description: 'blockade: What happens when my space dock is blockaded?'
+  vars:
+    question: What happens when my space dock is blockaded?
+    expected_rule_ids:
+    - '14'
+    - '14.2'
+    grounded_expected: true
+- description: 'neighbors: What makes two players neighbors?'
+  vars:
+    question: What makes two players neighbors?
+    expected_rule_ids:
+    - '60'
+    grounded_expected: true
+- description: 'transport-pickup: When moving a ship with capacity, can I pick up
+    infantry on a planet in a system I move through?'
+  vars:
+    question: When moving a ship with capacity, can I pick up infantry on a planet
+      in a system I move through?
+    expected_rule_ids:
+    - '95.1'
+    grounded_expected: true
+- description: 'transport-dropoff: When moving a ship with capacity, can I drop off
+    infantry on a planet I move through before reaching my destination?'
+  vars:
+    question: When moving a ship with capacity, can I drop off infantry on a planet
+      I move through before reaching my destination?
+    expected_rule_ids:
+    - '95.1'
+    - '58.4'
+    grounded_expected: true

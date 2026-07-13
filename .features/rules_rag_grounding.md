@@ -11,8 +11,12 @@
 >
 > **Branch:** suggested `epic/rules-rag-grounding` off `main`.
 
-**Status: planned (2026-07-01).** Activates the grounded-citations scope that
-`done/milestone_10_game_features.md` §1 explicitly deferred ("Living Rules
+**Status: Phases 0–3 DONE (2026-07-03), pushed on branch `epic/promptfoo-and-rag`;
+Phase 4 (answer evals + docs) IN PROGRESS; Phase 5 (embeddings) deferred — not
+justified (retrieval recall@8 = 1.0). Grounded Rules Q&A with real LRR citations
+is live behind `RULES_RAG_ENABLED` (default on); live-provider + prod-deploy
+checks are the outstanding owner items.** Activates the grounded-citations scope
+that `done/milestone_10_game_features.md` §1 explicitly deferred ("Living Rules
 Reference (LRR) PDF — authoritative rules text... Only needed if the rules
 chatbot later wants grounded citations").
 

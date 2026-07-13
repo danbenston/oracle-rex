@@ -38,6 +38,13 @@ mocks can't — the actual model behavior behind each prompt version.
 - **The project virtualenv** at `.venv/` with the app installed — the provider
   does `django.setup()` and imports `core.service.ai`. promptfoo shells out to
   this Python (see [Python interpreter](#python-interpreter)).
+- **The rules index must be built** before a rules run, or grounded Rules Q&A
+  degrades to ungrounded recall and the `cited_rules` assert fails everywhere:
+
+  ```powershell
+  python manage.py build_rules_index
+  ```
+
 - **Pinned promptfoo version:** `promptfoo@0.121.17`. Pin it on every invocation
   so runs are reproducible.
 
@@ -125,16 +132,22 @@ npx promptfoo@0.121.17 eval -c evals/promptfooconfig.rules.yaml -o evals/output/
 
 ## What the assertions check
 
-- **`pipeline_schema.py` (every case, via `defaultTest`)** — the response is
-  valid JSON, the real Pydantic schema (`RulesAnswer`, etc.) validates, the
-  answer field is non-empty, and the prompt version is stamped. Free. Set
-  `allow_fallback: false` in a case's `vars` to also fail when the model could
-  not produce native structured output and the service degraded to plain text.
-- **Per-case `contains` / `not-contains`** — key-fact checks. These are
-  intentionally light and heuristic (LLM prose varies); tune them against the
-  first real run and read the **delta** between runs, not the absolute score.
-- **`llm-rubric` (a few cases)** — model-graded, using the cheap Gemini model as
-  grader.
+Both run on **every** rules case via `defaultTest`, so the case files carry only
+data (question + `expected_rule_ids`), never assertion logic:
+
+- **`pipeline_schema.py`** — the response is valid JSON, the real Pydantic schema
+  (`RulesAnswer`, etc.) validates, the answer field is non-empty, and the prompt
+  version is stamped. Free. Set `allow_fallback: false` in a case's `vars` to also
+  fail when the model degraded to plain text.
+- **`cited_rules.py` (Tier B)** — the grounded answer actually **cites the rule it
+  should**: `grounded: true` and at least one of the case's `expected_rule_ids`
+  appears in `citations`. A case with `grounded_expected: false` instead asserts
+  the honest ungrounded path (no citations). Cited ids are post-validated and
+  inline-harvested by the service, so a citation is always a real, retrieved rule.
+  Strict on purpose — read the delta between runs.
+- **`llm-rubric` (optional, a few cases)** — model-graded, using the cheap Gemini
+  model as grader (config `defaultTest.options.provider`). Not wired by default;
+  add per case when a fact needs prose grading.
 
 ### The `_meta` block
 
@@ -142,30 +155,36 @@ The provider returns the structured result plus a `_meta` object so assertions
 can check **pipeline facts, not just text**:
 
 ```json
-{ "answer": "...", "rule_basis": ["..."],
+{ "answer": "...", "citations": [{"rule_id": "78.7", "relevance": "..."}],
+  "grounded": true,
   "_meta": { "feature": "rules", "model": "gemini-3.1-flash-lite",
-             "persona": "default", "prompt_version": "rules_chat_v1",
+             "persona": "default", "prompt_version": "rules_chat_v3",
              "schema_valid": true, "fallback_used": false } }
 ```
 
 ## Cost expectations
 
 - Rules cases are short prompts with small outputs on the cheap Gemini model. The
-  10-case set is a handful of cents-scale-or-less on the free tier; the 3-case
-  smoke subset is trivial. `llm-rubric` adds one extra cheap Gemini call per
-  rubric'd case.
+  34-case set is a handful of cents-scale-or-less on the free tier; the smoke
+  subset is trivial. `llm-rubric` adds one extra cheap Gemini call per rubric'd
+  case.
 - **Nothing runs automatically or on someone else's dime.** No per-commit CI, no
   runs on user/demo traffic.
 
-## Cases: starter vs. golden set
+## Cases come from the golden set (one question source)
 
-`cases/rules.yaml` is a **10-case starter**. The RAG epic
-(`.features/rules_rag_grounding.md`) owns the single curated question list at
-`core/data/eval/rules_golden.json`; when it lands, these cases are regenerated
-from it so there is exactly one curated question source in the repo. The starter
-has no citation assertions because `RulesAnswer` has no citations pre-RAG — the
-RAG epic's Phase 4 adds cited-`rule_id` and grounded/ungrounded checks to this
-same file.
+`cases/rules.yaml` is **generated** from `core/data/eval/rules_golden.json` — the
+single curated question list shared with the Tier A retrieval eval. Do not edit
+`rules.yaml` by hand; edit the golden set and regenerate:
+
+```powershell
+python scripts/build_promptfoo_rules_cases.py
+```
+
+Each generated case carries the `question` and its `expected_rule_ids`; the
+`cited_rules` assert in `defaultTest` uses those to check the answer cited the
+right rule. Adding a question in one place (the golden set) updates both the
+retrieval eval and this answer eval.
 
 ## Baselines & regression discipline
 
@@ -177,11 +196,14 @@ promptfoo's own HTML/JSON outputs stay in `output/` and are gitignored.
 ## Roadmap
 
 1. ✅ `evals/` skeleton + provider + rules cases + config + runbook.
-2. Regenerate rules cases from `rules_golden.json` when the RAG epic lands.
+2. ✅ Rules cases generated from `rules_golden.json`; `cited_rules` grounded/
+   citation assert (RAG epic Phase 4). **Remaining:** the first live Gemini run to
+   fill the Tier B row in `BASELINES.md`.
 3. `promptfooconfig.strategy.yaml` + fixtures + the vendored-tech python
    assertion (every tech in `tech_path` must exist in the AsyncTI4 data).
 4. `promptfooconfig.move.yaml` + `promptfooconfig.tac_calc.yaml` (light).
 5. Persona + provider matrix variants (documented above; provider blocks
    commented in the config).
-6. First `BASELINES.md` entries; add "run the relevant eval config" to the
-   prompt-change checklist in `core/service/ai/README.md`.
+6. ✅ `BASELINES.md` created (Tier A recorded; Tier B pending first run). Add
+   "run the relevant eval config" to the prompt-change checklist in
+   `core/service/ai/README.md`.

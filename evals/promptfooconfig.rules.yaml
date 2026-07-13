@@ -36,12 +36,17 @@ providers:
   #   config: { feature: rules, model: claude-haiku-4-5 }
 
 defaultTest:
-  # Structural contract applied to every case: valid JSON, RulesAnswer
-  # validates, non-empty answer, prompt-version stamped. Free once the response
-  # exists.
+  # Applied to every case (cases carry only question + expected_rule_ids):
+  #   pipeline_schema — structural: valid JSON, RulesAnswer validates, non-empty
+  #                     answer, prompt-version stamped.
+  #   cited_rules     — Tier B: grounded answer cites >=1 of the case's expected
+  #                     LRR rule_ids (or honestly ungrounded when expected).
+  # Both are deterministic and free once the response exists.
   assert:
     - type: python
       value: file://asserts/pipeline_schema.py
+    - type: python
+      value: file://asserts/cited_rules.py
   options:
     # Model-graded asserts (llm-rubric) use the cheap Gemini model as grader, not
     # the promptfoo default (OpenAI gpt-4). The Google provider reads GOOGLE_API_KEY
