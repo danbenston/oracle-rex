@@ -26,6 +26,16 @@ ALIASES: dict[str, list[str]] = {
     "taccy": ["tactical", "action"],
     "tac": ["tactical", "action"],
     "strat": ["strategic", "action", "strategy", "card"],
+    # Transport vocabulary: the LRR describes carrying ground forces as
+    # "transport" and only ever "pick up"; players say "drop off" / "unload",
+    # which share no tokens with the rules text (rule 95 Transport, 95.1a). Map
+    # that jargon onto the terms the corpus actually uses so both directions
+    # retrieve the transport rule.
+    "drop": ["transport", "active"],
+    "dropoff": ["transport", "active"],
+    "unload": ["transport", "active"],
+    "disembark": ["transport", "active"],
+    "deposit": ["transport", "active"],
     # Resources / economy
     "cap": ["capacity"],
     "tg": ["trade", "good"],
@@ -51,6 +61,9 @@ PHRASE_ALIASES: dict[str, list[str]] = {
     "space cannon": ["space", "cannon", "offense", "defense"],
     "home system": ["home", "system"],
     "action phase": ["action", "phase"],
+    # "drop off" / "pick up" -> the transport rule's vocabulary.
+    "drop off": ["transport", "active", "system", "commit"],
+    "pick up": ["transport"],
 }
 
 

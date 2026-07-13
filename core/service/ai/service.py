@@ -15,6 +15,7 @@ fixed-format text block and is returned as plain text.
 """
 
 import logging
+import re
 from dataclasses import dataclass, field
 from typing import Any, Dict, List
 
@@ -36,7 +37,7 @@ from .prompts import (
     tactical_calculator,
     tactical_move as tactical_move_prompt,
 )
-from .schemas import RulesAnswer, StrategicPlan, TacticalMove
+from .schemas import RuleCitation, RulesAnswer, StrategicPlan, TacticalMove
 
 logger = logging.getLogger(__name__)
 
@@ -171,23 +172,49 @@ def _retrieve_rules_passages(question: str) -> List[Dict[str, Any]]:
     ]
 
 
+_RULE_ID_IN_TEXT = re.compile(r"\b(\d+\.\d+)\b")
+
+
 def _validate_citations(answer: RulesAnswer, passages: List[Dict[str, Any]]) -> RulesAnswer:
     """Drop cited rule_ids that were not actually retrieved; set ``grounded``.
 
     Deterministic anti-hallucination check: a citation is only trustworthy if it
-    points at a rule we placed in the prompt. ``grounded`` is derived from the
-    surviving citations, not the model's self-report.
+    points at a rule we placed in the prompt. Two-way:
+
+      * drop any cited ``rule_id`` that was NOT retrieved (a fabricated cite);
+      * recover any ``N.M`` rule number the model wrote *inline in the answer
+        text* that WAS retrieved. Small models often reference rules in prose
+        (e.g. "...ships must end movement in the active system [58.4]") and leave
+        the citations field empty; without this recovery, a genuinely grounded
+        answer gets mislabeled "answered from general knowledge".
+
+    ``grounded`` is derived from the surviving citations, not the model's
+    self-report.
     """
     retrieved_ids = {p["rule_id"] for p in passages}
     valid = [c for c in answer.citations if c.rule_id in retrieved_ids]
     dropped = [c.rule_id for c in answer.citations if c.rule_id not in retrieved_ids]
+    cited_ids = {c.rule_id for c in valid}
+
+    harvested = []
+    for rid in _RULE_ID_IN_TEXT.findall(answer.answer or ""):
+        if rid in retrieved_ids and rid not in cited_ids:
+            cited_ids.add(rid)
+            harvested.append(RuleCitation(rule_id=rid, relevance="referenced in the answer"))
+
     if dropped:
         logger.warning(
             "Dropped %d cited rule_id(s) not in the retrieved set: %s",
             len(dropped), dropped,
         )
-    answer.citations = valid
-    answer.grounded = bool(valid)
+    if harvested:
+        logger.info(
+            "Recovered %d inline rule citation(s) from the answer text: %s",
+            len(harvested), [c.rule_id for c in harvested],
+        )
+
+    answer.citations = valid + harvested
+    answer.grounded = bool(answer.citations)
     return answer
 
 

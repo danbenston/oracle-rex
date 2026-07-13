@@ -34,6 +34,8 @@
     {"id": "structures-per-planet", "question": "How many PDS and space docks can I have on a single planet?", "expected_rule_ids": ["85.4", "85.5"], "tags": ["structures"]},
     {"id": "sustain-damage-timing", "question": "When exactly do I decide to use Sustain Damage relative to assigning hits?", "expected_rule_ids": ["87"], "tags": ["combat"]},
     {"id": "blockade", "question": "What happens when my space dock is blockaded?", "expected_rule_ids": ["14", "14.2"], "tags": ["production"]},
-    {"id": "neighbors", "question": "What makes two players neighbors?", "expected_rule_ids": ["60"], "tags": ["economy"]}
+    {"id": "neighbors", "question": "What makes two players neighbors?", "expected_rule_ids": ["60"], "tags": ["economy"]},
+    {"id": "transport-pickup", "question": "When moving a ship with capacity, can I pick up infantry on a planet in a system I move through?", "expected_rule_ids": ["95.1"], "tags": ["movement", "transport", "jargon"]},
+    {"id": "transport-dropoff", "question": "When moving a ship with capacity, can I drop off infantry on a planet I move through before reaching my destination?", "expected_rule_ids": ["95.1", "58.4"], "tags": ["movement", "transport", "jargon"]}
   ]
 }

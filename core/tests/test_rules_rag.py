@@ -136,6 +136,36 @@ class RulesRagServiceTests(SimpleTestCase):
         self.assertEqual(result.answer.citations, [])
         self.assertFalse(result.answer.grounded)
 
+    def test_inline_rule_refs_are_harvested_into_citations(self):
+        # Small model wrote rule numbers in prose and left the citations field
+        # empty; the retrieved ones must be recovered so the answer isn't
+        # falsely marked ungrounded (the drop-off screenshot regression).
+        answer = RulesAnswer(
+            answer="Ships must end movement in the active system [58.4], and the "
+                   "transport rules [78.4] do not allow intermediate drop-offs.",
+            citations=[],
+            grounded=False,
+        )
+        passages = [
+            {"rule_id": "58.4", "topic": "Movement", "text": "STEP 1-MOVE SHIPS ..."},
+            {"rule_id": "78.4", "topic": "Space Combat", "text": "..."},
+        ]
+        result = _run(answer, passages)
+        self.assertEqual({c.rule_id for c in result.answer.citations}, {"58.4", "78.4"})
+        self.assertTrue(result.answer.grounded)
+
+    def test_only_dotted_retrieved_ids_are_harvested(self):
+        # A bare topic number ("95") and an incidental number ("2 tiles") must
+        # not be harvested — only dotted rule_ids that were actually retrieved.
+        answer = RulesAnswer(
+            answer="Move up to 2 tiles; see rule 95 and 58.4 for the details.",
+            citations=[],
+            grounded=False,
+        )
+        passages = [{"rule_id": "58.4", "topic": "Movement", "text": "x"}]
+        result = _run(answer, passages)
+        self.assertEqual({c.rule_id for c in result.answer.citations}, {"58.4"})
+
     def test_fallback_answer_is_ungrounded(self):
         with patch.object(config, "RULES_RAG_ENABLED", True), \
                 patch.object(service, "_retrieve_rules_passages", return_value=PASSAGES), \

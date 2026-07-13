@@ -7,9 +7,9 @@ recall@k / MRR stay at or above committed floors. A chunking or alias change tha
 drops recall fails here — no provider call, no tokens, so it can run on every
 change (unlike the Tier B promptfoo answer evals).
 
-Baselines recorded 2026-07-03 on LRR 2.0 (32 cases):
-  recall@3 = 0.844 · recall@5 = 0.969 · recall@8 = 1.000 · recall@10 = 1.000
-  MRR@10  = 0.700
+Baselines recorded 2026-07-03 on LRR 2.0 (34 cases):
+  recall@3 = 0.853 · recall@5 = 0.971 · recall@8 = 1.000 · recall@10 = 1.000
+  MRR@10  = 0.718
 Floors below sit under those with margin so a later golden addition doesn't
 immediately break CI, while a real retrieval regression still trips them.
 """

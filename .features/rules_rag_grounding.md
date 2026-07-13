@@ -160,9 +160,20 @@ already practices:
   combat, space cannon offense timing, Nebula defense, sustain damage order,
   transactions timing...). Runs on every change to chunking/aliases/retrieval;
   **a chunking or alias change that drops recall fails CI.**
-  **Baseline (Phase 1, LRR 2.0, 32 cases):** recall@3 = 0.844 · recall@5 = 0.969
-  · recall@8 = 1.000 · recall@10 = 1.000 · MRR@10 = 0.700. Implemented in
+  **Baseline (LRR 2.0, 34 cases):** recall@3 = 0.853 · recall@5 = 0.971
+  · recall@8 = 1.000 · recall@10 = 1.000 · MRR@10 = 0.718. Implemented in
   `core/tests/test_rules_retrieval.py`.
+
+- **Post-P3 fix (2026-07-03) — transport "drop off" jargon + inline-citation
+  recovery.** A live drop-off question ("can I drop off infantry on a planet I
+  move through?") exposed two issues: (1) BM25 missed rule 95.1 because the LRR
+  says "pick up and transport", never "drop off" — fixed with a jargon alias
+  (drop/unload/disembark/"drop off" → transport/active/commit), which pulls 95.1
+  to rank 1; (2) the small model wrote rule numbers inline in prose and left the
+  `citations` field empty, so a genuinely grounded answer was mislabeled
+  "answered from general knowledge" — fixed by harvesting dotted `N.M` refs from
+  the answer text that were actually retrieved (`_validate_citations`). Golden
+  cases added for both directions; the flywheel per §6.
 - **Tier B — answer evals: opt-in, costs tokens, promptfoo.**
   A `promptfoo` config (Node tooling already exists in `frontend/`) hitting the
   real pipeline with the golden questions; assertions per case: cited rule_ids
@@ -209,10 +220,11 @@ already practices:
     so no app DB; builds a temp index): recall@k / MRR floors as a CI regression
     gate + golden-integrity + alias + determinism checks. Full backend suite 155
     green.
-  - **Baseline (LRR 2.0, 32 cases, recorded here):** recall@3 = 0.844 ·
-    recall@5 = 0.969 · **recall@8 = 1.000** · recall@10 = 1.000 · MRR@10 = 0.700.
+  - **Baseline (LRR 2.0, 34 cases, recorded here):** recall@3 = 0.853 ·
+    recall@5 = 0.971 · **recall@8 = 1.000** · recall@10 = 1.000 · MRR@10 = 0.718.
     Every golden question's answer lands within the top 8 (inside the k≈6–10
-    prompt budget). Floors in the test sit just below these.
+    prompt budget). Floors in the test sit just below these. (34 = the original
+    32 + a transport pick-up/drop-off pair added by the post-P3 jargon fix below.)
   - *Exit met:* eval green with committed baseline; retrieval is deterministic
     and free; no pipeline/app change yet (that's Phase 2). Embeddings (Phase 5)
     are not justified — lexical + aliases already hit recall@8 = 1.0.
