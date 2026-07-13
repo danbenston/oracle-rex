@@ -1,0 +1,23 @@
+# winnowdelta multi-root config for oracle-rex.
+#
+# Two roots: the Django backend at the repo root, and the Vite/React frontend
+# under frontend/. An explicit backend `test` command is REQUIRED here (not just
+# a nicety): oracle-rex's repo root is a non-identifier name ("oracle-rex", with
+# a hyphen) AND has a root __init__.py, so Django's bare `manage.py test`
+# auto-discovery builds an invalid module path and fails with
+# `ModuleNotFoundError: No module named 'oracle-rex.core'`. The deeper explicit
+# label `core.tests` sidesteps discovery entirely.
+#
+# NOTE: the app label must be `core.tests`, NOT `core` — `manage.py test core`
+# ALSO fails discovery here (same hyphenated-root reason). Verified 2026-07-03:
+# `core.tests` runs all 145 backend tests; `core` and bare `test` both error.
+
+[subproject.backend]
+stack = "django"
+cwd = "."
+test = [".venv/Scripts/python.exe", "manage.py", "test", "core.tests"]
+
+[subproject.frontend]
+stack = "vitest"
+cwd = "frontend"
+tools = ["eslint", "prettier", "tsc"]

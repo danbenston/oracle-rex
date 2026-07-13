@@ -60,8 +60,44 @@ export const completedRulesResult = {
     assumptions: ['Standard space combat retreat.'],
     rule_basis: ['Space combat, Retreat step'],
     caveats: ['Must be announced before hits resolve.'],
+    citations: [
+      {
+        rule_id: '78.7',
+        relevance: 'A retreat needs surviving ships and an eligible system',
+      },
+    ],
+    grounded: true,
     needs_exact_text: false,
   },
+  passages: [
+    {
+      rule_id: '78.7',
+      topic: 'Space Combat',
+      text: 'STEP 5-RETREAT: If a player announced a retreat and there is still an eligible system, they must retreat.',
+      score: 9.1,
+    },
+    {
+      rule_id: '78.4',
+      topic: 'Space Combat',
+      text: 'STEP 2-ANNOUNCE RETREATS: Each player may announce a retreat, beginning with the defender.',
+      score: 8.2,
+    },
+  ],
+}
+
+export const ungroundedRulesResult = {
+  answer: 'Discordant Stars content is not in the LRR; from general knowledge...',
+  structured: {
+    answer:
+      'That is Discordant Stars content, which is not in the Living Rules Reference.',
+    assumptions: [],
+    rule_basis: [],
+    caveats: [],
+    citations: [],
+    grounded: false,
+    needs_exact_text: false,
+  },
+  passages: [],
 }
 
 export const demoTacticalResult = {

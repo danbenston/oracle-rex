@@ -34,8 +34,14 @@ The following tabs make up all the functions of this application:
     - Allow the user to select between AI 'personalities'
   
 
-  - **Rules Q&A**: A text chatbot that can answer questions about TI rules. Prompt has been tweaked to make the response more to-the-point.
-  
+  - **Rules Q&A**: A chatbot that answers Twilight Imperium rules questions,
+    **grounded in the official Living Rules Reference**. Instead of relying on
+    model recall, it retrieves the relevant LRR passages and answers from them,
+    then shows the rules it cited as tappable chips (`LRR 58.4 · Movement`) that
+    expand to the exact rule text. Out-of-reference questions (e.g. Discordant
+    Stars) are honestly flagged as "answered from general knowledge" rather than
+    fabricating a citation. See [Grounded Rules Q&A](#grounded-rules-qa-rag--lrr-citations).
+
     **Planned Features**:
     - Allow the user to check a box for a more verbose, beginner-friendly response.
 
@@ -210,6 +216,47 @@ The validators ([`core/data/validators.py`](core/data/validators.py)) check:
 
 These checks are also run as part of the test suite
 ([`core/tests/test_data_validation.py`](core/tests/test_data_validation.py)).
+
+### Grounded Rules Q&A (RAG + LRR citations)
+
+The Rules Q&A feature answers **from the official Living Rules Reference**, not
+from model recall. The flow is a small, deterministic RAG pipeline with a
+zero-cost retrieval step in front of the single model call:
+
+- **Corpus.** The official FFG *Prophecy of Kings Living Rules Reference 2.0* is
+  ingested by [`scripts/ingest_lrr.py`](scripts/ingest_lrr.py) into
+  [`core/data/source/lrr/lrr_rules.json`](core/data/source/lrr) — 601 chunks
+  (101 topics + 500 sub-rules), chunked by rule number so citations are stable
+  (`LRR 58.4`). The source PDF is Asmodee/FFG IP and is not committed; only the
+  parsed, mechanical rules text is. A validator (`validate_lrr_corpus`) runs in
+  `validate_data`.
+- **Retrieval.** [`core/service/rules_index/`](core/service/rules_index) builds a
+  standalone **SQLite FTS5** (BM25) index from the corpus and retrieves the top
+  passages for a question — no LLM, no API key, no per-request cost. A small TI
+  jargon alias map ("PDS" → space cannon, "drop off" → transport, …) bridges the
+  gap between how players ask and how the rules are written. Build the index
+  (a build artifact, rebuilt like `collectstatic`):
+
+      python manage.py build_rules_index
+      python manage.py rules_search "can I retreat with no ships left?"   # debug CLI
+
+- **Answer.** `get_rules_result` threads the retrieved passages into the
+  `rules_chat_v3` prompt and asks the model to answer from them and cite the rule
+  numbers it used. Cited rule ids are validated against what was actually
+  retrieved (fabricated cites are dropped; rule numbers the model writes inline
+  are recovered), and `grounded` is derived from the surviving citations. The
+  passages ride along in the job payload so the UI shows exact rule text with no
+  second request. Toggle with `RULES_RAG_ENABLED` (default on).
+- **UI.** The React `RulesPanel` renders citations as chips that expand to the
+  exact rule text; ungrounded answers are visibly marked "answered from general
+  knowledge." The demo prompt chips show it all with no API key.
+- **Evals.** Two tiers: **Tier A** (retrieval) is a deterministic recall@k / MRR
+  gate over a golden set
+  ([`core/data/eval/rules_golden.json`](core/data/eval/rules_golden.json)) that
+  runs in CI ([`core/tests/test_rules_retrieval.py`](core/tests/test_rules_retrieval.py));
+  **Tier B** (answer quality) is an opt-in [promptfoo](evals/README.md) run over
+  the same questions, asserting the answer cites the expected rules. See
+  [`.features/rules_rag_grounding.md`](.features/rules_rag_grounding.md).
 
 ### Running the tests
 

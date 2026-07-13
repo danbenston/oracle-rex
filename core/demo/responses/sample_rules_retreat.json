@@ -1,19 +1,80 @@
 {
   "question": "Can I retreat from space combat if I have no ships left?",
-  "answer": "No. Retreat moves your surviving ships to an adjacent eligible system, so you need at least one ship to retreat. If you have no ships remaining you have lost the space combat, and combat ends. You also must have announced the retreat before the combat round resolved and have a valid adjacent system (one you control or that is empty, and not the system the attacker came from in the same way that blocks it).",
+  "answer": "No. A retreat moves your surviving ships, so you must have at least one ship left to retreat. With no ships remaining you have lost the space combat and it ends.\n\nCited rules:\n- LRR 78.7 · A retreat needs surviving ships and an eligible adjacent system\n- LRR 78.4 · A retreat must be announced before hits are assigned\n\nRule basis:\n- Space combat - Retreat step\n- A retreat requires surviving ships and a valid adjacent system\n\nAssumptions:\n- You are asking about a standard space combat retreat, not a special faction ability.\n\nCaveats:\n- Retreat must be announced before the round's hits are assigned/resolved and needs an eligible adjacent system.\n- Some abilities (e.g., Skilled Retreat action card) change where or how you can retreat.",
   "structured": {
-    "answer": "No — a retreat moves your surviving ships, so you must have at least one ship left to retreat. With no ships remaining you have lost the space combat and it ends.",
+    "answer": "No. A retreat moves your surviving ships, so you must have at least one ship left to retreat. With no ships remaining you have lost the space combat and it ends.",
     "assumptions": [
       "You are asking about a standard space combat retreat, not a special faction ability."
     ],
     "rule_basis": [
-      "Space combat — Retreat step",
+      "Space combat - Retreat step",
       "A retreat requires surviving ships and a valid adjacent system"
     ],
     "caveats": [
       "Retreat must be announced before the round's hits are assigned/resolved and needs an eligible adjacent system.",
       "Some abilities (e.g., Skilled Retreat action card) change where or how you can retreat."
     ],
-    "needs_exact_text": false
-  }
+    "needs_exact_text": false,
+    "citations": [
+      {
+        "rule_id": "78.7",
+        "relevance": "A retreat needs surviving ships and an eligible adjacent system"
+      },
+      {
+        "rule_id": "78.4",
+        "relevance": "A retreat must be announced before hits are assigned"
+      }
+    ],
+    "grounded": true
+  },
+  "passages": [
+    {
+      "rule_id": "78.8",
+      "topic": "Space Combat",
+      "text": "After the “Retreat” step, if both players still have ships in the active system, those players resolve another round of space combat beginning with the “Announce Retreats” step.",
+      "score": 19.732
+    },
+    {
+      "rule_id": "78.4",
+      "topic": "Space Combat",
+      "text": "STEP 2—ANNOUNCE RETREATS: Each player may announce a retreat, beginning with the defender. (a) A retreat will not occur immediately; the units retreat during the “Retreat” step. (b) If the defender announces a retreat, the attacker cannot announce a retreat during that combat round. (c) A player cannot announce a retreat if there is not at least one eligible system to retreat to.",
+      "score": 18.226
+    },
+    {
+      "rule_id": "78.7",
+      "topic": "Space Combat",
+      "text": "STEP 5—RETREAT: If a player announced a retreat during step 2, and there is still an eligible system for their units to retreat to, they must retreat. (a) If a player announced a retreat during the “Announce Retreats” step, but their opponent has no ships remaining in the system, the combat immediately ends and the retreat does not occur. (b) To retreat, a player takes all of their ships with a move value in the combat and moves them to a single system that is adjacent to the active system. That player’s fighters and ground forces in the space area of the active system that are unable to move or be transported are removed. (c) The system that a player’s units retreat to must contain one or more of that player’s units, a planet they control, or both. Additionally, the system cannot contain ships controlled by another player. (d) If any of a player’s units successfully retreat and are moved into an adjacent system, that player must place a command token from their reinforcements in the system to which their units retreated. If that system already contains one of their command tokens, that player does not place an additional token there. If the player has no command tokens in their reinforcements, that player must use one from their command sheet instead.",
+      "score": 17.276
+    },
+    {
+      "rule_id": "78",
+      "topic": "Space Combat",
+      "text": "After resolving the “Space Cannon Offense” step of a tactical action, if two players have ships in the active system, those players must resolve a space combat.",
+      "score": 12.119
+    },
+    {
+      "rule_id": "78.1",
+      "topic": "Space Combat",
+      "text": "If the active player is the only player with ships in the system, they skip the “Space Combat” step of the tactical action and proceeds to the “Invasion” step.",
+      "score": 12.02
+    },
+    {
+      "rule_id": "78.10",
+      "topic": "Space Combat",
+      "text": "After a combat ends, the player with one or more ships remaining in the system is the winner of the combat; the other player is the loser of the combat. If neither player has a ship remaining, the combat ends in a draw and there is no winner. (a) If the winner of the combat has fighters or ground forces in the space area of the active system and those units exceed the capacity of that player’s ships in that system, that player must choose and remove any excess units.",
+      "score": 11.775
+    },
+    {
+      "rule_id": "78.9",
+      "topic": "Space Combat",
+      "text": "Space combat ends when only one player—or neither player— has a ship in the space area of the active system. (a) During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.",
+      "score": 11.638
+    },
+    {
+      "rule_id": "78.6",
+      "topic": "Space Combat",
+      "text": "STEP 4—ASSIGN HITS: Each player in the combat must choose and destroy one of their own ships in the active system for each hit their opponent produced. (a) Before assigning hits, players may use their units’ “Sustain Damage” abilities to cancel hits. (b) When a unit is destroyed, the player who controls that unit removes it from the board and places it in their reinforcements.",
+      "score": 10.843
+    }
+  ]
 }

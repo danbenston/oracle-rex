@@ -15,7 +15,9 @@ fixed-format text block and is returned as plain text.
 """
 
 import logging
-from typing import Any, Dict
+import re
+from dataclasses import dataclass, field
+from typing import Any, Dict, List
 
 from . import config, personas
 from .clients import get_chat
@@ -35,7 +37,7 @@ from .prompts import (
     tactical_calculator,
     tactical_move as tactical_move_prompt,
 )
-from .schemas import RulesAnswer, StrategicPlan, TacticalMove
+from .schemas import RuleCitation, RulesAnswer, StrategicPlan, TacticalMove
 
 logger = logging.getLogger(__name__)
 
@@ -135,18 +137,114 @@ def _token_budget(default: int, override) -> int:
     return default
 
 
-def get_rules_response(
-    question: str, api_key: str, model: str, max_tokens: int = None,
+@dataclass
+class RulesResult:
+    """A rules answer plus the retrieved passages it was grounded in.
+
+    ``passages`` (``{rule_id, topic, text, score}``) go into the job payload so
+    the frontend can show the exact cited rule text with no second request; the
+    quoted text therefore always comes from our index, never the model.
+    """
+
+    answer: RulesAnswer
+    passages: List[Dict[str, Any]] = field(default_factory=list)
+
+
+def _retrieve_rules_passages(question: str) -> List[Dict[str, Any]]:
+    """Retrieve LRR passages for a question, or [] when RAG is off/unavailable.
+
+    Retrieval failures degrade gracefully to the ungrounded recall path rather
+    than failing the request — a missing index (e.g. not built on a fresh deploy)
+    should never take the feature down.
+    """
+    if not config.RULES_RAG_ENABLED:
+        return []
+    try:
+        from core.service.rules_index import RulesIndexError, retrieve
+
+        hits = retrieve(question, k=config.RULES_RETRIEVAL_K)
+    except Exception as exc:  # noqa: BLE001 - any retrieval issue -> ungrounded
+        logger.warning("Rules retrieval unavailable; answering ungrounded: %s", exc)
+        return []
+    return [
+        {"rule_id": h.rule_id, "topic": h.topic, "text": h.text, "score": round(h.score, 3)}
+        for h in hits
+    ]
+
+
+_RULE_ID_IN_TEXT = re.compile(r"\b(\d+\.\d+)\b")
+
+
+def _validate_citations(answer: RulesAnswer, passages: List[Dict[str, Any]]) -> RulesAnswer:
+    """Drop cited rule_ids that were not actually retrieved; set ``grounded``.
+
+    Deterministic anti-hallucination check: a citation is only trustworthy if it
+    points at a rule we placed in the prompt. Two-way:
+
+      * drop any cited ``rule_id`` that was NOT retrieved (a fabricated cite);
+      * recover any ``N.M`` rule number the model wrote *inline in the answer
+        text* that WAS retrieved. Small models often reference rules in prose
+        (e.g. "...ships must end movement in the active system [58.4]") and leave
+        the citations field empty; without this recovery, a genuinely grounded
+        answer gets mislabeled "answered from general knowledge".
+
+    ``grounded`` is derived from the surviving citations, not the model's
+    self-report.
+    """
+    retrieved_ids = {p["rule_id"] for p in passages}
+    valid = [c for c in answer.citations if c.rule_id in retrieved_ids]
+    dropped = [c.rule_id for c in answer.citations if c.rule_id not in retrieved_ids]
+    cited_ids = {c.rule_id for c in valid}
+
+    harvested = []
+    for rid in _RULE_ID_IN_TEXT.findall(answer.answer or ""):
+        if rid in retrieved_ids and rid not in cited_ids:
+            cited_ids.add(rid)
+            harvested.append(RuleCitation(rule_id=rid, relevance="referenced in the answer"))
+
+    if dropped:
+        logger.warning(
+            "Dropped %d cited rule_id(s) not in the retrieved set: %s",
+            len(dropped), dropped,
+        )
+    if harvested:
+        logger.info(
+            "Recovered %d inline rule citation(s) from the answer text: %s",
+            len(harvested), [c.rule_id for c in harvested],
+        )
+
+    answer.citations = valid + harvested
+    answer.grounded = bool(answer.citations)
+    return answer
+
+
+def get_rules_result(
+    question: str, api_key: str, model: str = None, max_tokens: int = None,
     persona: str = None,
-) -> RulesAnswer:
+) -> RulesResult:
+    """Grounded Rules Q&A: retrieve LRR passages, answer from them, validate the
+    citations, and return both the answer and the passages used."""
     _require(bool(question and question.strip()), "No question was provided.")
+    passages = _retrieve_rules_passages(question)
     chat = get_chat(
         model, api_key,
         _token_budget(config.RULES_MAX_TOKENS, max_tokens),
         config.RULES_REASONING_EFFORT,
     )
-    messages = personas.apply_persona(rules_chat.build_messages(question), persona)
-    return _invoke_structured(chat, messages, RulesAnswer, "rules")
+    messages = personas.apply_persona(
+        rules_chat.build_messages(question, passages or None), persona
+    )
+    answer = _invoke_structured(chat, messages, RulesAnswer, "rules")
+    answer = _validate_citations(answer, passages)
+    return RulesResult(answer=answer, passages=passages)
+
+
+def get_rules_response(
+    question: str, api_key: str, model: str = None, max_tokens: int = None,
+    persona: str = None,
+) -> RulesAnswer:
+    """Backward-compatible wrapper returning just the answer (no passages)."""
+    return get_rules_result(question, api_key, model, max_tokens, persona).answer
 
 
 def get_strategy_response(
@@ -199,7 +297,9 @@ def get_tac_calc_response(
 
 __all__ = [
     "AIServiceError",
+    "RulesResult",
     "get_rules_response",
+    "get_rules_result",
     "get_strategy_response",
     "get_move_response",
     "get_tac_calc_response",

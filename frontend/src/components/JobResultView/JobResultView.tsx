@@ -5,7 +5,8 @@ import {
   rulesCard,
   strategyCard,
 } from '../AdvisorCard/advisorSections'
-import type { FeatureType, JobResult } from '../../types/ai'
+import { RuleCitations } from '../RuleCitations/RuleCitations'
+import type { FeatureType, JobResult, RulesAnswer } from '../../types/ai'
 
 // The shared result renderer: structured payloads (rules / strategy / move)
 // render as an AdvisorCard; tac_calc (and any response without valid structured
@@ -37,14 +38,21 @@ export function JobResultView({ feature, result }: JobResultViewProps) {
   const structured = parseStructured(feature, result.structured)
 
   if (structured) {
-    let props
+    // Rules answers render the card plus a grounding block: cited LRR rules as
+    // expandable chips (exact text from result.passages), or an ungrounded note.
     if (feature === 'rules') {
-      props = rulesCard(structured as Parameters<typeof rulesCard>[0])
-    } else if (feature === 'strategy') {
-      props = strategyCard(structured as Parameters<typeof strategyCard>[0])
-    } else {
-      props = moveCard(structured as Parameters<typeof moveCard>[0])
+      const answer = structured as RulesAnswer
+      return (
+        <>
+          <AdvisorCard {...rulesCard(answer)} demoLabel={demoLabel} />
+          <RuleCitations answer={answer} passages={result.passages ?? []} />
+        </>
+      )
     }
+    const props =
+      feature === 'strategy'
+        ? strategyCard(structured as Parameters<typeof strategyCard>[0])
+        : moveCard(structured as Parameters<typeof moveCard>[0])
     return <AdvisorCard {...props} demoLabel={demoLabel} />
   }
 

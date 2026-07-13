@@ -1,5 +1,5 @@
-from .rules_answer import RulesAnswer
+from .rules_answer import RuleCitation, RulesAnswer
 from .strategic_plan import StrategicPlan
 from .tactical_move import TacticalMove
 
-__all__ = ["RulesAnswer", "StrategicPlan", "TacticalMove"]
+__all__ = ["RuleCitation", "RulesAnswer", "StrategicPlan", "TacticalMove"]

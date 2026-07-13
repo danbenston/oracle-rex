@@ -40,7 +40,7 @@ describe('App shell (Phase 2)', () => {
     expect(screen.getByText(/three ways to use oracle rex/i)).toBeInTheDocument()
     // Each feature's model radio group renders.
     expect(
-      screen.getByRole('radio', { name: /grok 4\.20 \(math\/logic\)/i }),
+      screen.getByRole('radio', { name: /grok 4\.3 \(math\/logic\)/i }),
     ).toBeInTheDocument()
   })
 

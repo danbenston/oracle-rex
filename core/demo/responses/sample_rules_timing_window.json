@@ -1,6 +1,6 @@
 {
   "question": "What happens if two players have abilities that trigger at the same timing window?",
-  "answer": "When multiple abilities want to resolve in the same timing window, the active player resolves their ability first, then play proceeds clockwise. Each player resolves all of their own pending abilities for that window before passing to the next player. You only move on from the window once every player has declined to resolve anything further.",
+  "answer": "When multiple abilities want to resolve in the same timing window, the active player resolves theirs first, then resolution proceeds clockwise. Each player resolves all of their own pending abilities before passing; the window ends only once every player declines to resolve anything further.\n\nCited rules:\n- LRR 1.19 · Action phase: simultaneous abilities resolve in initiative order\n- LRR 1.20 · Strategy/agenda phases: resolve starting with the speaker, clockwise\n\nRule basis:\n- Ability resolution / timing rules\n- Active player resolves first, then clockwise order\n\nAssumptions:\n- By 'same timing window' you mean abilities with the same trigger (e.g., 'after an action', 'when a unit is destroyed').\n\nCaveats:\n- Some specific cards say 'cannot be cancelled' or override normal order; the card text wins.\n- For exact wording in a tournament dispute, check the Living Rules Reference entry on 'Abilities' and 'Timing'.",
   "structured": {
     "answer": "When multiple abilities want to resolve in the same timing window, the active player resolves theirs first, then resolution proceeds clockwise. Each player resolves all of their own pending abilities before passing; the window ends only once every player declines to resolve anything further.",
     "assumptions": [
@@ -11,9 +11,70 @@
       "Active player resolves first, then clockwise order"
     ],
     "caveats": [
-      "Some specific cards say 'cannot be cancelled' or override normal order — the card text wins.",
+      "Some specific cards say 'cannot be cancelled' or override normal order; the card text wins.",
       "For exact wording in a tournament dispute, check the Living Rules Reference entry on 'Abilities' and 'Timing'."
     ],
-    "needs_exact_text": false
-  }
+    "needs_exact_text": false,
+    "citations": [
+      {
+        "rule_id": "1.19",
+        "relevance": "Action phase: simultaneous abilities resolve in initiative order"
+      },
+      {
+        "rule_id": "1.20",
+        "relevance": "Strategy/agenda phases: resolve starting with the speaker, clockwise"
+      }
+    ],
+    "grounded": true
+  },
+  "passages": [
+    {
+      "rule_id": "78.2",
+      "topic": "Space Combat",
+      "text": "If an ability occurs “before combat,” it occurs immediately before the “Anti-Fighter Barrage” step. (a) During the first round of a combat, “start of combat” and “start of combat round” effects occur during the same timing window. (b) During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window. To resolve a space combat, players perform the following steps:",
+      "score": 13.44
+    },
+    {
+      "rule_id": "1.20",
+      "topic": "Abilities",
+      "text": "If there are multiple abilities that players wish to resolve at the same time during the strategy or agenda phases, players take turns resolving abilities starting with the speaker and proceeding clockwise. This process continues until each player has resolved each ability that they wish to resolve during that window.",
+      "score": 12.087
+    },
+    {
+      "rule_id": "1.19",
+      "topic": "Abilities",
+      "text": "If there are multiple abilities that players wish to resolve at the same time during the action phase, each player takes a turn resolving an ability in initiative order, beginning with the active player. This process continues until each player has resolved each ability that they wish to resolve during that window.",
+      "score": 11.924
+    },
+    {
+      "rule_id": "30.3",
+      "topic": "Deploy",
+      "text": "A unit’s deploy ability can be resolved only once per timing window.",
+      "score": 11.262
+    },
+    {
+      "rule_id": "1.16",
+      "topic": "Abilities",
+      "text": "Effects that occur “when” an event happens take priority over effects that occur “after” an event happens.",
+      "score": 11.011
+    },
+    {
+      "rule_id": "2.6",
+      "topic": "Action Cards",
+      "text": "The first paragraph of each action card is presented in bold text and describes the timing of when that card’s ability can be resolved. (a) If an action card contains the word “Action,” a player must use a component action during the action phase to resolve the ability. A player cannot resolve a component action if they cannot completely resolve its ability. (b) Multiple action cards with the same name cannot be played during a single timing window to affect the same units or game effect. Canceled cards are not treated as being played.",
+      "score": 10.965
+    },
+    {
+      "rule_id": "78.9",
+      "topic": "Space Combat",
+      "text": "Space combat ends when only one player—or neither player— has a ship in the space area of the active system. (a) During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window.",
+      "score": 10.81
+    },
+    {
+      "rule_id": "42.4",
+      "topic": "Ground Combat",
+      "text": "Ground combat ends when only one player (or neither player) has ground forces on the planet. (a) During the first round of a combat, “start of combat” and “start of combat round” effects occur during the same timing window. (b) During the last round of a combat, “end of combat” and “end of combat round” effects occur during the same timing window. (c) After a combat ends, the player with one or more ground forces remaining on the planet is the winner of the combat; the other player is the loser of the combat. (d) If neither player has a ground force remaining, there is no winner; the combat ends in a draw.",
+      "score": 10.592
+    }
+  ]
 }

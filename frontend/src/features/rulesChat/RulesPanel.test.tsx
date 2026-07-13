@@ -102,6 +102,12 @@ describe('RulesPanel', () => {
       ).toBeInTheDocument(),
     )
     expect(screen.getByText(/Space combat, Retreat step/)).toBeInTheDocument()
+    // Grounded answer shows a cited-rule chip; tapping it reveals the exact
+    // rule text from the job payload's passages (no second request).
+    const chip = screen.getByRole('button', { name: /LRR 78\.7 · Space Combat/ })
+    expect(screen.queryByText(/STEP 5-RETREAT/)).not.toBeInTheDocument()
+    fireEvent.click(chip)
+    expect(screen.getByText(/STEP 5-RETREAT/)).toBeInTheDocument()
     // Question is trimmed before submission.
     expect(captured?.question).toBe('Can I retreat with no ships?')
     expect(captured?.api_key).toBe('sk-test')
