@@ -27,7 +27,7 @@ is the free-tier Gemini model.
 ```powershell
 python manage.py build_rules_index                 # grounding needs the index
 $env:PROMPTFOO_PYTHON = ".\.venv\Scripts\python.exe"
-npx promptfoo@0.121.17 eval -c evals/promptfooconfig.rules.yaml
+npx promptfoo@0.118.0 eval -c evals/promptfooconfig.rules.yaml
 ```
 
 | Date | Model | Prompt | Cases | pipeline_schema pass | cited_rules pass | Notable failures |

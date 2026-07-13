@@ -29,11 +29,31 @@ def _pass(reason: str) -> dict:
     return {"pass": True, "score": 1.0, "reason": reason}
 
 
+def _expected_ids(raw) -> list:
+    """Parse expected rule ids from a promptfoo var.
+
+    The generator passes a space/comma-joined string (promptfoo would otherwise
+    expand a list var into multiple test cases), but accept a real list too so
+    the assert is robust to either shape.
+    """
+    if isinstance(raw, (list, tuple)):
+        return [str(x).strip() for x in raw if str(x).strip()]
+    return [t for t in str(raw or "").replace(",", " ").split() if t]
+
+
+def _as_bool(raw, default: bool = True) -> bool:
+    if isinstance(raw, bool):
+        return raw
+    if raw is None:
+        return default
+    return str(raw).strip().lower() not in ("false", "0", "no", "")
+
+
 def get_assert(output, context):
     context = context or {}
     vars_ = context.get("vars") or {}
-    expected = list(vars_.get("expected_rule_ids") or [])
-    grounded_expected = vars_.get("grounded_expected", True)
+    expected = _expected_ids(vars_.get("expected_rule_ids"))
+    grounded_expected = _as_bool(vars_.get("grounded_expected", True))
 
     try:
         payload = json.loads(output) if isinstance(output, str) else output

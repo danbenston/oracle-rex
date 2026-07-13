@@ -30,3 +30,8 @@ core/data/index/
 # ingested locally by scripts/ingest_lrr.py. See .features/rules_rag_grounding.md.
 *.pdf
 lrr*.pdf
+
+# promptfoo run artifacts when the eval is run from the repo root (the committed
+# record is evals/BASELINES.md; reports/cache stay local).
+/promptfoo-errors.log
+/.promptfoo/
