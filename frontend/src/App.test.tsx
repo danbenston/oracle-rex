@@ -1,5 +1,5 @@
 import { QueryClientProvider } from '@tanstack/react-query'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import { http, HttpResponse } from 'msw'
 import { beforeEach, describe, expect, it } from 'vitest'
 
@@ -38,9 +38,12 @@ describe('App shell (Phase 2)', () => {
       screen.getByRole('heading', { name: /oracle rex/i, level: 1 }),
     ).toBeInTheDocument()
     expect(screen.getByText(/three ways to use oracle rex/i)).toBeInTheDocument()
-    // Each feature's model radio group renders.
+    // Each feature's model radio group renders. Scoped to a group rather than
+    // matched on a bare label: the same model is offered in several groups, so
+    // an unscoped label match is ambiguous.
+    const tacticalGroup = screen.getByRole('group', { name: 'Tactical Calculator' })
     expect(
-      screen.getByRole('radio', { name: /grok 4\.3 \(math\/logic\)/i }),
+      within(tacticalGroup).getByRole('radio', { name: /grok 4\.5 \(mid\)/i }),
     ).toBeInTheDocument()
   })
 

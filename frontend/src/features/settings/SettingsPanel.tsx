@@ -144,11 +144,13 @@ export function SettingsPanel() {
           Recommended models are selected. Be sure you have a corresponding API key for
           every AI type selected.
         </p>
+        {/* Names tiers, not models: the low/mid/high suffix in each option label is
+            the stable handle, so a model swap can't strand this copy. */}
         <p className={styles.modelWarn}>
           These are reasoning (&ldquo;thinking&rdquo;) models. They deliberate before
-          answering, which improves quality but adds latency. The heaviest models
-          (GPT-5.5) give the strongest answers but may occasionally time out on the
-          hosted demo; the lighter models (GPT-5.4 mini/nano, Grok 4.3) respond faster.
+          answering, which improves quality but adds latency. The (high) models give the
+          strongest answers but may occasionally time out on the hosted demo; the (low)
+          models respond faster.
         </p>
 
         {FEATURE_MODEL_GROUPS.map((group) => (

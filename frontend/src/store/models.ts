@@ -43,22 +43,25 @@ const GEMINI: ModelOption = {
   apiMake: 'google',
 }
 
-// The fast, low-latency models at the top of every feature group, ordered
-// fastest -> most capable. Gemini (free, server-keyed) leads, then the two fast
-// BYOK models.
+// Paid (BYOK) models carry a plain low/mid/high tier suffix rather than a
+// per-model descriptor, so the ladder reads the same in every group and a model
+// swap doesn't strand a bespoke label. The tier tracks capability, which is also
+// the ordering key. Gemini keeps its own label: it is the free server-keyed
+// option and sits outside the paid ladder.
 const FAST_OPTIONS: ModelOption[] = [
   GEMINI,
-  { value: 'gpt-5.4-nano', label: 'GPT-5.4 nano (fast)', apiMake: 'openai' },
-  { value: 'claude-haiku-4-5', label: 'Claude Haiku 4.5 (fast)', apiMake: 'anthropic' },
+  { value: 'gpt-5.4-nano', label: 'GPT-5.4 nano (low)', apiMake: 'openai' },
+  { value: 'claude-haiku-4-5', label: 'Claude Haiku 4.5 (low)', apiMake: 'anthropic' },
 ]
 
 // Strategy + Move share the same option list, ordered fastest -> most capable.
 const strategyMoveOptions: ModelOption[] = [
   ...FAST_OPTIONS,
-  { value: 'gpt-5.4', label: 'GPT-5.4', apiMake: 'openai' },
-  { value: 'grok-4.3', label: 'Grok 4.3', apiMake: 'xai' },
-  { value: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6', apiMake: 'anthropic' },
-  { value: 'gpt-5.5', label: 'GPT-5.5 (most capable)', apiMake: 'openai' },
+  { value: 'gpt-5.6-terra', label: 'GPT-5.6 Terra (mid)', apiMake: 'openai' },
+  { value: 'grok-4.5', label: 'Grok 4.5 (mid)', apiMake: 'xai' },
+  { value: 'claude-sonnet-5', label: 'Claude Sonnet 5 (mid)', apiMake: 'anthropic' },
+  { value: 'claude-opus-4-8', label: 'Claude Opus 4.8 (high)', apiMake: 'anthropic' },
+  { value: 'gpt-5.6-sol', label: 'GPT-5.6 Sol (high)', apiMake: 'openai' },
 ]
 
 // Ordered to match the Settings tab layout (Rules, Strategy, Move, Tactical).
@@ -67,10 +70,13 @@ export const FEATURE_MODEL_GROUPS: FeatureModelGroup[] = [
     feature: 'rules',
     heading: 'Rules Q&A',
     defaultValue: 'gemini-3.1-flash-lite',
+    // Grounded Q&A puts retrieved rules passages in the prompt and wants a short
+    // cited answer, so the group tops out at mid: cheap input and faithful
+    // formatting matter more here than deep reasoning.
     options: [
       ...FAST_OPTIONS,
-      { value: 'gpt-5.4-mini', label: 'GPT-5.4 mini', apiMake: 'openai' },
-      { value: 'grok-4.3', label: 'Grok 4.3', apiMake: 'xai' },
+      { value: 'grok-4.3', label: 'Grok 4.3 (low)', apiMake: 'xai' },
+      { value: 'gpt-5.6-luna', label: 'GPT-5.6 Luna (mid)', apiMake: 'openai' },
     ],
   },
   {
@@ -91,9 +97,14 @@ export const FEATURE_MODEL_GROUPS: FeatureModelGroup[] = [
     defaultValue: 'gemini-3.1-flash-lite',
     options: [
       ...FAST_OPTIONS,
-      { value: 'gpt-5.4-mini', label: 'GPT-5.4 mini', apiMake: 'openai' },
-      { value: 'grok-4.3', label: 'Grok 4.3 (math/logic)', apiMake: 'xai' },
-      { value: 'gpt-5.5', label: 'GPT-5.5 (most capable)', apiMake: 'openai' },
+      { value: 'gpt-5.6-terra', label: 'GPT-5.6 Terra (mid)', apiMake: 'openai' },
+      { value: 'grok-4.5', label: 'Grok 4.5 (mid)', apiMake: 'xai' },
+      {
+        value: 'claude-sonnet-5',
+        label: 'Claude Sonnet 5 (mid)',
+        apiMake: 'anthropic',
+      },
+      { value: 'gpt-5.6-sol', label: 'GPT-5.6 Sol (high)', apiMake: 'openai' },
     ],
   },
 ]

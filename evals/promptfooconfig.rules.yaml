@@ -34,6 +34,9 @@ providers:
   # - id: file://providers/oracle_rex_provider.py
   #   label: claude-haiku-rules
   #   config: { feature: rules, model: claude-haiku-4-5 }
+  # - id: file://providers/oracle_rex_provider.py
+  #   label: gpt-5.6-luna-rules
+  #   config: { feature: rules, model: gpt-5.6-luna }
 
 defaultTest:
   # Applied to every case (cases carry only question + expected_rule_ids):

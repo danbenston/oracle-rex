@@ -35,7 +35,7 @@ describe('SettingsPanel', () => {
     renderPanel()
     const strategyGroup = screen.getByRole('group', { name: 'Strategy Suggester' })
     const claude = within(strategyGroup).getByRole('radio', {
-      name: 'Claude Sonnet 4.6',
+      name: 'Claude Sonnet 5 (mid)',
     })
     expect(claude).not.toBeChecked()
     fireEvent.click(claude)

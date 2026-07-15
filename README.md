@@ -345,8 +345,17 @@ uncomment the worker service and Postgres database in `render.yaml` and set
   worker, so both derive the same BYOK-encryption key with no manual step.
 
 ## LLMs in Use:
-    - grok-4.3
-    - gpt-5.5
-    - gpt-5.4
-    - gpt-5.4-mini
-    - gpt-5.4-nano
+
+`core/service/ai/config.py` is the source of truth; this list mirrors it.
+
+- **OpenAI** (BYOK): `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`,
+  `gpt-5.4-nano`
+- **Anthropic** (BYOK): `claude-opus-4-8`, `claude-sonnet-5`, `claude-haiku-4-5`
+- **xAI** (BYOK): `grok-4.5`, `grok-4.3`
+- **Google** (server-held key, free tier): `gemini-3.1-flash-lite`
+
+Which models a feature offers is a per-feature choice, not a flat list: Rules
+Q&A tops out mid (it is retrieval-grounded and wants cheap input plus faithful
+citations), while Strategy and Move go up to `gpt-5.6-sol` / `claude-opus-4-8`.
+The per-feature option lists live in `frontend/src/store/models.ts` and must use
+the same ids as `config.py`.

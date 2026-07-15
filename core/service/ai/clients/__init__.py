@@ -19,8 +19,9 @@ _BUILDERS = {
 def get_chat(model: str, api_key: str, max_tokens: int, reasoning_effort: str = None):
     """Build a chat model for ``model``, validating the API key is present.
 
-    ``reasoning_effort`` applies only to OpenAI reasoning models; the xAI and
-    Anthropic clients accept and ignore it (they manage their own thinking).
+    ``reasoning_effort`` applies to OpenAI and Anthropic models; the xAI and
+    Gemini clients accept and ignore it (they manage their own thinking). The
+    Anthropic client sends it only to the Claude models that accept it.
 
     Google (Gemini) models run on the server-held key (config.gemini_api_key()),
     not a per-request BYOK key, so the request never has to carry one.

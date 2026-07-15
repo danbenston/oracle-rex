@@ -13,8 +13,8 @@ describe('buildLiveCredentials', () => {
   })
 
   it('uses the BYOK key and model when no access code is given', () => {
-    const result = buildLiveCredentials({ apiKey: ' sk-123 ', model: 'gpt-5.4' })
-    expect(result).toEqual({ creds: { api_key: 'sk-123', model: 'gpt-5.4' } })
+    const result = buildLiveCredentials({ apiKey: ' sk-123 ', model: 'gpt-5.6-terra' })
+    expect(result).toEqual({ creds: { api_key: 'sk-123', model: 'gpt-5.6-terra' } })
   })
 
   it('returns a helpful error when neither credential is present', () => {

@@ -61,16 +61,24 @@ the model id automatically. The Anthropic client lazily imports
 `langchain_anthropic`, so the app runs even before that package / an API key is
 in place.
 
-All current models are reasoning ("thinking") models — `gpt-5.5` / `gpt-5.4` /
-`gpt-5.4-mini` / `gpt-5.4-nano`, `grok-4.3`, and the Claude 4.x
-family. Two consequences live in `config.py`:
+All current models are reasoning ("thinking") models — the `gpt-5.6` family
+(`sol` / `terra` / `luna`) plus `gpt-5.4-nano`, `grok-4.5` / `grok-4.3`, and the
+Claude 4.x/5 family. Two consequences live in `config.py`:
 
 - **Token limits cover reasoning + output.** Reasoning is billed against
   `max_tokens`, so the per-feature limits are much larger than the old
   non-reasoning values; set them too low and a model returns an empty response.
-- **`*_REASONING_EFFORT`** sets how hard OpenAI models think per feature (low for
-  quick lookups, medium for planning/combat math). xAI and Anthropic models
-  reason on their own and ignore it.
+- **`*_REASONING_EFFORT`** sets how hard OpenAI and Anthropic models think per
+  feature (low for quick lookups and combat math, medium for planning). xAI and
+  Gemini reason on their own and ignore it.
+
+Effort is not uniform across Anthropic's models, so it is gated rather than sent
+blindly. `ANTHROPIC_EFFORT_MODELS` lists the Claude ids that accept `effort`;
+the API rejects it on models that predate the parameter (Haiku 4.5), so the
+client drops it for anything not on that list. When adding a Claude model, check
+the provider's effort docs and update that set — leaving a capable model off
+only costs default behavior, but adding an incapable one turns every request for
+it into a 400.
 
 ### Structured output
 
