@@ -39,7 +39,7 @@ describe('settings store', () => {
   it('errors when a BYOK model is selected with no credential entered', () => {
     const { result } = renderHook(() => useSettings(), { wrapper })
     // The default Gemini model needs no key; a BYOK model with no key errors.
-    act(() => result.current.setModel('strategy', 'gpt-5.4'))
+    act(() => result.current.setModel('strategy', 'gpt-5.6-terra'))
     expect(result.current.getCredentials('strategy')).toEqual({
       error: NO_CREDENTIALS_MESSAGE,
     })
@@ -50,21 +50,21 @@ describe('settings store', () => {
 
     // Pick a BYOK OpenAI model for strategy (the default is now Gemini), so the
     // OpenAI key should be used.
-    act(() => result.current.setModel('strategy', 'gpt-5.4'))
+    act(() => result.current.setModel('strategy', 'gpt-5.6-terra'))
     act(() => result.current.setApiKey('openai', 'sk-openai'))
     expect(result.current.getCredentials('strategy')).toEqual({
-      creds: { api_key: 'sk-openai', model: 'gpt-5.4' },
+      creds: { api_key: 'sk-openai', model: 'gpt-5.6-terra' },
     })
 
     // Switching strategy to a Claude model should now require the Anthropic key.
-    act(() => result.current.setModel('strategy', 'claude-sonnet-4-6'))
+    act(() => result.current.setModel('strategy', 'claude-sonnet-5'))
     expect(result.current.getCredentials('strategy')).toEqual({
       error: NO_CREDENTIALS_MESSAGE,
     })
 
     act(() => result.current.setApiKey('anthropic', 'sk-anthropic'))
     expect(result.current.getCredentials('strategy')).toEqual({
-      creds: { api_key: 'sk-anthropic', model: 'claude-sonnet-4-6' },
+      creds: { api_key: 'sk-anthropic', model: 'claude-sonnet-5' },
     })
   })
 

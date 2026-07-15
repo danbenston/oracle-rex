@@ -3,6 +3,7 @@
 from unittest.mock import patch
 
 from django.test import TestCase
+from langchain_core.messages import AIMessage
 
 from ...service.ai import config
 from ...service.ai.clients import get_chat
@@ -22,7 +23,7 @@ from ...service.ai import service
 
 class TestConfig(TestCase):
     def test_provider_for_known_models(self):
-        self.assertEqual(config.provider_for_model("gpt-5.4"), config.OPENAI)
+        self.assertEqual(config.provider_for_model("gpt-5.6-terra"), config.OPENAI)
         self.assertEqual(config.provider_for_model("grok-4.3"), config.XAI)
         self.assertEqual(config.provider_for_model("claude-opus-4-8"), config.ANTHROPIC)
 
@@ -31,16 +32,16 @@ class TestConfig(TestCase):
         self.assertEqual(config.resolve_model("gpt-4"), config.FALLBACK_MODEL)
         self.assertEqual(config.resolve_model("gpt-4.1-nano"), config.FALLBACK_MODEL)
         self.assertEqual(config.resolve_model(None), config.FALLBACK_MODEL)
-        self.assertEqual(config.resolve_model("gpt-5.4"), "gpt-5.4")
+        self.assertEqual(config.resolve_model("gpt-5.6-terra"), "gpt-5.6-terra")
 
 
 class TestClientFactory(TestCase):
     def test_missing_api_key_raises(self):
         with self.assertRaises(MissingAPIKeyError):
-            get_chat("gpt-5.4", "", 4000)
+            get_chat("gpt-5.6-terra", "", 4000)
 
     def test_openai_forwards_reasoning_effort(self):
-        chat = get_chat("gpt-5.4", "fake-key", 4000, reasoning_effort="medium")
+        chat = get_chat("gpt-5.6-terra", "fake-key", 4000, reasoning_effort="medium")
         self.assertEqual(chat.reasoning_effort, "medium")
 
     def test_xai_ignores_reasoning_effort(self):
@@ -49,13 +50,31 @@ class TestClientFactory(TestCase):
         self.assertEqual(chat.model_name, "grok-4.3")
 
     def test_anthropic_requested_without_package_is_clear_error(self):
-        # langchain_anthropic isn't installed in this env; should be a clean
-        # ProviderError, not an unhandled ImportError.
+        # Only meaningful where langchain_anthropic is absent; there it should be
+        # a clean ProviderError, not an unhandled ImportError.
         try:
             import langchain_anthropic  # noqa: F401
         except ImportError:
             with self.assertRaises(ProviderError):
                 get_chat("claude-opus-4-8", "fake-key", 500)
+
+    def test_anthropic_forwards_effort_when_model_supports_it(self):
+        chat = get_chat("claude-sonnet-5", "fake-key", 4000, reasoning_effort="medium")
+        self.assertEqual(chat.effort, "medium")
+
+    def test_anthropic_omits_effort_when_model_rejects_it(self):
+        # Haiku 4.5 predates the effort parameter and the API 400s on it, so the
+        # client must drop it rather than pass the per-feature value through.
+        chat = get_chat("claude-haiku-4-5", "fake-key", 4000, reasoning_effort="medium")
+        self.assertIsNone(chat.effort)
+
+    def test_effort_support_matches_configured_anthropic_models(self):
+        # Guards the swap this catalog is built for: every effort-capable id must
+        # be a model we actually serve, so a rename can't leave a stale entry
+        # silently un-gated.
+        self.assertTrue(
+            set(config.ANTHROPIC_EFFORT_MODELS).issubset(set(config.ANTHROPIC_MODELS))
+        )
 
 
 class TestErrorClassification(TestCase):
@@ -139,11 +158,12 @@ class _FakeChat:
     def invoke(self, messages):
         if self._invoke_exc:
             raise self._invoke_exc
-
-        class _Resp:
-            content = self._plain_content
-
-        return _Resp()
+        # A real AIMessage, not a stand-in with a bare `.content` string. The
+        # provider's own message type is what the service reads, and its
+        # content/text handling is the whole subtlety here: a hand-rolled fake
+        # that is always a plain string can't reproduce the block-content shape
+        # that thinking models actually return.
+        return AIMessage(content=self._plain_content)
 
 
 class TestServiceFlow(TestCase):
@@ -151,7 +171,7 @@ class TestServiceFlow(TestCase):
         expected = RulesAnswer(answer="Yes.")
         chat = _FakeChat(structured_result=expected)
         with patch.object(service, "get_chat", return_value=chat):
-            result = service.get_rules_response("Can I do X?", "key", "gpt-5.4")
+            result = service.get_rules_response("Can I do X?", "key", "gpt-5.6-terra")
         self.assertIsInstance(result, RulesAnswer)
         self.assertEqual(result.answer, "Yes.")
 
@@ -170,18 +190,47 @@ class TestServiceFlow(TestCase):
         chat = _FakeChat(structured_result=Exception("Incorrect API key provided"))
         with patch.object(service, "get_chat", return_value=chat):
             with self.assertRaises(InvalidAPIKeyError):
-                service.get_rules_response("Q?", "bad-key", "gpt-5.4")
+                service.get_rules_response("Q?", "bad-key", "gpt-5.6-terra")
 
     def test_empty_plain_content_is_malformed(self):
         chat = _FakeChat(plain_content="   ")
         with patch.object(service, "get_chat", return_value=chat):
             with self.assertRaises(MalformedResponseError):
                 service.get_tac_calc_response(
-                    {"friendly": {}}, api_key="key", model="gpt-5.4"
+                    {"friendly": {}}, api_key="key", model="gpt-5.6-terra"
+                )
+
+    def test_plain_content_as_blocks_is_read_not_rejected(self):
+        # A thinking model returns content as a list of typed blocks rather than
+        # a string. That is a valid answer, not a malformed one — reading
+        # `.content` and demanding a str rejected real Gemini answers on tac_calc.
+        chat = _FakeChat(
+            plain_content=[
+                {
+                    "type": "text",
+                    "text": "With a 66% win probability, hold position.",
+                    "extras": {"signature": "EjQKMgERTTIPlt5UgPLP"},
+                }
+            ]
+        )
+        with patch.object(service, "get_chat", return_value=chat):
+            result = service.get_tac_calc_response(
+                {"friendly": {}}, api_key="key", model="gemini-3.1-flash-lite"
+            )
+        self.assertEqual(result, "With a 66% win probability, hold position.")
+
+    def test_thinking_only_blocks_with_no_text_is_malformed(self):
+        # The genuine empty-output case this guard exists for: the model spent
+        # its budget thinking and produced no answer. Must still raise.
+        chat = _FakeChat(plain_content=[{"type": "thinking", "thinking": "hmm..."}])
+        with patch.object(service, "get_chat", return_value=chat):
+            with self.assertRaises(MalformedResponseError):
+                service.get_tac_calc_response(
+                    {"friendly": {}}, api_key="key", model="gemini-3.1-flash-lite"
                 )
 
     def test_input_validation(self):
         from ...service.ai.errors import InputValidationError
 
         with self.assertRaises(InputValidationError):
-            service.get_rules_response("", "key", "gpt-5.4")
+            service.get_rules_response("", "key", "gpt-5.6-terra")

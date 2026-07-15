@@ -48,7 +48,7 @@ function SeedKey() {
   const { setApiKey, setModel } = useSettings()
   return (
     <>
-      <button type="button" onClick={() => setModel('tactical', 'gpt-5.4-mini')}>
+      <button type="button" onClick={() => setModel('tactical', 'gpt-5.6-terra')}>
         seed-model
       </button>
       <button type="button" onClick={() => setApiKey('openai', 'sk-test')}>

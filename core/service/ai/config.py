@@ -37,9 +37,17 @@ def gemini_api_key() -> str:
 # These are all current-generation reasoning ("thinking") models: they deliberate
 # before answering, which improves quality but uses extra tokens and latency (see
 # the token limits and ``*_REASONING_EFFORT`` settings below).
-OPENAI_MODELS = ["gpt-5.5", "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano"]
-XAI_MODELS = ["grok-4.3"]
-ANTHROPIC_MODELS = ["claude-opus-4-8", "claude-sonnet-4-6", "claude-haiku-4-5"]
+OPENAI_MODELS = ["gpt-5.6-sol", "gpt-5.6-terra", "gpt-5.6-luna", "gpt-5.4-nano"]
+XAI_MODELS = ["grok-4.5", "grok-4.3"]
+ANTHROPIC_MODELS = ["claude-opus-4-8", "claude-sonnet-5", "claude-haiku-4-5"]
+# Claude models that accept the `effort` parameter. Not every Claude model does:
+# Haiku 4.5 predates adaptive thinking and the API rejects `effort` for it, so
+# sending one anyway would 400 the fast option that leads every feature group.
+# Haiku needs no effort control regardless — its thinking is opt-in via the
+# `thinking` parameter, which this app never sets, so it cannot silently spend a
+# token budget on hidden reasoning the way Sonnet 5 can. Add a model here only
+# after confirming it against the provider's effort docs.
+ANTHROPIC_EFFORT_MODELS = {"claude-opus-4-8", "claude-sonnet-5"}
 # Confirm the exact id against Google AI Studio and keep it identical to the
 # matching option value in frontend/src/store/models.ts (a mismatch makes
 # resolve_model fall back to the OpenAI default, which has no server key).
@@ -70,6 +78,11 @@ def resolve_model(model) -> str:
     return FALLBACK_MODEL
 
 
+def anthropic_supports_effort(model: str) -> bool:
+    """True if ``model`` accepts Claude's ``effort`` parameter."""
+    return model in ANTHROPIC_EFFORT_MODELS
+
+
 # --- Token limits (per feature) -------------------------------------------
 
 # Reasoning models spend a large share of ``max_tokens`` on hidden thinking
@@ -80,11 +93,12 @@ def resolve_model(model) -> str:
 RULES_MAX_TOKENS = 4000
 STRATEGY_MAX_TOKENS = 12000
 MOVE_MAX_TOKENS = 12000
-# tac_calc pairs a long combat-rules system prompt with "medium" reasoning effort,
-# so a lighter model (the default gpt-5.4-mini) could spend the whole 4000-token
-# budget on hidden reasoning and return empty visible output — which the service
-# layer surfaces as a "couldn't understand the response" MalformedResponseError.
-# Raised to 8000 to leave room for the fixed-format answer after the reasoning.
+# tac_calc pairs a long combat-rules system prompt with reasoning effort, so a
+# lighter model could spend the whole 4000-token budget on hidden reasoning and
+# return empty visible output — which the service layer surfaces as a "couldn't
+# understand the response" MalformedResponseError. Raised to 8000 to leave room
+# for the fixed-format answer after the reasoning. TAC_CALC_REASONING_EFFORT is
+# now "low" for the same reason; the headroom stays as a belt-and-braces guard.
 TAC_CALC_MAX_TOKENS = 8000
 
 # --- Live-demo output caps (per feature) ----------------------------------
@@ -109,16 +123,33 @@ def live_demo_max_tokens(feature_type: str) -> int:
     """Reasoning-safe output cap for a private-live-demo request, per feature."""
     return LIVE_DEMO_MAX_TOKENS.get(feature_type, LIVE_DEMO_DEFAULT_MAX_TOKENS)
 
-# --- Reasoning effort (OpenAI GPT-5.x only) -------------------------------
+# --- Reasoning effort (OpenAI + Anthropic) --------------------------------
 
 # Controls how much these models deliberate before answering. Lower = faster
-# and cheaper; higher = more thorough. Applied only to OpenAI reasoning models;
-# xAI (Grok) and Anthropic (Claude) decide their own thinking depth and ignore
-# this. Valid values: "none", "low", "medium", "high", "xhigh".
-RULES_REASONING_EFFORT = "low"          # quick factual lookups
+# and cheaper; higher = more thorough.
+#
+# Honored by OpenAI (GPT-5.x `reasoning_effort`) and Anthropic (Claude
+# `effort`). xAI (Grok) and Gemini decide their own thinking depth and ignore
+# this; their clients accept the argument for a uniform signature and drop it.
+#
+# Only the values common to both providers are used here: "low" and "medium".
+# OpenAI additionally accepts "none" and (on gpt-5.6-sol) "max"; Anthropic
+# accepts "high"/"xhigh"/"max". Anything outside a provider's set is that
+# client's problem to translate — keep these to the shared subset.
+#
+# Anthropic's default is "high" when unset, which matters more than it looks:
+# on Claude, effort covers ALL output tokens (thinking included) and thinking is
+# billed against max_tokens. Left at the default, Sonnet 5 can spend an entire
+# RULES_MAX_TOKENS budget thinking and return no visible text, which surfaces as
+# a MalformedResponseError. Setting these explicitly is what prevents that.
+RULES_REASONING_EFFORT = "low"          # quick factual lookups over retrieved passages
 STRATEGY_REASONING_EFFORT = "medium"    # deep, multi-factor planning
 MOVE_REASONING_EFFORT = "medium"        # tactical evaluation
-TAC_CALC_REASONING_EFFORT = "medium"    # probability / combat arithmetic
+# Fixed-format probability/combat arithmetic. "low" rather than "medium": the
+# answer is short and templated, and higher effort mostly buys overthinking here
+# (it was medium effort that drove the runaway reasoning behind the raised
+# TAC_CALC_MAX_TOKENS above). Raise to "medium" if calc accuracy regresses.
+TAC_CALC_REASONING_EFFORT = "low"
 
 # --- Timeouts --------------------------------------------------------------
 

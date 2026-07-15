@@ -79,9 +79,19 @@ def _invoke_plain(chat, messages, feature: str) -> str:
     except Exception as exc:  # noqa: BLE001 - re-classified into AIServiceError
         raise _classify_and_log(exc, feature)
 
-    content = getattr(response, "content", response)
+    # `.content` is not reliably a string: for a model that thinks, LangChain
+    # returns a list of typed blocks (text, thinking, ...) instead. `.text`
+    # concatenates just the text blocks, and passes plain-string content through
+    # unchanged, so it is the right reader for every provider. Reading `.content`
+    # here made a complete Gemini answer look like an empty response, because the
+    # thinking blocks pushed it into list form.
+    raw = getattr(response, "content", response)
+    text = getattr(response, "text", None)
+    content = text if isinstance(text, str) else raw
     if not isinstance(content, str) or not content.strip():
-        raise MalformedResponseError(detail=f"Empty/invalid content: {content!r}")
+        # Report the raw blocks, not the extracted text: when extraction is what
+        # went wrong, the blocks are the part worth seeing.
+        raise MalformedResponseError(detail=f"Empty/invalid content: {raw!r}")
     return content
 
 

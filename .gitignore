@@ -35,3 +35,6 @@ lrr*.pdf
 # record is evals/BASELINES.md; reports/cache stay local).
 /promptfoo-errors.log
 /.promptfoo/
+
+# winnowdelta build/lint baseline cache (local, machine-specific)
+.winnowdelta/

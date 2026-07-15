@@ -192,12 +192,12 @@ class TestLiveDemoAccess(TestCase):
         with patch("core.views.enqueue_ai_job") as mock_enqueue:
             resp = self.client.post(
                 reverse("rules_job_create"),
-                data=json.dumps({"question": "Q?", "api_key": "sk-mine", "model": "gpt-5.4"}),
+                data=json.dumps({"question": "Q?", "api_key": "sk-mine", "model": "gpt-5.6-terra"}),
                 content_type="application/json",
             )
         self.assertEqual(resp.status_code, 202)
         job = AIJob.objects.get(pk=resp.json()["job_id"])
-        self.assertEqual(job.model_name, "gpt-5.4")
+        self.assertEqual(job.model_name, "gpt-5.6-terra")
         self.assertNotIn("_max_tokens", job.input_payload_json)
         args, _ = mock_enqueue.call_args
         self.assertEqual(decrypt_key(args[1]), "sk-mine")

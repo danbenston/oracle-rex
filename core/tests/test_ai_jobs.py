@@ -48,7 +48,7 @@ class TestRunAiJob(TestCase):
         return AIJob.objects.create(
             feature_type=feature_type,
             input_payload_json=payload,
-            model_name="gpt-5.4",
+            model_name="gpt-5.6-terra",
             **kwargs,
         )
 
@@ -171,7 +171,7 @@ class TestJobEndpoints(TestCase):
         with patch("core.views.enqueue_ai_job") as mock_enqueue:
             resp = self.client.post(
                 reverse("rules_job_create"),
-                data=json.dumps({"question": "Can I retreat?", "api_key": "sk-x", "model": "gpt-5.4"}),
+                data=json.dumps({"question": "Can I retreat?", "api_key": "sk-x", "model": "gpt-5.6-terra"}),
                 content_type="application/json",
             )
         self.assertEqual(resp.status_code, 202)
@@ -181,7 +181,7 @@ class TestJobEndpoints(TestCase):
 
         job = AIJob.objects.get(pk=body["job_id"])
         self.assertEqual(job.feature_type, AIJob.FeatureType.RULES)
-        self.assertEqual(job.model_name, "gpt-5.4")
+        self.assertEqual(job.model_name, "gpt-5.6-terra")
         self.assertEqual(job.prompt_version, "rules_chat_v3")
 
         # Key is encrypted into the enqueue arg, and never stored on the row.
