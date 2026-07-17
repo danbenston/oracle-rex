@@ -1,0 +1,232 @@
+Each faction starts the game with a unique combination of [[technology]]. This information can be found on the back of the faction sheet. During the "Gather Starting Components" step of game setup, each player places their starting technology cards face up in their play area near their faction sheet.
+
+This page lists the starting technologies for each faction (Including [[Expansions#Fourth Edition|Expansions]]).
+{| class="article-table"
+!'''<big>Faction</big>'''
+!'''<big>[[Technology]]</big>'''
+|-
+| colspan="2" |
+|-
+| colspan="2" |'''Base Game''' {{Edition|Base Game}}
+|-
+| colspan="2" |
+|-
+|[[The Arborec]]
+|{{Tech|warfare}}  [[Warfare Technologies#Magen Defense Grid|Magen Defense Grid]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Barony of Letnev]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+|-
+|{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+|-
+| colspan="2" |
+|-
+|[[The Clan of Saar]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+|-
+| colspan="2" |
+|-
+|[[The Embers of Muaat]]
+|{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Emirates of Hacan]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+|-
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Sarween Tools|Sarween Tools]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Federation of Sol]]
+|{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+|-
+|{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+|-
+| colspan="2" |
+|-
+|[[The Ghosts of Creuss]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Gravity Drive|Gravity Drive]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The L1Z1X Mindnet]]
+|{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+|-
+|{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Mentak Coalition]]
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Graviton Laser System|Sarween Tools]]
+|-
+|{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Naalu Collective]]
+|{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+|-
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Sarween Tools|Sarween Tools]]
+|-
+| colspan="2" |
+|-
+|rowspan="3" |[[The Nekro Virus]]
+|{{Tech|biotic}}  [[Biotic Technologies#Dacxive Animators|Dacxive Animators]]
+|-
+|'''Valefar Assimilator X'''
+|-
+|'''Valefar Assimilator Y'''
+|-
+| colspan="2" |
+|-
+|[[Sardakk N'orr]]
+|'''None'''
+|-
+| colspan="2" |
+|-
+| rowspan="4" |[[The Universities of Jol-Nar]]
+|{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+|-
+|{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+|-
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Sarween Tools|Sarween Tools]]
+|-
+|{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+|-
+| colspan="2" |
+|-
+|[[The Winnu]]
+|'''Any ONE of:''' 
+*{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+*{{Tech|biotic}}  [[Biotic Technologies#Technology introduced in Prophecy of Kings|Psychoarcheology]]
+*{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+*{{Tech|propulsion}}  [[Propulsion Technologies#Dark Energy Tap|Dark Energy Tap]]
+*{{Tech|cybernetic}}  [[Cybernetic Technologies#Sarween Tools|Sarween Tools]]
+*{{Tech|cybernetic}}  [[Cybernetic Technologies#Scanlink Drone Network|Scanlink Drone Network]]
+*{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+*{{Tech|warfare}}  [[Warfare Technologies#Technology introduced in Prophecy of Kings|AI Development Algorithm]]
+|-
+| colspan="2" |
+|-
+|[[The Xxcha Kingdom]]
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Graviton Laser System|Graviton Laser System]]
+|-
+| colspan="2" |
+|-
+|[[The Yin Brotherhood]]
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Sarween Tools|Sarween Tools]]
+|-
+| colspan="2" |
+|-
+|[[The Yssaril Tribes]]
+|{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+|-
+| colspan="2" |
+|-
+| colspan="2" |'''Prophecy of Kings''' {{Edition|Prophecy of Kings}}
+|-
+| colspan="2" |
+|-
+|[[The Argent Flight]]
+|'''Choose two of the following:'''
+*{{Tech|biotic}}  [[Biotic Technologies#Neural Motivator|Neural Motivator]]
+*{{Tech|cybernetic}}  [[Cybernetic Technologies#Sarween Tools|Sarween Tools]]
+*{{Tech|warfare}}  [[Warfare Technologies#Plasma Scoring|Plasma Scoring]]
+|-
+| colspan="2" |
+|-
+|[[The Empyrean]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Dark Energy Tap|Dark Energy Tap]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Mahact Gene Sorcerers|The Mahact Gene-Sorcerers]]
+|{{Tech|biotic}}  [[Biotic Technologies#Bio Stims|Bio Stims]]
+|-
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Predictive Intelligence|Predictive Intelligence]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Naaz-Rokha Alliance]]
+|{{Tech|biotic}}  [[Biotic Technologies#Technology introduced in Prophecy of Kings|Psychoarchaeology]]
+|-
+|{{Tech|warfare}}  [[Warfare Technologies#Technology introduced in Prophecy of Kings|AI Development Algorithm]]
+|-
+| colspan="2" |
+|-
+|[[The Nomad]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Sling Relay|Sling Relay]]
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[The Titans of Ul]]
+|{{Tech|propulsion}}  [[Propulsion Technologies#Antimass Deflectors|Antimass Deflectors]]
+|-
+|{{Tech|cybernetic}}  [[Cybernetic Technologies#Scanlink Drone Network|Scanlink Drone Network]]
+|-
+| colspan="2" |
+|-
+|[[The Vuil'Raith Cabal]]
+|{{Tech|warfare}}  [[Warfare Technologies#Self Assembly Routines|Self Assembly Routines]]
+|-
+| colspan="2" |
+|-
+| colspan="2" |'''Codex III''' {{Edition|Codex III}}
+|-
+| colspan="2" |
+|-
+|[[The Council Keleres]]
+|'''Any 2 non-faction technologies owned by other players'''
+|-
+| colspan="2" |
+|-
+| colspan="2" |'''Thunder's Edge''' {{Edition|Thunder's Edge}}
+|-
+| colspan="2" |
+|-
+|[[The Crimson Rebellion]]
+|'''Choose one red or blue with no prerequisites'''
+|-
+| colspan="2" |
+|-
+|[[The Deepwrought Scholarate]]
+|'''During setup, research technology twice'''
+|-
+| colspan="2" |
+|-
+|[[The Firmament / The Obsidian]]
+|'''Choose one green or yellow technology that has no pre-requisites.'''
+|-
+| colspan="2" |
+|-
+|[[Last Bastion]]
+|'''Choose 1 blue or yellow technology with no prerequisites'''
+|-
+| colspan="2" |
+|-
+|[[The Ral Nel Consortium]]
+|'''Choose 1 red or green technology with no prerequisites'''
+|-
+|}<br />
+== Trivia ==
+
+* Starting technologies have the following distribution among the Base Game factions: 
+** 1 faction has no starting technologies ([[Sardakk N'orr]])
+**4 factions have one Level 0 starting technology
+** 1 faction chooses any one Level 0 technology as its starting technology ([[The Winnu]])
+** 6 factions have two Level 0 starting technologies
+** 1 faction has four Level 0 starting technologies ([[The Universities of Jol-Nar]])
+**4 factions have one Level 1 starting technology
+* Starting technologies have the following distribution among the Prophecy of Kings factions:
+** 1 faction has one Level 0 starting technology
+** 2 factions have two Level 0 starting technologies
+** 1 faction chooses two of three optional Level 0 technologies as its starting technologies ([[The Argent Flight]])
+** 2 factions have one Level 1 starting technology
+** 1 faction has two Level 1 starting technologies ([[The Mahact Gene-Sorcerers]])
+
+{{Factions}}
+
+{{Technologies}}

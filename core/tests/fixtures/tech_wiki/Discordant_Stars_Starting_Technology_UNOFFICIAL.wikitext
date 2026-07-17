@@ -1,0 +1,243 @@
+Each faction starts the game with a unique combination of [[technology]]. This information can be found on the back of the faction sheet. During the "Gather Starting Components" step of game setup, each player places their starting technology cards face up in their play area near their faction sheet.
+
+This page lists the starting technologies for each [[Discordant Stars Factions (UNOFFICIAL)|Discordant Stars faction]].
+
+{| class="article-table"
+!'''<big>Faction</big>'''
+!'''<big>[[Technology]]</big>'''
+|-
+| rowspan="2" |[[Shipwrights of Axis (UNOFFICIAL)|The Shipwrights of  Axis]]
+|{{Tech|cybernetic|Sarween Tools}}
+|-
+|{{Tech|warfare|AI Development Algorithm}}
+|-
+| colspan="2" |
+|-
+|[[Bentor Conglomerate (UNOFFICIAL)|The Bentor Conglomerate]]
+|'''Choose two of the following:'''
+*{{Tech|propulsion|Dark Energy Tap}}
+*{{Tech|cybernetic|Scanlink Drone Network}}
+*{{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+|[[Celdauri Trade Confederation (UNOFFICIAL)|The Celdauri Trade Confederation]]
+|'''Choose two of the following:'''
+*{{Tech|propulsion|Antimass Deflectors}}
+*{{Tech|cybernetic|Sarween Tools}}
+*{{Tech|warfare|Plasma Scoring}}
+|-
+| colspan="2" |
+|-
+|[[Cheiran Hordes (UNOFFICIAL)|The Cheiran Hordes]]
+|'''Choose one of the following:'''
+* {{Tech|warfare|Magen Defense Grid}}
+* {{Tech|warfare|Self-Assembly Routines}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Savages of Cymiae (UNOFFICIAL)|The Savages of Cymiae]]
+|{{Tech|warfare|AI Development Algorithm}}
+|-
+|{{Tech|biotic|Neural Motivator}}
+|-
+|
+|
+|-
+| rowspan="2" |[[Dih-Mohn Flotilla (UNOFFICIAL)|The Dih-Mohn Flotilla]]
+|{{Tech|propulsion|Dark Energy Tap}}
+|-
+|{{Tech|cybernetic|Scanlink Drone Network}}
+|-
+| colspan="2" |
+|-
+|[[Edyn Mandate (UNOFFICIAL)|The Edyn Mandate]]
+|'''Choose any 3 technologies that have different colors and no prerequisites'''
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Florzen Profiteers (UNOFFICIAL)|The Florzen Profiteers]]
+|{{Tech|cybernetic|Scanlink Drone Network}}
+|-
+|{{Tech|biotic|Neural Motivator}}
+|-
+| colspan="2" |
+|-
+|[[Free Systems Compact (UNOFFICIAL)|The Free Systems Compact]]
+|{{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Ghemina Raiders (UNOFFICIAL)|The Ghemina Raiders]]
+|{{Tech|propulsion|Dark Energy Tap}}
+|-
+|{{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+|[[Ghoti Wayfarers (UNOFFICIAL)|The Ghoti Wayfarers]]
+|'''Choose one of the following:'''
+* {{Tech|propulsion|Gravity Drive}}
+* {{Tech|propulsion|Sling Relay}}
+|-
+| colspan="2" |
+|-
+|[[Gledge Union (UNOFFICIAL)|The GLEdge Union]]
+|'''Choose two of the following:'''
+* {{Tech|warfare|AI Development Algorithm}}
+* {{Tech|cybernetic|Scanlink Drone Network}}
+* {{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Augurs of Ilyxum (UNOFFICIAL)|The Augurs of Ilyxum]]
+|{{Tech|cybernetic|Scanlink Drone Network}}
+|-
+|{{Tech|warfare|AI Development Algorithm}}
+|-
+| colspan="2" |
+|-
+|[[Berserkers of Kjalengard (UNOFFICIAL)|The Berserkers of Kjalengard]]
+|'''Choose one non-faction unit upgrade technology'''
+|-
+| colspan="2" |
+|-
+|[[Kollecc Society (UNOFFICIAL)|The Kollecc Society]]
+|{{Tech|cybernetic|Scanlink Drone Network}}
+|-
+| colspan="2" |
+|-
+|[[Monks of Kolume (UNOFFICIAL)|The Monks of Kolume]]
+|'''Choose one of the following:'''
+* {{Tech|cybernetic|Graviton Laster System}}
+* {{Tech|cybernetic|Predictive Intelligence}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Kortali Tribunal (UNOFFICIAL)|The Kortali Tribunal]]
+|{{Tech|warfare|Plasma Scoring}}
+|-
+|{{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+|[[Kyro Sodality (UNOFFICIAL)|The Kyro Sodality]]
+|'''Choose one of the following:'''
+* {{Tech|biotic|Daxcive Animators}}
+* {{Tech|biotic|Bio-Stims}}
+|-
+| colspan="2" |
+|-
+|[[Lanefir Remnants (UNOFFICIAL)|The Lanefir Remnants]]
+|'''Choose two of the following:'''
+* {{Tech|propulsion|Dark Energy Tap}}
+* {{Tech|cybernetic|Scanlink Drone Network}}
+* {{Tech|warfare|AI Development Algorithm}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Li-Zho Dynasty (UNOFFICIAL)|The Li-Zho Dynasty]]
+|{{Tech|biotic|Psychoarchaeology}}
+|-
+|{{Tech|propulsion|Antimass Deflectors}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[L'tokk Khrask (UNOFFICIAL)|The L'tokk Khrask]]
+|{{Tech|cybernetic|Scanlink Drone Network}}
+|-
+|{{Tech|warfare|Plasma Scoring}}
+|-
+|
+|
+|-
+|[[Mirveda Protectorate (UNOFFICIAL)|The Mirveda Protectorate]]
+|{{Tech|warfare|AI Development Algorithm}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Glimmer of Mortheus (UNOFFICIAL)|The Glimmer of Mortheus]]
+|{{Tech|propulsion|Dark Energy Tap}}
+|-
+|{{Tech|cybernetic|Sarween Tools}}
+|-
+| colspan="2" |
+|-
+|[[Myko-Mentori (UNOFFICIAL)|The Myko-Mentori]]
+|{{Tech|cybernetic|Predictive Intelligence}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Nivyn Star Kings (UNOFFICIAL)|The Nivyn Star Kings]]
+|{{Tech|propulsion|Dark Energy Tap}}
+|-
+|{{Tech|warfare|Plasma Scoring}}
+|-
+| colspan="2" |
+|-
+|[[Nokar Sellships (UNOFFICIAL)|The Nokar Sellships]]
+|'''Choose two of the following:'''
+* {{Tech|warfare|AI Development Algorithm}}
+* {{Tech|propulsion|Dark Energy Tap}}
+* {{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Olradin League (UNOFFICIAL)|The Olradin League]]
+|{{Tech|cybernetic|Scanlink Drone Network}}
+|-
+|{{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+|[[Zealots of Rhodun (UNOFFICIAL)|The Zealots of Rhodun]]
+|{{Tech|biotic|Bio-Stims}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Roh'Dhna Mechatronics (UNOFFICIAL)|Roh'Dhna Mechatronics]]
+|{{Tech|cybernetic|Sarween Tools}}
+|-
+|{{Tech|biotic|Psychoarchaeology}}
+|-
+| colspan="2" |
+|-
+|[[Tnelis Syndicate (UNOFFICIAL)|The Tnelis Syndicate]]
+|'''Choose two of the following:'''
+* {{Tech|warfare|Plasma Scoring}}
+* {{Tech|propulsion|Antimass Deflectors}}
+* {{Tech|biotic|Neural Motivator}}
+|-
+| colspan="2" |
+|-
+|[[Vaden Banking Clans (UNOFFICIAL)|The Vaden Banking Clans]]
+|'''Choose two of the following:'''
+* {{Tech|propulsion|Antimass Deflectors}}
+* {{Tech|cybernetic|Sarween Tools}}
+* {{Tech|biotic|Neural Motivator}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Vaylerian Scourge (UNOFFICIAL)|The Vaylerian Scourge]]
+|{{Tech|propulsion|Dark Energy Tap}}
+|-
+|{{Tech|biotic|Neural Motivator}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Veldyr Sovereignty (UNOFFICIAL)|The Veldyr Sovereignty]]
+|{{Tech|propulsion|Dark Energy Tap}}
+|-
+|{{Tech|warfare|AI Development Algorithm}}
+|-
+| colspan="2" |
+|-
+| rowspan="2" |[[Zelian Purifier (UNOFFICIAL)|The Zelian Purifier]]
+|{{Tech|propulsion|Antimass Deflectors}}
+|-
+|{{Tech|warfare|AI Development Algorithm}}
+|-
+|}<br />
+[[Category:Discordant Stars]]
+[[Category:Technologies]]
+[[Category:Unofficial Expansions]]

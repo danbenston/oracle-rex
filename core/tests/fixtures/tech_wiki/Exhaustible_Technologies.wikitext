@@ -1,0 +1,391 @@
+This page lists technology that is usable only once per round and must be exhausted 
+
+These technologies are able to be refreshed by the use of [[Biotic Technologies#Technology introduced in Prophecy of Kings|Bio-Stims]] (with the exception of Bio-Stims itself) 
+
+<br />
+
+== Standard Technology ==
+{| class="article-table" 
+! colspan="3" style="text-align: center;|X-89 Bacterial Weapon
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card and choose 1 planet in a system that contains 1 or more of your ships that have [[Bombardment|BOMBARDMENT]]; destroy all infantry on that planet.
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|
+| style="text-align: right;|{{Tech|biotic|w=32px}}
+|}<br />
+{| class="article-table"
+! colspan="3" style="text-align: center; |Sling Relay
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card to produce 1 ship in any system that contains your space docks.
+|-
+|
+|-
+|
+|-
+|{{Tech|propulsion}}
+|
+| style="text-align: right;|{{Tech|propulsion|w=32px}}
+|}<br />
+{| class="article-table"
+! colspan="3" style="text-align: center; |Graviton Laser System
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*You may exhaust this card before 1 or more of your units uses [[Space Cannon]]; hits produced by those units must be assigned to non-fighter ships if able.
+|-
+|
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}
+
+
+{| class="article-table"
+! colspan="3" style="text-align: center; |Transit Diodes
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*You may exhaust this card at the start of your turn during the action phase; remove up to 4 of your ground forces from the game board and place them on 1 or more planets you control.
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}<br />
+{| class="article-table"
+! colspan="3" style="text-align: center; |Predictive Intelligence
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*At the end of your turn, you may exhaust this card to redistribute your command tokens.
+*When you cast votes during the agenda phase, you may cast 3 additional votes; if you do, and the outcome you voted for is not resolved, exhaust this card.
+|-
+|
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}
+
+
+{| class="article-table"
+! colspan="3" style="text-align: center; |Magen Defense Grid
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*You may exhaust this card at the start of a round of ground combat on a planet that contains 1 or more of your units that have [[Planetary Shield]]; your opponent cannot make combat rolls this combat round.
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|
+| style="text-align: right;|{{Tech|warfare|w=32px}}
+|}<br />
+{| class="article-table"
+! colspan="3" style="text-align: center; |AI Development Algorithm
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*When you research a unit upgrade technology, you may exhaust this card to ignore any one prerequisite.
+*When one or more of your units use [[Production]], you may exhaust this card  to reduce the combined cost of the produced units by the number of [[Unit Upgrades|unit upgrade technologies]] that you own.
+|-
+|
+|-
+|
+|-
+|
+|
+| style="text-align: right;|{{Tech|warfare|w=32px}}
+|}<br />
+{| class="article-table"
+! colspan="3" style="text-align: center; |Self Assembly Routines
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*After 1 or more of your units use PRODUCTION, you may exhaust this card to place 1 mech from your reinforcements on a planet you control in that system.
+*After 1 of your mechs is destroyed, gain 1 trade good.
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|
+| style="text-align: right;|{{Tech|warfare|w=32px}}
+|}<br />
+{| class="article-table"
+! colspan="3" style="text-align: center; |Bio-Stims
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*You may exhaust this card at the end of your turn to ready one of your planets that has a technology specialty or to ready one of your other technologies.
+|-
+|
+|-
+|
+|-
+|{{Tech|biotic}}
+|
+| style="text-align: right;|{{Tech|biotic|w=32px}}
+|}<br />
+
+== Faction Technology ==
+
+=== [[The Council Keleres]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Executive Order
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card and draw the top or bottom card of the agenda deck. Players immediately vote on this agenda as if you were the speaker; you can spend trade goods and resources on this agenda as if they were votes. 
+|-
+|
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}<br />
+
+=== [[The Emirates of Hacan]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Production Biomes
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card and spend 1 token from your strategy pool to gain 4 trade goods and choose 1 other player; that player gains 2 trade goods.
+|-
+|
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|
+| style="text-align: right;|{{Tech|biotic|w=32px}}
+|}<br />
+
+=== [[The Ghosts of Creuss]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Wormhole Generator '''Ω'''
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card to place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships.
+|-
+|
+|-
+|{{Tech|propulsion}}
+|-
+|{{Tech|propulsion}}
+|
+| style="text-align: right;|{{Tech|propulsion|w=32px}}
+|}<br />
+
+=== [[The L1Z1X Mindnet]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Inheritance Systems
+|-
+|Req.
+| colspan="2" rowspan="3" |
+* You may exhaust this card and spend 2 resources when you research a technology; ignore all of that technology's prerequisites.
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}<br />
+
+=== [[The Naaz-Rokha Alliance]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Supercharge
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*At the start of a combat round, you may exhaust this card to apply +1 to the result of each of your unit's combat rolls during this combat round.
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|
+| style="text-align: right;|{{Tech|warfare|w=32px}}
+|}<br />
+
+=== [[The Nomad]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Temporal Command Suite
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*After any player's agent becomes exhausted, you may exhaust this card to ready that agent; if you ready another player's agent you may perform a transaction with that player.
+|-
+|
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}<br />
+
+=== [[The Ral Nel Consortium]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Nanomachines
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card to place 1 PDS on a planet you control.
+*ACTION: Exhaust this card to repair all of your damaged units.
+*ACTION: Exhaust this card and discard 1 action card to draw 1 action card.
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|
+| style="text-align: right;|{{Tech|warfare|w=32px}}
+|}<br />
+
+=== [[The Universities of Jol-Nar]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Spacial Conduit Cylinder
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*You may exhaust this card after you activate a system that contains 1 or more of your units; that system is adjacent to all other systems that contain 1 or more of your units during this activation.
+|-
+|
+|-
+|{{Tech|propulsion}}
+|-
+|{{Tech|propulsion}}
+|
+| style="text-align: right;|{{Tech|propulsion|w=32px}}
+|}<br />
+
+=== [[The Vuil'Raith Cabal]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Vortex
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card to choose another player's non-structure [[Units|unit]] in a system that is adjacent to 1 or more of your [[Space Dock|space docks]]. Capture 1 unit of that type from that player's [[reinforcements]].
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|
+| style="text-align: right;|{{Tech|warfare|w=32px}}
+|}<br />
+
+=== [[The Winnu]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |'''Lazax Gate Folding'''
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*During your tactical actions, if you do not control Mecatol Rex, treat its systems as if it contains both an alpha and beta wormhole.
+*ACTION: If you control Mecatol Rex, exhaust this card to place 1 infantry from your reinforcements on Mecatol Rex.
+|-
+|
+|-
+|{{Tech|propulsion}}
+|-
+|{{Tech|propulsion}}
+|
+| style="text-align: right;|{{Tech|propulsion|w=32px}}
+|}<br />
+
+{| class="article-table"
+! colspan="3" style="text-align: center; |Hegemonic Trade Policy
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*Exhaust this card when 1 or more of your units use PRODUCTION; swap the resource and influence values of 1 planet you control until the end of your turn.
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}<br />
+
+=== [[The Xxcha Kingdom]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Instinct Training
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*You may exhaust this card and spend 1 token from your strategy pool when another player plays an action card; cancel that action card.
+|-
+|
+|-
+|
+|-
+|{{Tech|biotic}}
+|
+| style="text-align: right;|{{Tech|biotic|w=32px}}
+|}<br />
+
+{| class="article-table"
+! colspan="3" style="text-align: center; |Nullification Field
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*After another player activates a system that contains 1 or more of your ships, you may exhaust this card and spend 1 token from your strategy pool; immediately end that player's turn.
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|-
+|{{Tech|cybernetic}}
+|
+| style="text-align: right;|{{Tech|cybernetic|w=32px}}
+|}<br />
+
+=== [[The Yssaril Tribes]] ===
+{| class="article-table"
+! colspan="3" style="text-align: center; |Mageon Implants
+|-
+|Req.
+| colspan="2" rowspan="3" |
+*ACTION: Exhaust this card to look at another player's hand of action cards.  Choose 1 of those cards and add it to your hand.
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|
+| style="text-align: right;|{{Tech|biotic|w=32px}}
+|}<br />
+[[Category:Technologies]]

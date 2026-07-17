@@ -1,0 +1,297 @@
+[[File:KeleresFactionTech1.png|thumb|373x373px]]
+'''Type:''' [[Technology]]
+
+Each faction in Twilight Imperium has access to exclusive technologies that can be researched, in addition to the [[Technology#Basic Technologies|basic technologies]] available to all factions.
+
+This list does not contain [[Unit Upgrades|unit upgrade technologies]]. 
+
+== [[Base Game (Fourth Edition)|Base Game]] {{Edition|Base Game}}==
+
+=== [[The Arborec]] ===
+{{Tech|biotic}} '''Bioplasmosis:''' At the end of the status phase, you may remove any number of infantry from planets you control and place them on 1 or more planets you control in the same or adjacent systems<blockquote>
+
+Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+
+
+=== [[The Barony of Letnev]] ===
+{{Tech|cybernetic}} '''L4 Disruptors:''' During an invasion, units cannot use SPACE CANNON against your units<blockquote>
+
+Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+{{Tech|warfare}} '''Non-Euclidean Shielding: '''When 1 of your units uses SUSTAIN DAMAGE, cancel 2 hits instead of 1<blockquote>
+
+Prerequisites: {{Tech|warfare}} {{Tech|warfare}}</blockquote>
+
+
+
+=== [[The Clan of Saar]] ===
+{{Tech|propulsion}} '''Chaos Mapping:''' Other players cannot activate asteroid fields that contain 1 or more of your ships. 
+
+At the start of your turn during the action phase, you may produce 1 unit in a system that contains at least 1 of your units that has Production<blockquote>
+
+Prerequisites: {{Tech|propulsion}}</blockquote>
+
+
+
+=== [[The Embers of Muaat]] ===
+{{Tech|warfare}} '''Magmus Reactor: '''Your ships can move into supernovas. After 1 or more of your units use Production in a system that either contains a war sun or is adjacent to a supernova, gain 1 trade good<blockquote>
+
+Prerequisites: {{Tech|warfare}} {{Tech|warfare}}</blockquote>
+
+{{Tech|warfare}} '''Magmus Reactor Ω: '''Your ships can move into supernovas.
+
+Each supernova that contains 1 or more of your units gains the PRODUCTION 5 ability as if it were 1 of your units<blockquote>
+
+Prerequisites: {{Tech|warfare}} {{Tech|warfare}}</blockquote>
+
+(Ω) indicates omega tech introduced in the first volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here]. 
+
+
+
+=== [[The Emirates of Hacan]] ===
+{{Tech|biotic}} '''Production Biomes: '''ACTION: Exhaust this card and spend 1 token from your strategy pool to gain 4 trade goods and choose 1 other player; that player gains 2 trade goods<blockquote>
+
+Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+{{Tech|cybernetic}} '''Quantum Datahub Node: '''At the end of the strategy phase, you may spend 1 token from your strategy pool and give another player 3 of your trade goods.  If you do, give 1 of your strategy cards to that player and take 1 of their strategy cards<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+
+
+=== [[The Federation of Sol]] ===
+* Only [[Unit Upgrades|unit upgrade]] faction technologies.
+
+
+
+=== [[The Ghosts of Creuss]] ===
+{{Tech|propulsion}} '''Wormhole Generator:''' At the start of the status phase, place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships<blockquote>
+
+Prerequisites: {{Tech|propulsion}} {{Tech|propulsion}}</blockquote>
+
+{{Tech|propulsion}} '''Wormhole Generator Ω:''' ACTION''': '''Exhaust this card to place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships<blockquote>
+
+Prerequisites: {{Tech|propulsion}} {{Tech|propulsion}}</blockquote>
+
+{{Tech|warfare}} '''Dimensional Splicer:''' At the start of space combat in a system that contains a wormhole and 1 or more of your ships, you may produce 1 hit and assign it to 1 of your opponent's ships<blockquote>
+
+Prerequisites: {{Tech|warfare}}</blockquote>
+
+(Ω) indicates omega tech introduced in the first volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here]. 
+
+
+
+=== [[The L1Z1X Mindnet]] ===
+{{Tech|cybernetic}} '''Inheritance Systems:''' You may exhaust this card and spend 2 resources when you research a technology; ignore all of that technology's prerequisites<blockquote>Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+
+
+=== [[The Mentak Coalition]] ===
+{{Tech|cybernetic}} '''Salvage Operations:''' After you win or lose a space combat, gain 1 trade good; if you won the combat, you may also produce 1 ship in that system of any ship type that was destroyed during the combat<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+{{Tech|cybernetic}} '''Mirror Computing:''' When you spend trade goods, each trade good is worth 2 resources or influence instead of 1<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+
+
+=== [[The Naalu Collective]] ===
+{{Tech|biotic}} '''Neuroglaive:''' After another player activates a system that contains 1 or more of your ships, that player removes 1 token from their fleet pool and returns it to their reinforcements<blockquote>
+
+Prerequisites: {{Tech|biotic}} {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+
+
+=== [[The Nekro Virus]] ===
+'''Valefar Assimilator X:''' When you would gain another players technology using 1 of your faction ability, you may place the "X" assimilator token on a faction technology owned by that player instead.  While that token is on a technology, this card gains that technology's text.  You cannot place an assimilator token on technology that already has an assimilator token.<blockquote>
+
+Prerequisites: None
+
+</blockquote>'''Valefar Assimilator Y:''' When you would gain another players technology using 1 of your faction ability, you may place the "Y" assimilator token on a faction technology owned by that player instead.  While that token is on a technology, this card gains that technology's text.  You cannot place an assimilator token on technology that already has an assimilator token.<blockquote>
+
+Prerequisites: None</blockquote>
+
+
+
+=== [[Sardakk N'orr]] ===
+{{Tech|warfare}} '''Valkyrie Particle Weave:''' After making combat rolls during a round of ground combat, if your opponent produced 1 or more hits, you produce 1 additional hit<blockquote>
+
+Prerequisites: {{Tech|warfare}} {{Tech|warfare}}</blockquote>
+
+
+
+=== [[The Universities of Jol-Nar]] ===
+{{Tech|cybernetic}} '''E-Res Siphons :''' After another player activates a system that contains 1 or more of your ships, gain 4 trade goods<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+{{Tech|propulsion}} '''Spacial Conduit Cylinder :''' You may exhaust this card after you activate a system that contains 1 or more of your units; that system is adjacent to all other systems that contain 1 or more of your units during this activation<blockquote>
+
+Prerequisites: {{Tech|propulsion}} {{Tech|propulsion}}</blockquote>
+
+
+
+=== [[The Winnu]] ===
+{{Tech|propulsion}}''' Lazax Gate Folding:''' During your tactical actions, if you do not control Mecatol Rex, treat its system as if it contains both an alpha and beta wormhole. ACTION: If you control Mecatol Rex, exhaust this card to place 1 infantry from your reinforcements on Mecatol Rex<blockquote>
+
+Prerequisites: {{Tech|propulsion}} {{Tech|propulsion}}</blockquote>
+
+{{Tech|cybernetic}} '''Hegemonic Trade Policy:''' Exhaust this card when 1 or more of your units use PRODUCTION; swap the resource and influence values of 1 planet you control [[Errata#Hegemonic Trade Policy|during that use of Production]]<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+
+
+=== [[The Xxcha Kingdom]] ===
+{{Tech|cybernetic}} '''Nullification Field:''' After another player activates a system that contains 1 or more of your ships, you may exhaust this card and spend 1 token from your strategy pool; immediately end that player's turn<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+{{Tech|biotic}} '''Instinct Training:''' You may exhaust this card and spend 1 token from your strategy pool when another player plays an action card; cancel that action card<blockquote>
+
+Prerequisites:{{Tech|biotic}}</blockquote>
+
+
+
+=== [[The Yin Brotherhood]] ===
+{{Tech|cybernetic}} '''Impulse Core:''' At the start of a space combat, you may destroy 1 of your cruisers or destroyers in the active system to produce 1 hit against your opponent's ships; that hit must be assigned by your opponent to 1 of their non-fighters ships if able<blockquote>
+
+Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>
+
+{{Tech|biotic}} '''Yin Spinner:''' After 1 or more of your units use PRODUCTION, place 1 infantry from your reinforcements on a planet you control in that system<blockquote>
+
+Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+{{Tech|biotic}} '''Yin Spinner''' '''Ω:''' After you produce units, place up to 2 infantry from your reinforcements on any planet you control or in any space area that contains 1 or more of your ships<blockquote>
+
+Prerequisites: {{Tech|biotic}} {{Tech|biotic}}
+
+</blockquote>(Ω) indicates omega tech introduced in the first volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here]. 
+
+
+
+=== [[The Yssaril Tribes]] ===
+{{Tech|biotic}} '''Transparasteel Plating:''' During your turn of the action phase, players that have passed cannot play action cards<blockquote>Prerequisites: {{Tech|biotic}}</blockquote>{{Tech|biotic}} '''Mageon Implants:''' ACTION: Exhaust this card to look at another player's hand of action cards.  Choose 1 of those cards and add it to your hand<blockquote>Prerequisites: {{Tech|biotic}} {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+== [[Prophecy of Kings]] {{Edition|Prophecy of Kings}} ==
+
+=== [[The Argent Flight]] ===
+{{Tech|cybernetic}} '''Aerie Hololattice:''' Other players cannot move ships through systems that contain your structures. Each planet that contains 1 or more of your structures gains the PRODUCTION 1 ability as if it were a unit<blockquote>
+
+Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+
+
+=== [[The Empyrean]] ===
+{{Tech|propulsion}} '''Aetherstream:''' After you or one of your neighbors activates a system that is adjacent to an anomaly, you may apply +1 to the move value of all of that player's ships during this tactical action <blockquote>
+
+Prerequisites: {{Tech|propulsion}} {{Tech|propulsion}}</blockquote>
+
+{{Tech|biotic}} '''Voidwatch:''' After a player moves ships into a system that contains 1 or more of your units, they must give you 1 promissory note from their hand, if able<blockquote>
+
+Prerequisites: {{Tech|biotic}}</blockquote>
+
+
+
+=== [[The Mahact Gene Sorcerers]] ===
+'''{{Tech|biotic}} Genetic Recombination:''' You may exhaust this card before a player casts votes; that player must cast at least 1 vote for an outcome of your choice or remove 1 token from their fleet pool and return it to their reinforcements<blockquote>
+
+Prerequisites: '''{{Tech|biotic}}'''</blockquote>
+
+
+
+=== [[The Naaz-Rokha Alliance]] ===
+{{Tech|warfare}} '''Supercharge:''' At the start of a combat round, you may exhaust this card to apply +1 to the result of each of your unit's combat rolls during this combat round<blockquote>
+
+Prerequisites: {{Tech|warfare}}</blockquote>
+
+{{Tech|biotic}} '''Pre-Fab Arcologies:''' After you explore a planet, ready that planet<blockquote>
+
+Prerequisites: {{Tech|biotic}} {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+
+
+=== [[The Nomad]] ===
+{{Tech|cybernetic}} '''Temporal Command Suite: '''After any player's agent becomes exhausted, you may exhaust this card to ready that agent; if you ready another player's agent you may perform a transaction with that player <blockquote>
+
+Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+
+
+=== [[The Titans of Ul]] ===
+* Only [[Unit Upgrades|unit upgrade]] faction technologies.
+
+
+
+=== [[The Vuil'Raith Cabal]] ===
+{{Tech|warfare}} '''Vortex: '''ACTION: Exhaust this card to choose another player's non-structure [[Units|unit]] in a system that is adjacent to 1 or more of your [[Space Dock|space docks]]. Capture 1 unit of that type from that player's [[reinforcements]]<blockquote>
+
+Prerequisites: {{Tech|warfare}}</blockquote>
+
+
+
+== [[Codex#Volume_III_(Vigil)|Codex III]] {{Edition|Codex III}} ==
+
+=== [[ The Council Keleres]] ===
+{{Tech|cybernetic}}'''I.I.H.Q. Modernization '''{{Edition|Codex III}} (Moved to Breakthrough in Thunder's Edge Expansion)<blockquote>You are [[neighbors]] with all players that have [[units]] or control planets in or adjacent to the Mecatol Rex system.</blockquote><blockquote>Gain the Custodia Vigilia planet card and its [[Planets and Systems#Legendary Planets|legendary planet]] ability card. You cannot lose these cards, and this card cannot have an [[The Nekro Virus#Faction Technologies|X or Y assimilator]] token placed on it.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>{{Tech|cybernetic}}'''Executive Order '''{{Edition|Thunder's Edge}}<blockquote>ACTION: Exhaust this card and draw the top or bottom card of the agenda deck. Players immediatly vote on this agenda as if you were the speaker; you can spend trade goods and resources on this agenda as if they were votes.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>{{Tech|cybernetic}}  '''Agency Supply Network ''' {{Edition|Codex III}}<blockquote>Whenever you resolve one of your [[Production|PRODUCTION]] abilities, you may resolve an additional one of your PRODUCTION abilities in any system; the additional use does not trigger this ability.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote>{{Tech|cybernetic}}  '''Agency Supply Network '''  {{Edition|Thunder's Edge}}<blockquote>Once per action, when you resolve a unit's PRODUCTION ability, you may resolve another of your unit's PRODUCTION abilities in any system.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}} {{Tech|cybernetic}}</blockquote><blockquote>
+
+</blockquote>
+
+== [[Thunder's Edge]] {{Edition|Thunder's Edge}} ==
+
+===[[The Crimson Rebellion]]===
+{{Tech|cybernetic}}  '''Subatomic Splicer: ''' When one of your ships is destroyed, you may [[Production|produce]] a ship of the same type at a [[Space Dock|space dock]] in your [[Home Systems|home system]]. <blockquote>
+
+Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+
+
+===[[The Deepwrought Scholarate]]===
+{{Tech|biotic}}  '''Radical Advancement:''' At the start of the [[Status Phase|status phase]], you may replace one of your non-unit upgrade technologies with a technology of the same color that has exactly 1 more prerequisite.<blockquote>
+
+Prerequisites: {{Tech|biotic}}</blockquote>
+
+{{Tech|biotic}}  '''Hydrothermal Mining:''' At the start of the [[Status Phase|status phase]], gain 1 trade good for each ocean card in play.<blockquote>
+
+Prerequisites: {{Tech|biotic}}</blockquote>
+
+
+
+===[[The Firmament / The Obsidian]]===
+This faction's technology changes it's text when the faction transforms from the Firmament to the Obsidian. If the technology is not researched whilst they are still the Firmament, they will be unobtainable as the Obsidian. 
+
+====[[The Firmament / The Obsidian|The Firmament]]====
+{{Tech|cybernetic}}  '''Plane Splitter:''' When you gain this card put The Fracture into play. Flip this card if The Obsidian faction is in play.<blockquote>
+
+Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+{{Tech|biotic}}  '''Neural Parasite:''' At the start of the status phase you may place 1 infantry from your reinforcements on a planet you control in your home system. Flip this card if The Obsidian faction is in play.<blockquote>
+
+Prerequisites: {{Tech|biotic}}{{Tech|biotic}}</blockquote>
+
+====[[The Firmament / The Obsidian#The Obsidian|The Obsidian]]====
+{{Tech|cybernetic}}  '''Plane Splitter:''' At the start of your strategic action, you may move an ingress token into a system that contains or is adjacent to your units. This technology cannot be researched. 
+
+{{Tech|biotic}}  '''Neural Parasite:''' At the start of your turn destroy one of another players infantry in or adjacent to a system that contains your infantry. This technology cannot be researched.
+
+
+
+===[[Last Bastion]]===
+{{Tech|warfare}}  '''Proxima Targeting VI''' <blockquote>Cancel 1 hit produced by [[Bombardment]] rolls made against your ground forces for each galvanized unit present.</blockquote><blockquote>At the start of a round of combat, you may resolve [[Bombardment]] 8 (x3) against your opponents ground forces; if you do, make an identical roll against your own ground forces.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}</blockquote><blockquote> </blockquote>
+
+
+
+===[[The Ral Nel Consortium]]===
+{{Tech|warfare}}  '''Nanomachines:'''<blockquote>ACTION: Exhaust this card to place 1 PDS on a planet you control.
+
+ACTION: Exhaust this card to repair all of your damaged units.
+
+ACTION: Exhaust this card and discard 1 action card to draw 1 action card.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}</blockquote><blockquote> </blockquote>
+
+
+{{Factions}}
+
+{{Technologies}}

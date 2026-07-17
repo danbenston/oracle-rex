@@ -1,0 +1,683 @@
+
+[[Category:Discordant Stars]]
+[[Category:Factions and Races]]
+[[Category:Units]]
+A number of factions have special variations of certain units that '''when upgraded count as [https://twilight-imperium.fandom.com/wiki/Technology#Faction_Technologies faction technology].'''  Below is a list of all such faction specific units in the [[Discordant Stars Expansion (UNOFFICIAL)|Discordant Stars expansion]].
+==[[Celdauri Trade Confederation (UNOFFICIAL)|The Celdauri Trade Confederation]] ([[Space Dock]])==
+{| class="article-table"
+!Name
+!Abilities
+!Prerequisites
+|-
+|Trade Port I
+([[Space Dock]])
+|[[Anti-Fighter Barrage|'''Anti-Fighter Barrage''']] '''6 (x2)'''
+'''[[Production]]''' '''X+2''' (X is the [[Spending Resources and Influence|resource]] or [[Spending Resources and Influence|influence]] value of the planet)
+
+This unit’s [[Production|PRODUCTION]] value is equal to 2 more than the [[Spending Resources and Influence|resource]] or [[Spending Resources and Influence|influence]] value of this planet.
+
+Up to 3 [[Fighter|fighters]] in this system do not count against your ships' [[capacity]].
+|None
+|-
+|Trade Port II
+([[Space Dock]])
+|'''[[Anti-Fighter Barrage]] 6 (x2)'''
+'''[[Production]]''' '''X+4''' (X is the [[Spending Resources and Influence|resource]] or [[Spending Resources and Influence|influence]] value of the planet)
+
+This unit’s [[Production|PRODUCTION]] value is equal to 4 more than the [[Spending Resources and Influence|resource]] or [[Spending Resources and Influence|influence]] value of this planet.
+
+Up to 3 [[Fighter|fighters]] in this system do not count against your ships' [[capacity]].
+
+This unit may use its [[Anti-Fighter Barrage|ANTI-FIGHTER BARRAGE]] during each round of [[Space Combat|space combat]].
+|{{Tech|cybernetic}}{{Tech|cybernetic}}
+|}
+
+==[[Cheiran Hordes (UNOFFICIAL)|The Cheiran Hordes]] ([[Dreadnought]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Chitin Hulk I ([[Dreadnought]])
+|4
+|5
+|1
+|1
+|[[Sustain Damage|'''Sustain Damage''']]
+'''[[Bombardment]]''' '''5'''
+
+When this [[Units#ships|unit]] is destroyed, you may place 1 [[fighter]] from your [[reinforcements]] in this system’s space area.
+|None
+|-
+|Chitin Hulk II ([[Dreadnought]])
+|4
+|5
+|2
+|1
+|[[Sustain Damage|'''Sustain Damage''']]
+'''[[Bombardment]]''' '''5'''
+
+This unit cannot be destroyed by "Direct Hit" [[Action Cards|action cards]].
+
+When this [[Units#ships|unit]] is destroyed, you may place 1 [[fighter]] or 1 [[destroyer]] from your [[reinforcements]] in this system’s space area.
+|{{Tech|propulsion}}{{Tech|propulsion}}{{Tech|cybernetic}}
+|}
+
+==[[Savages of Cymiae (UNOFFICIAL)|The Savages of Cymiae]] ([[Infantry]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Unholy Abomination I
+([[Infantry]])
+|1
+|5
+| -
+| -
+|None
+|None
+|-
+|Unholy Abomination II
+([[Infantry]])
+|1
+|4
+| -
+| -
+|After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card. At the start of your turn, place each unit that is on this card on a planet you control, if able.
+|{{Tech|biotic}}{{Tech|biotic}}
+|}
+
+==[[Dih-Mohn Flotilla (UNOFFICIAL)|The Dih-Mohn Flotilla]] ([[Dreadnought]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Aegis I
+([[Dreadnought]])
+|4
+|5
+|1
+|1
+|'''[[Sustain Damage]]'''
+'''[[Bombardment]] 5'''
+
+When another [[Units#ships|ship]] in this system would be destroyed during combat, you may have this ship become [[Sustain Damage|damaged]] instead.
+|None
+|-
+|Aegis II 
+([[Dreadnought]])
+|4
+|4
+|2
+|1
+|'''[[Sustain Damage]]'''
+'''[[Bombardment]] 5'''
+
+When another [[Units#ships|ship]] in this system would be destroyed by a game effect, you may have this ship become [[Sustain Damage|damaged]] instead.
+|{{Tech|propulsion}}{{Tech|propulsion}}{{Tech|cybernetic}}
+|}
+
+==[[Florzen Profiteers (UNOFFICIAL)|The Florzen Profiteers]] ([[Fighter]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Corsair I
+([[Fighter]])
+|1 (x2)
+|9
+|1
+| -
+|'''[[Anti-Fighter Barrage]] 9'''
+This unit may move without being [[Movement#Transport|transported]]. [[Fighter|Fighters]] in excess of your ships’ capacity count against your [[Command Sheet#Fleet Pool|fleet pool]].
+|None
+|-
+|Corsair II
+([[Fighter]])
+|1 (x2)
+|8
+|3
+| -
+|'''[[Anti-Fighter Barrage]] 8'''
+This unit may move without being [[Movement#Transport|transported]]. [[Fighter|Fighters]] in excess of your ships’ capacity count against your [[Command Sheet#Fleet Pool|fleet pool]].
+|{{Tech|biotic}}{{Tech|propulsion}}
+|}
+
+==[[Ghemina Raiders (UNOFFICIAL)|The Ghemina Raiders]] ([[Carrier]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Combat Transport I
+([[Carrier]])
+|3
+|9
+|2
+|4
+|None
+|None
+|-
+|Combat Transport II
+([[Carrier]])
+|3
+|9
+|2
+|6
+|You may reroll 1 of your unit's [[combat]] dice during each round of [[Ground Combat|ground combat]] on a planet in this system that contains 2 or fewer of your [[infantry]].
+|{{Tech|propulsion}}{{Tech|propulsion}}
+|}
+
+==[[Gledge Union (UNOFFICIAL)|The GLEdge Union]] ([[PDS]])==
+{| class="article-table"
+!Name
+!Abilities
+!Prerequisites
+|-
+|Orion Platform I
+([[PDS]])
+|'''[[Planetary Shield]]'''
+[[Space Cannon|'''Space Cannon''']] '''6'''
+
+When this unit makes a [[Space Cannon|SPACE CANNON]] roll against another player’s units, if it rolls at least 1 result of 9 or 10, [[Exploration|explore]] this planet.
+|None
+|-
+|Orion Platform II
+([[PDS]])
+|'''[[Planetary Shield]]'''
+[[Space Cannon|'''Space Cannon''']] '''5'''
+
+When this unit produces 1 or more hits against another player's units, [[Exploration|explore]] this planet.
+
+You may use this unit’s [[Space Cannon|SPACE CANNON]] against ships that are [[Planets and Systems#Adjacency|adjacent]] to this unit's system.
+|{{Tech|warfare}}{{Tech|cybernetic}}
+|}
+
+==[[Berserkers of Kjalengard (UNOFFICIAL)|The Berserkers of Kjalengard]] ([[Carrier]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Star Dragon I
+([[Carrier]])
+|3
+|8
+|1
+|4
+|This unit may ignore the [[movement]] effects of non-[[Planets and Systems#Supernova|supernova]] [[Planets and Systems#Anomalies|anomalies]]. 
+|None
+|-
+|Star Dragon II
+([[Carrier]])
+|3
+|7
+|2
+|6
+|This unit may ignore the [[movement]] effects of [[Planets and Systems#Anomalies|anomalies]]. 
+|{{Tech|propulsion}}{{Tech|propulsion}}
+|}
+
+==[[Li-Zho Dynasty (UNOFFICIAL)|The Li-Zho Dynasty]] ([[Fighter]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Heavy Bomber I
+([[Fighter]])
+|1 (x2)
+|9
+| -
+| -
+|'''[[Bombardment]] 9'''
+|None
+|-
+|Heavy Bomber II
+([[Fighter]])
+|1 (x2)
+|8
+|2
+| -
+|'''[[Bombardment]] 8'''
+This unit may move without being [[Movement#Transport|transported]]. [[Fighter|Fighters]] in excess of your ships’ capacity count against your [[Command Sheet#Fleet Pool|fleet pool]].
+|{{Tech|biotic}}{{Tech|propulsion}}
+|}
+
+== [[L'tokk Khrask (UNOFFICIAL)|The L'tokk Khrask]] ([[Cruiser]]) ==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Shattered Sky I
+([[Cruiser]])
+|2
+|7
+|2
+|1
+|'''[[Bombardment]] 8'''
+|None
+|-
+|Shattered Sky II
+([[Cruiser]])
+|2
+|6
+|3
+|2
+|'''[[Bombardment]]''' '''6'''
+|{{Tech|warfare}}{{Tech|cybernetic}}{{Tech|biotic}}
+|}
+
+==[[Mirveda Protectorate (UNOFFICIAL)|The Mirveda Protectorate]] ([[PDS]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Gauss Cannon I
+([[PDS]])
+| -
+| -
+|1
+| -
+|'''[[Space Cannon]]''' '''6'''
+'''[[Bombardment]] 6'''
+
+This unit is placed in a space area instead of on a planet. This unit can [[Movement|move]] and [[Space Combat#Step 5: RETREAT|retreat]] as if it were a ship. This unit can be [[blockaded]], if it is [[blockaded]], it is destroyed.
+|None
+|-
+|Gauss Cannon II
+([[PDS]])
+| -
+| -
+|2
+|1
+|'''[[Space Cannon]]''' '''4'''
+'''[[Bombardment]]''' '''4'''
+
+This unit is placed in a space area instead of on a planet. This unit can [[Movement|move]] and [[Space Combat#Step 5: RETREAT|retreat]] as if it were a ship. This unit can be [[blockaded]], if it is [[blockaded]], it is destroyed. 
+|{{Tech|warfare}}{{Tech|cybernetic}}
+|}
+
+==[[Myko-Mentori (UNOFFICIAL)|The Myko-Mentori]] ([[Space Dock]])==
+{| class="article-table"
+!Name
+!Abilities
+!Prerequisites
+|-
+|Mycelium Ring I
+([[Space Dock]])
+|'''[[Planetary Shield]]'''
+'''[[Production]]''' '''X+2''' (X is the [[Spending Resources and Influence|resource]] value of the planet)
+
+This unit’s [[Production|PRODUCTION]] value is equal to 2 more than the [[Spending Resources and Influence|resource]] value of this planet. 
+
+[[Deploy|DEPLOY]]: When you gain control of a planet, you may replace 4 [[infantry]] on that planet with 1 [[Space Dock|space dock]].
+|None
+|-
+|Mycelium Ring II
+([[Space Dock]])
+|'''[[Planetary Shield]]'''
+'''[[Production]]''' '''X+5''' (X is the [[Spending Resources and Influence|resource]] value of the planet)
+
+This unit’s [[Production|PRODUCTION]] value is equal to 5 more than the [[Spending Resources and Influence|resource]] value of this planet. 
+
+[[Deploy|DEPLOY]]: When you gain control of a planet, you may replace 3 [[infantry]] on that planet with 1 [[Space Dock|space dock]].
+|{{Tech|cybernetic}}{{Tech|cybernetic}}
+|}
+
+==[[Nivyn Star Kings (UNOFFICIAL)|The Nivyn Star Kings]] ([[Mechs|Mech]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Voidflare Warden I
+([[Mechs|Mech]])
+|2
+|6
+| -
+| -
+|'''[[Sustain Damage]]'''
+After this system is [[Activation|activated]], you may have this unit become [[Sustain Damage|damaged]] to place or move the [[DS - Nivyn Star Kings (UNOFFICIAL)#Faction Abilities|Wound]] token into this system.
+|None
+|-
+|Voidflare Warden II
+([[Mechs|Mech]])
+|2
+|4
+| -
+| -
+|'''[[Sustain Damage]]'''
+After a system is [[Activation|activated]], you may have this unit become [[Sustain Damage|damaged]] to place or move the [[DS - Nivyn Star Kings (UNOFFICIAL)#Faction Abilities|Wound]] token into this system.
+|{{Tech|propulsion}}{{Tech|cybernetic}}{{Tech|warfare}}
+|}
+
+==[[Nokar Sellships (UNOFFICIAL)|The Nokar Sellships]] ([[Destroyer]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Sabre I
+([[Destroyer]])
+|1
+|8
+|2
+| -
+|[[Anti-Fighter Barrage|'''Anti-Fighter Barrage''']] '''9 (x2)'''
+After this unit is destroyed during [[combat]], roll a die, on a result of 9 or 10, produce up to 1 hit against your opponent’s ships.
+|None
+|-
+|Sabre II
+([[Destroyer]])
+|1
+|7
+|2
+| -
+|'''[[Anti-Fighter Barrage]] 6 (x3)'''
+After this unit is destroyed during [[Ground Combat|combat]], roll a die, on a result equal to or greater than 7, produce up to 1 hit against your opponent’s ships.
+|{{Tech|warfare}}{{Tech|warfare}}
+|}
+
+==[[Roh'Dhna Mechatronics (UNOFFICIAL)|Roh'Dhna Mechatronics]] ([[War Sun]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Terrafactory I
+([[War Sun]])
+| -
+|5 (x2) 
+| -
+|4
+|'''[[Production]] 5'''
+This unit produces only 1 [[fighter]] or [[infantry]] for their cost instead of 2.
+
+This unit cannot [[Movement|move]] or be [[Production|produced]].
+|None
+|-
+|Terrafactory II
+([[War Sun]])
+|12
+|3 (x3)
+|2
+|6
+|'''[[Production]]''' '''5'''
+'''[[Bombardment]]''' '''3 (x3)'''
+
+'''[[Sustain Damage]]'''
+
+This unit produces only 1 [[fighter]] or [[infantry]] for their cost instead of 2.
+
+Other player's units in this system lose [[Planetary Shield|PLANETARY SHIELD]].
+|{{Tech|cybernetic}}{{Tech|warfare}}{{Tech|warfare}}{{Tech|warfare}}
+|}
+
+==[[Tnelis Syndicate (UNOFFICIAL)|The Tnelis Syndicate]] ([[Destroyer]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Blockade Runner I
+([[Destroyer]])
+|1
+|9
+|2
+| -
+|'''[[Anti-Fighter Barrage]] 9 (x3)'''
+|None
+|-
+|Blockade Runner II
+([[Destroyer]])
+|1
+|8
+|2
+| -
+|'''[[Anti-Fighter Barrage]] 6 (x4)'''
+This ship can [[Movement#Step 1: Move Ships|move]] through systems that contain other players' [[Units#Ships|ships]]. 
+|{{Tech|warfare}}{{Tech|warfare}}
+|}
+
+==[[Vaylerian Scourge (UNOFFICIAL)|The Vaylerian Scourge]] ([[Cruiser]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Raider I
+([[Cruiser]])
+|2
+|7
+|2
+|1
+|During a round of [[Space Combat|space combat]], if your opponent cannot declare a [[Space Combat#Step 5: RETREAT|retreat]], hits produced by this ship must be assigned to non-[[fighter]] ships, if able. This unit may only [[Capacity|transport]] [[Ground Forces|ground forces]].
+|None
+|-
+|Raider II
+([[Cruiser]])
+|2
+|6
+|3
+|1
+|During a round of [[Space Combat|space combat]], if your opponent cannot declare a [[Space Combat#Step 5: RETREAT|retreat]], hits produced by this ship cannot be canceled and must be assigned to non-[[fighter]] ships, if able.
+|{{Tech|warfare}}{{Tech|cybernetic}}{{Tech|biotic}}
+|}
+
+==[[Veldyr Sovereignty (UNOFFICIAL)|The Veldyr Sovereignty]] ([[Dreadnought]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Lancer Dreadnought I 
+([[Dreadnought]])
+|4
+|5
+|1
+|1
+|'''[[Sustain Damage]]'''
+'''[[Bombardment]] 5'''
+
+'''[[Space Cannon]] 8'''
+|None
+|-
+|Lancer Dreadnought II 
+([[Dreadnought]])
+|4
+|5
+|2
+|1
+|'''[[Sustain Damage]]'''
+'''[[Bombardment]]''' '''5'''
+
+[[Space Cannon|'''Space Cannon''']] '''5'''
+
+This unit cannot be destroyed by "Direct Hit" [[Action Cards|action cards]].
+|{{Tech|propulsion}}{{Tech|propulsion}}{{Tech|cybernetic}}
+|}
+
+==[[Zelian Purifier (UNOFFICIAL)|The Zelian Purifier]] ([[Infantry]])==
+{| class="article-table"
+!Name
+!Cost
+!Combat
+!Move
+!Capacity
+!Abilities
+!Prerequisites
+|-
+|Impactor I
+([[Infantry]])
+|1 (x2)
+|8
+| -
+| -
+|'''[[Bombardment]]''' '''9'''
+During [[invasion]], this unit must [[Invasion#STEP 2: Commit Ground Forces|commit]] to a planet it [[Bombardment|bombards]].
+|None
+|-
+|Impactor II
+([[Infantry]])
+|1 (x2)
+|7
+| -
+| -
+|'''[[Bombardment]]''' '''8'''
+After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your [[Home System|home system]].
+|{{Tech|biotic}}{{Tech|biotic}}
+|}
+
+== Discordant Stars Unit Upgrade Reference ==
+('''*''') Indicates Unit Upgrade faction technology
+{| class="article-table mw-collapsible mw-collapsed" width="100%"
+|'''Level 0'''
+|'''Level 1'''
+|'''Level 2'''
+|'''Level 3'''
+|'''Level 4'''
+|-
+|
+|
+|{{Tech|biotic}} {{Tech|biotic}}
+
+
+- [[Infantry#Upgraded Unit|Infantry II]]<br>
+- [[Savages of Cymiae (UNOFFICIAL)#Faction Specific Units|Unholy Abomination II]]*<br>
+- [[Zelian Purifier (UNOFFICIAL)#Faction Specific Units|Impactor II]]*
+|{{Tech|propulsion}} {{Tech|propulsion}} {{Tech|cybernetic}}
+
+
+- [[Dreadnought#Upgraded Unit|Dreadnought II]]<br>
+- [[Cheiran Hordes (UNOFFICIAL)#Faction Specific Units|Chitin Hulk II]]*<br>
+- [[Dih-Mohn Flotilla (UNOFFICIAL)#Faction Specific Units|Aegis II]]*<br>
+- [[Veldyr Sovereignty (UNOFFICIAL)#Faction Specific Units|Lancer Dreadnought II]]*
+| rowspan="6" |{{Tech|cybernetic}} {{Tech|warfare}} {{Tech|warfare}} {{Tech|warfare}}
+
+
+- [[War Sun]]<br>
+- [[Roh'Dhna Mechatronics (UNOFFICIAL)#Faction Specific Units|Terrafactory II]]*
+|-
+|
+|
+|{{Tech|propulsion}} {{Tech|propulsion}}
+
+
+- [[Carrier#Upgraded Unit|Carrier II]]<br>
+- [[Ghemina Raiders (UNOFFICIAL)#Faction Specific Units|Combat Transport II]]*<br>
+- [[Berserkers of Kjalengard (UNOFFICIAL)#Faction Specific Units|Star Dragon II]]*
+|{{Tech|biotic}} {{Tech|cybernetic}} {{Tech|warfare}}
+
+
+- [[Cruiser#Upgraded Unit|Cruiser II]]<br>
+- [[L'tokk Khrask (UNOFFICIAL)#Faction Specific Units|Shattered Sky II]]*<br>
+- [[Vaylerian Scourge (UNOFFICIAL)#Faction Specific Units|Raider II]]*
+|-
+|
+|
+|{{Tech|cybernetic}} {{Tech|cybernetic}}
+
+
+- [[Space Dock#Upgraded Unit|Space Dock II]]<br>
+- [[Celdauri Trade Confederation (UNOFFICIAL)#Faction Specific Units|Trade Port II]]*<br>
+- [[Myko-Mentori (UNOFFICIAL)#Faction Specific Units|Mycelium Ring II]]*
+|{{Tech|propulsion}}{{Tech|cybernetic}}{{Tech|warfare}}
+
+
+- [[Nivyn Star Kings (UNOFFICIAL)#Faction Specific Units|Voidflare Warden II]]*
+|-
+|
+|
+|{{Tech|warfare}} {{Tech|warfare}}
+
+
+- [[Destroyer#Upgraded Unit|Destroyer II]]<br>
+- [[Nokar Sellships (UNOFFICIAL)#Faction Specific Units|Sabre II]]*<br>
+- [[Tnelis Syndicate (UNOFFICIAL)#Faction Specific Units|Blockade Runner II]]*
+| rowspan="3" |
+|-
+|
+|
+|{{Tech|biotic}} {{Tech|propulsion}}
+
+
+- [[Fighter#Upgraded Unit|Fighter II]]<br>
+- [[Florzen Profiteers (UNOFFICIAL)#Faction Specific Units|Corsair II]]*<br>
+- [[Li-Zho Dynasty (UNOFFICIAL)#Faction Specific Units|Heavy Bomber II]]*
+|-
+|
+|
+|{{Tech|cybernetic}} {{Tech|warfare}}
+
+
+- [[PDS#Upgraded Unit|PDS II]]<br>
+- [[Gledge Union (UNOFFICIAL)#Faction Specific Units|Orion Platform II]]*<br>
+- [[Mirveda Protectorate (UNOFFICIAL)#Faction Specific Units|Gauss Cannon II]]*
+|}
+[[Category:Unofficial Expansions]]

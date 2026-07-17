@@ -1,0 +1,256 @@
+{{DISPLAYTITLE:Propulsion Technologies (Blue)}}
+[[File:SlingRelay.png|thumb|490x490px]]
+'''Type:''' [[Technology]]
+
+
+'''See Also:''' [[Biotic Technologies]] | [[Cybernetic Technologies]] | [[Warfare Technologies]]
+
+== Basic Technology ==
+
+=== Antimass Deflectors ===
+''<u>[[Starting Technology|Starting Tech]]</u>:'' [[The Barony of Letnev|Barony of Letnev]], [[The Clan of Saar|Clan of Saar]], [[The Emirates of Hacan|Emirates of Hacan]], [[The Federation of Sol|Federation of Sol]], [[The Universities of Jol-Nar|Universities of Jol-Nar]], [[The Titans of Ul]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" | Antimass Deflectors
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* Your ships can move into and through asteroid fields
+* When other players’ units use SPACE CANNON against your units, apply -1 to the result of each die roll
+|-
+| 
+|-
+| 
+|-
+| 
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== Gravity Drive ===
+''[[Starting Technology|<u>Starting Tech</u>:]] ''[[The Ghosts of Creuss|Ghosts of Creuss]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+<nowiki> </nowiki>Gravity Drive
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you activate a system, apply +1 to the move value of 1 of your ships during this tactical action
+|-
+| 
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== Fleet Logistics ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+<nowiki> </nowiki>Fleet Logistics
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* During each of your turns of the action phase, you may perform 2 actions instead of 1
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== Light/Wave Deflector ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+<nowiki> </nowiki>Light/Wave Deflector
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* Your ships can move through systems that contain other players' ships
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+==[[Faction Technologies|Faction Technology]]==
+
+=== [[The Clan of Saar]] ===
+
+==== Chaos Mapping ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Chaos Mapping
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* Other players cannot activate asteroid fields that contain 1 or more of your ships.
+* At the start of your turn during the action phase, you may produce 1 unit in a system that contains at least 1 of your units that has Production.
+|-
+| 
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== [[The Ghosts of Creuss]] ===
+
+==== Wormhole Generator ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Wormhole Generator '''{{Edition|Base Game}}'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the start of the status phase, place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships.
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Wormhole Generator '''Ω <big>{{Edition|Codex I}}</big>'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* ACTION: Exhaust this card to place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+(Ω) indicates omega tech released in the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here]
+
+
+=== [[The Universities of Jol-Nar]] ===
+
+==== Spacial Conduit Cylinder ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Spacial Conduit Cylinder
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* You may exhaust this card after you activate a system that contains 1 or more of your units; that system is adjacent to all other systems that contain 1 or more of your units during this activation.
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== [[The Winnu]] ===
+
+==== Lazax Gate Folding ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+'''Lazax Gate Folding'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* During your tactical actions, if you do not control Mecatol Rex, treat its system as if it has both an α and β wormhole. ACTION: If you control Mecatol Rex, exhaust this card to place 1 infantry from your reinforcements on Mecatol Rex 
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+== Technology introduced in [[Prophecy of Kings]]  ==
+
+=== Dark Energy Tap  ===
+''<u>[[Starting Technology|Starting Tech]]</u>:'' ''[[The Empyrean]]'' 
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" | Dark Energy Tap {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* After you perform a tactical action in a system that contains a [[Exploration|frontier token]], if you have 1 or more ships in that system, explore that token
+* Your ships can retreat into adjacent systems that do not contain other players' units, even if you do not have units or control planets in that system.
+|-
+| 
+|-
+| 
+|-
+| 
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== Sling Relay  ===
+''<u>[[Starting Technology|Starting Tech]]</u>: [[The Nomad]] ''
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Sling Relay {{Edition|Prophecy of Kings}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* ACTION: Exhaust this card to produce 1 ship in any system that contains 1 of your space docks
+|-
+| 
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+
+=== [[The Empyrean]]  ===
+
+==== Aetherstream ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Aetherstream 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you or one of your neighbors activates a system that is adjacent to an [[Planets and Systems#Anomalies|anomaly]], you may apply +1 to the move value of all of that player's ships during this tactical action
+|-
+| 
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|propulsion|w=32px}}
+|}
+
+{{Technologies}}

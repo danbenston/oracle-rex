@@ -1,0 +1,205 @@
+Each faction in Twilight Imperium has access to exclusive technologies that can be researched in addition to the general technologies available to all factions.
+
+This list does not contain [[Discordant Stars Faction Specific Units (UNOFFICIAL)|Discordant Stars unit upgrade technologies]].
+
+
+==[[Shipwrights of Axis (UNOFFICIAL)|The Shipwrights of Axis]]==
+{{Tech|propulsion}}  '''<big>Rift Engines</big>'''<blockquote>After you [[Activation|activate]] a system, you may [[Readied and Exhausted|exhaust]] this card to choose 1 [[Units#Ships|ship]] you control and roll a die. On a result of 1-3, remove that [[Units#Ships|ship]] from the game board; on a result of 4-10, apply +2 to that ship’s move value during this [[Tactical Action|tactical action]].</blockquote><blockquote>Prerequisites: {{Tech|propulsion}}</blockquote>{{Tech|cybernetic}}  '''<big>Emergency Deployment</big>'''<blockquote>ACTION: [[Readied and Exhausted|Exhaust]] this card to place or move 1 of your [[Space Dock|space docks]] onto a [[Planets and Systems|planet]] you control.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Bentor Conglomerate (UNOFFICIAL)|The Bentor Conglomerate]]==
+{{Tech|biotic}}  '''<big>Broker Network</big>'''<blockquote>Each planet you control that has a [[Technology#Technology Specialty Planets|technology specialty]] or an [[attachment]] gains the [[Production|PRODUCTION]] 1 ability as if it were a unit.</blockquote><blockquote>Prerequisites: {{Tech|biotic}}</blockquote>{{Tech|cybernetic}}  '''<big>Merged Replicators</big>'''<blockquote>When 1 or more of your units use [[Production|PRODUCTION]], you may [[Readied and Exhausted|exhaust]] this card to swap 1 of those unit's [[Production|PRODUCTION]] with another on the game board, or apply +2 to the total [[Production|PRODUCTION]] value of those units.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Celdauri Trade Confederation (UNOFFICIAL)|The Celdauri Trade Confederation]]==
+{{Tech|warfare}}  '''<big>Emergency Mobilization Protocols</big>'''<blockquote>At the end of your turn, you may exhaust this card and spend 1 [[Command Tokens|token]] from your [[Command Sheet#Strategy Pool|strategy pool]] to remove a [[Command Tokens|command token]] from a system that contains 1 or more of your [[Space Dock|space docks]].</blockquote><blockquote>Prerequisites: {{Tech|warfare}} {{Tech|warfare}}</blockquote>
+
+==[[Cheiran Hordes (UNOFFICIAL)|The Cheiran Hordes]]==
+{{Tech|warfare}}  '''<big>Brood Pod</big>'''<blockquote>After another player activates a system that contains 1 of your [[Units#structures|structures]], you may [[Readied and Exhausted|exhaust]] this card to [[Production|produce]] 1 ship in the active system.
+
+For each of your [[Units#Structures|structures]] in the active system, you may remove that unit from the game board to reduce the cost of the [[Production|produced]] [[Units#ships|ship]] by 3.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}{{Tech|warfare}}</blockquote>
+
+==[[Savages of Cymiae (UNOFFICIAL)|The Savages of Cymiae]]==
+{{Tech|cybernetic}}  '''<big>Recursive Worm</big>'''<blockquote>At the start of your turn, you may [[Readied and Exhausted|exhaust]] this card to choose 1 non-home system other than [[Planets and Systems#Mecatol Rex|Mecatol Rex]] that contains 1 or more of your units; place 1 other player’s [[Command Tokens|command token]] from their [[reinforcements]] in that system.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+==[[Dih-Mohn Flotilla (UNOFFICIAL)|The Dih-Mohn Flotilla]]==
+{{Tech|cybernetic}}  '''<big>Impressment Programs</big>'''<blockquote>When you [[Exploration|explore]] a planet, you may [[Production|produce]] 1 [[Units#ships|ship]] in that planet’s system.</blockquote><blockquote>
+
+ACTION: [[Readied and Exhausted|Exhaust]] this card and 1 planet you control to [[Exploration|explore]] that planet.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Edyn Mandate (UNOFFICIAL)|The Edyn Mandate]]==
+{{Tech|biotic}}  '''<big>Unity Algorithm</big>'''<blockquote>Once per [[Agenda Phase|agenda phase]], after an [[Agenda Cards|agenda]] is [[Agenda Phase#Reveal%20First%20Agenda|revealed]], you may predict aloud an outcome of that [[Agenda Cards|agenda]].
+
+If your prediction is correct, you may score 1 [[Objectives#Public Objectives|public objective]] if you fulfill its requirements; each other player who voted for that outcome draws 1 [[Objectives#Secret Objectives|secret objective]]. </blockquote><blockquote>Prerequisites: {{Tech|biotic}}{{Tech|biotic}}{{Tech|biotic}}</blockquote>{{Tech|cybernetic}}  '''<big>Encrypted Trade Hub </big>'''<blockquote>You may [[Readied and Exhausted|exhaust]] this card to allow a player to exchange 1 of their [[Exploration#Relic Fragments and Relics|relics]] or [[Agenda Cards|agendas]] as part of a [[Transactions & Deals|transaction]].
+
+You always [[Agenda Phase#Voting|vote]] last during the [[Agenda Phase|agenda phase]]. When an outcome you [[Agenda Phase#Voting|voted]] for or predicted is resolved, each player who [[Agenda Phase#Voting|voted]] for that outcome gains 1 [[Trade Goods & Commodities|commodity]]. </blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Florzen Profiteers (UNOFFICIAL)|The Florzen Profiteers]]==
+{{Tech|biotic}}  '''<big>Blackmail Programs</big>'''<blockquote>When a player would perform a [[Strategic Action|strategic action,]] you may [[Readied and Exhausted|exhaust]] this card and spend 1 [[Command Tokens|token]] from your [[Command Sheet#Strategy Pool|strategy pool]] to end that player's turn; the [[Strategic Action|strategic action]] is not resolved and the [[Strategy Cards|strategy card]] is not exhausted.</blockquote><blockquote>Prerequisites: {{Tech|biotic}}{{Tech|biotic}}</blockquote>
+
+==[[Free Systems Compact (UNOFFICIAL)|The Free Systems Compact]]==
+{{Tech|biotic}}  '''<big>Envoy Network</big>'''<blockquote>At the start of the [[Agenda Phase|agenda phase]], you may choose and [[Readied and Exhausted|exhaust]] [[Planets and Systems#Planet Traits|1 cultural, 1 hazardous, and 1 industrial]] planet.</blockquote><blockquote>When you cast 1 or more votes, if you exhaust at least [[Planets and Systems#Planet Traits|1 cultural, 1 hazardous, and 1 industrial]] planet to cast [[Agenda Phase#Voting|votes]], you may cast 4 additional [[Agenda Phase#Voting|votes]]. </blockquote><blockquote>Prerequisites: {{Tech|biotic}}</blockquote>{{Tech|cybernetic}}  '''<big>Covert Strike Teams</big>'''<blockquote>At the start of a [[Ground Combat|ground combat]], you may roll 1 die for each of up to 2 of your [[Ground Forces|ground forces]] on that planet.</blockquote><blockquote>For each result equal to or greater than that unit's [[combat]] value, produce 1 hit; your opponent must assign it to 1 of their units on that planet.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Ghemina Raiders (UNOFFICIAL)|The Ghemina Raiders]]==
+{{Tech|biotic}}  '''<big>War Song Implants</big>'''<blockquote>After you win a [[Space Combat|space combat]], you may [[Readied and Exhausted|ready]] 1 planet you control.</blockquote><blockquote>Prerequisites: {{Tech|biotic}}{{Tech|biotic}}{{Tech|biotic}}</blockquote>
+
+==[[Ghoti Wayfarers (UNOFFICIAL)|The Ghoti Wayfarers]]==
+{{Tech|biotic}}  '''<big>Networked Command</big>'''<blockquote>Up to 3 [[Units#Ships|ships]] in your [[Home System|home system]] do not count against your [[Command Sheet#Fleet Pool|fleet pool]].</blockquote><blockquote>When you cast 1 or more [[Agenda Phase#Voting|votes]], you may [[Readied and Exhausted|exhaust]] this card to cast an additional number of [[Agenda Phase#Voting|votes]] equal to the number of [[Command Tokens|command tokens]] in your [[Command Sheet#Fleet Pool|fleet pool]].</blockquote><blockquote>Prerequisites: {{Tech|biotic}} </blockquote>{{Tech|cybernetic}}  '''<big>Parallel Production</big>'''<blockquote>When you [[Production|produce]] 1 or more units, you may [[Production|produce]] 1 additional unit in each of 2 systems that contain 1 or more of your [[Units#ships|ships]] and 1 of your [[Command Tokens|command tokens]].</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+==[[Gledge Union (UNOFFICIAL)|The GLEdge Union]]==
+{{Tech|propulsion}}  '''<big>Lightning Drives</big>'''<blockquote>During [[movement]], you may increase the [[Movement|move]] value of each of your non-[[fighter]] ships not transporting fighters or infantry by 1. </blockquote><blockquote>Prerequisites:  {{Tech|propulsion}} {{Tech|propulsion}} {{Tech|propulsion}}</blockquote>
+
+==[[Augurs of Ilyxum (UNOFFICIAL)|The Augurs of Ilyxum]]==
+{{Tech|biotic}}  '''<big>Psychographics</big>'''<blockquote>During the [[Status Phase|status phase]], you may score 1 additional [[Objectives#Public Objectives|public objective]] instead of a [[Objectives#Secret Objectives|secret objective]]. </blockquote><blockquote>Prerequisites: {{Tech|biotic}}{{Tech|biotic}}{{Tech|biotic}}</blockquote>{{Tech|cybernetic}}  '''<big>Sentient Datapool</big>'''<blockquote>At the start of the [[Status Phase|status phase]], you may spend 3 [[Trade Goods & Commodities|trade goods]] to [[Technology#Research|research]] 1 [[technology]]. </blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Berserkers of Kjalengard (UNOFFICIAL)|The Berserkers of Kjalengard]]==
+{{Tech|biotic}}  '''<big>Zhrgar Stimulants</big>'''<blockquote>Once per action, after a player produces 1 or more hits during a round of [[combat]] in a system that contains a Glory token, gain 1 [[Trade Goods & Commodities|trade good]].<br>
+
+After a player rolls combat dice, you may exhaust this card to allow that player to reroll any number of those dice.</blockquote><blockquote>Prerequisites: {{Tech|biotic}}</blockquote>
+
+==[[Kollecc Society (UNOFFICIAL)|The Kollecc Society]]==
+{{Tech|cybernetic}}  '''<big>Seeker Drones</big>'''<blockquote>ACTION: [[Readied and Exhausted|Exhaust]] this card to choose 1 of your [[neighbors]] that has 1 or more [[Exploration|relic]] fragments. That player gains 2 [[Trade Goods & Commodities|trade goods]] and must give you 1 of those [[Exploration#Relic Fragments and Relics|relic fragments]] of your choice</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>{{Tech|propulsion}}  '''<big>Shrouded Skirmishers</big>'''<blockquote>At the start of a [[Space Combat|space combat]], you may choose 1 of your ships in the [[Activation|active]] system that did not begin this action in that system; roll a die. On a result equal to or greater than that ship's [[Combat|combat value]], produce 1 hit; your opponent must assign it to 1 of their ships.</blockquote><blockquote>Prerequisites: {{Tech|propulsion}}</blockquote>
+
+==[[Monks of Kolume (UNOFFICIAL)|The Monks of Kolume]]==
+{{Tech|biotic}}  '''<big>Applied Biothermics</big>'''<blockquote>When you [[Action Phase#Pass|pass]], you may gain 1 [[Trade Goods & Commodities|commodity]] for each other player who has [[Action Phase#Pass|passed]].</blockquote><blockquote>ACTION: [[Readied and Exhausted|Exhaust]] this card.</blockquote><blockquote>Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>{{Tech|warfare}}  '''<big>Omniscience Field</big>'''<blockquote>After a system is [[Activation|activated]], you may [[Readied and Exhausted|exhaust]] this card to choose 1 player. Apply +1 or -1 to all rolls that player makes during this [[Tactical Action|tactical action.]]</blockquote><blockquote>Prerequisites: {{Tech|warfare}}{{Tech|warfare}}{{Tech|warfare}}</blockquote>
+
+==[[Kortali Tribunal (UNOFFICIAL)|The Kortali Tribunal]]==
+{{Tech|biotic}}  '''<big>Tempest Drive</big>'''<blockquote>After you win a combat in a system, you may [[Readied and Exhausted|exhaust]] this card to remove 1 command token from that system.</blockquote><blockquote>Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>{{Tech|warfare}}  '''<big>Deliverance Engine</big>'''<blockquote>Once per [[Space Combat|space combat]], after 1 of your non-[[fighter]] ships is destroyed, you may produce 1 hit and assign it to 1 of your opponent’s non-[[carrier]] ships. </blockquote><blockquote>Prerequisites: {{Tech|warfare}}{{Tech|warfare}}</blockquote>
+
+==[[Kyro Sodality (UNOFFICIAL)|The Kyro Sodality]]==
+{{Tech|biotic}}  '''<big>Indoctrination Team</big>'''<blockquote>During the [[Agenda Phase|agenda phase]], after an outcome you voted for is [[Agenda Phase#Resolve Outcome|resolved]], place 2 [[infantry]] from your [[reinforcements]] on a planet you control.</blockquote><blockquote>Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>{{Tech|cybernetic}}  '''<big>Vector Program</big>'''<blockquote>At the start of the [[Strategy Phase|strategy phase]], you may place any number of your [[Trade Goods & Commodities|trade goods]] on any combination of [[Strategy Cards|strategy cards]]. Then, place 2 [[Trade Goods & Commodities|trade goods]] from the supply on 1 [[Strategy Cards|strategy card]]</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+==[[Lanefir Remnants (UNOFFICIAL)|The Lanefir Remnants]]==
+{{Tech|propulsion}}  '''<big>Spark Thrusters</big>'''<blockquote>ACTION: Spend 1 [[Command Tokens|command token]] from your [[Command Sheet#Strategy Pool|strategy pool]] or purge 1 [[Exploration#Relic Fragments and Relics|relic fragment]] to [[Movement|move]] 1 of your ships to an [[Planets and Systems#Adjacency|adjacent]] system that contains no other player’s ships. If you spent a [[Command Tokens|command token]], exhaust this card.</blockquote><blockquote>Prerequisites: {{Tech|propulsion}}{{Tech|propulsion}}</blockquote>{{Tech|warfare}}  '''<big>ATS Armaments</big>'''<blockquote>After you [[Exploration|explore]], or [[purge]] 1 or more [[Exploration#Relic Fragments and Relics|relic fragments]], place 1 commodity token on this card. 
+
+At the start of a round of [[combat]], remove any number of tokens from this card to reroll up to that many of your dice during this round of [[combat]].</blockquote><blockquote>Prerequisites: {{Tech|warfare}}{{Tech|warfare}}</blockquote>
+
+==[[Li-Zho Dynasty (UNOFFICIAL)|The Li-Zho Dynasty]]==
+{{Tech|propulsion}}  '''<big>Wraith Engine</big>'''<blockquote>After you [[Activation|activate]] a non-home system, you may [[Readied and Exhausted|exhaust]] this card to choose 1 ship you control; you may treat that ship as [[Planets and Systems#Adjacency|adjacent]] to the [[Activation|active]] system until the end of this [[Tactical Action|tactical action]]. </blockquote><blockquote>Prerequisites: {{Tech|propulsion}}{{Tech|propulsion}}</blockquote>
+
+== [[L'tokk Khrask (UNOFFICIAL)|The L'tokk Khrask]] ==
+{{Tech|biotic}}  '''<big>Stone's Embrace</big>'''<blockquote>When you would spend a [[Command Tokens|token]] from your [[Command Sheet#Strategy Pool|strategy pool]], you may [[Readied and Exhausted|exhaust]] 1 planet you control to spend 1 [[Command Tokens|token]] from your [[reinforcements]] instead.</blockquote><blockquote>Prerequisites: {{Tech|biotic}}{{Tech|biotic}}</blockquote>
+
+==[[Mirveda Protectorate (UNOFFICIAL)|The Mirveda Protectorate]]==
+{{Tech|warfare}}  '''<big>Orbital Defense Grid</big>'''<blockquote>At the start of [[invasion]], choose up to 1 unit you control in the [[Activation|active system]]; that unit gains [[Planetary Shield|PLANETARY SHIELD]].</blockquote><blockquote>When a player [[Invasion#STEP 2: Commit Ground Forces|commits]] a unit to land on a planet you control, you may [[Readied and Exhausted|exhaust]] this card to destroy that unit.</blockquote><blockquote>Prerequisites: {{Tech|warfare}} {{Tech|warfare}}</blockquote>
+
+==[[Glimmer of Mortheus (UNOFFICIAL)|The Glimmer of Mortheus]]==
+{{Tech|warfare}}  '''<big>Fractal Plating</big>'''<blockquote>After a unit you control in a system is destroyed, you may [[Readied and Exhausted|exhaust]] this card to place 1 unit of that type from your [[reinforcements]] in the space area of a system [[Planets and Systems#Adjacency|adjacent]] to that system that contains 1 or more of your ships.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}{{Tech|warfare}}</blockquote>{{Tech|cybernetic}}  '''<big>Fabrication Grid</big>'''<blockquote>Each system that contains 1 or more of your ships and no planets gains [[Production|PRODUCTION]] 2 as if it were a unit you control.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Myko-Mentori (UNOFFICIAL)|The Myko-Mentori]]==
+{{Tech|biotic}}  '''<big>Psychoactive Armaments</big>'''<blockquote>After your opponent makes a [[combat]] roll, you may [[Readied and Exhausted|exhaust]] this card. If you do, for each of their units that did not produce a hit, you may reroll that unit's [[combat]] roll; any hits that roll produces are produced against your opponent’s units instead.</blockquote><blockquote>Prerequisites: {{Tech|biotic}} {{Tech|biotic}}</blockquote>
+
+==[[Nivyn Star Kings (UNOFFICIAL)|The Nivyn Star Kings]]==
+{{Tech|cybernetic}}  '''<big>Voidwake Missiles</big>'''<blockquote>After 1 or more of your units with [[Sustain Damage|SUSTAIN DAMAGE]] makes a [[combat]] roll, you may choose 1 of those units to become [[Sustain Damage|damaged]] to reroll its [[combat]] roll.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+==[[Nokar Sellships (UNOFFICIAL)|The Nokar Sellships]]==
+{{Tech|cybernetic}}  '''<big>Local Contracts</big>'''<blockquote>During the [[Action Phase|action phase]]: You may exhaust this card to use the [[Production|PRODUCTION]] ability of 1 of your units. Then, place 1 [[Command Tokens|command token]] from your [[reinforcements]] in that unit’s system.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Olradin League (UNOFFICIAL)|The Olradin League]]==
+{{Tech|warfare}}  '''<big>False Flag Operations</big>'''<blockquote>At the start of your turn, you may [[Readied and Exhausted|exhaust]] this card and 1 planet you control to ready 1 non-home planet other than [[Planets and Systems#Mecatol Rex|Mecatol Rex]]. </blockquote><blockquote>Prerequisites: {{Tech|warfare}}</blockquote>{{Tech|propulsion}}  '''<big>Geosympathic Impeller</big>'''<blockquote>After you [[Activation|activate]] a system, you may [[Readied and Exhausted|exhaust]] a planet you control of the same type as a planet in that system to apply +1 to the [[Movement|move]] value of each of your ships during this [[Tactical Action|tactical action]].</blockquote><blockquote>Prerequisites: {{Tech|propulsion}}</blockquote>
+
+==[[Zealots of Rhodun (UNOFFICIAL)|The Zealots of Rhodun]]==
+{{Tech|cybernetic}}  '''<big>Sanctification Field</big>'''<blockquote>When you [[Activation|activate]] a system, or a system that contains 1 or more of your units is [[Activation|activated]], you may choose 1 [[technology]] or non-[[fighter]], non-[[Units#Structures|structure]] [[Technology#Unit Upgrade Technologies|unit upgrade technology]] another player controls; until the end of this [[Tactical Action|tactical action]], that card is treated as though it had no ability text.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>{{Tech|propulsion}}  '''<big>Pilgrimage Beacons </big>'''<blockquote>Once during your turn, when you [[Readied and Exhausted|exhaust]] 1 or more planets you control that have a [[Planets and Systems#Technology Specialty|technology specialty]], you may [[Production|produce]] 1 ship in 1 system that contains 1 of those planets. </blockquote><blockquote>Prerequisites: {{Tech|propulsion}}{{Tech|propulsion}}</blockquote>
+
+==[[Roh'Dhna Mechatronics (UNOFFICIAL)|Roh'Dhna Mechatronics]]==
+{{Tech|cybernetic}}  '''<big>Contractual Obligations</big>'''<blockquote>At the start of the [[Agenda Phase|agenda phase]], for each [[Technology#Unit Upgrade Technologies|unit upgrade technology]] you control, you may choose 1 player. Each of those players must [[Production|produce]] 1 ship in a system that contains 1 or more of their [[Space Dock|space docks]] or [[War Sun|war suns]]. </blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Tnelis Syndicate (UNOFFICIAL)|The Tnelis Syndicate]]==
+{{Tech|cybernetic}}  '''<big>Daedalon Flight System</big>'''<blockquote>After a round of [[Space Combat|space combat]] in a system that contains 1 or more of your [[DS - Tnelis Syndicate (UNOFFICIAL)#Mech|mechs]], you may have 1 of those units become [[Sustain Damage|damaged]] to produce 1 hit and assign it to a [[cruiser]], [[dreadnought]], or [[destroyer]] you do not control in that system. </blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}</blockquote>
+
+==[[Vaden Banking Clans (UNOFFICIAL)|The Vaden Banking Clans]]==
+{{Tech|propulsion}}  '''<big>Midas Turbine</big>'''<blockquote>After you activate a system, you may [[Readied and Exhausted|exhaust]] this card and spend any number of [[Trade Goods & Commodities|trade goods]]; for each  [[Trade Goods & Commodities|trade good]] you spent, apply +1 to the [[Movement|move]] value of 1 non-[[fighter]] ship you control.</blockquote><blockquote>Prerequisites: {{Tech|propulsion}}</blockquote>{{Tech|cybernetic}}  '''<big>Krovoz Strike Teams</big>'''<blockquote>After another player’s unit uses [[Sustain Damage|SUSTAIN DAMAGE]] to cancel a hit produced by your units or abilities, you may [[Readied and Exhausted|exhaust]] this card to destroy that unit.</blockquote><blockquote>After you produce 1 or more hits during a round of [[combat]], you may spend 1 [[Trade Goods & Commodities|trade good]] to produce 1 additional hit.</blockquote><blockquote>Prerequisites: {{Tech|cybernetic}}{{Tech|cybernetic}}</blockquote>
+
+==[[Vaylerian Scourge (UNOFFICIAL)|The Vaylerian Scourge]]==
+{{Tech|warfare}}  '''<big>Scavenger Exos</big>'''<blockquote>Once per action, after you win a ground combat, you may draw 1 action card.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}</blockquote>
+
+==[[Veldyr Sovereignty (UNOFFICIAL)|The Veldyr Sovereignty]]==
+{{Tech|warfare}}  '''<big>SEIDR Project</big>'''<blockquote>At the end of each round of [[Space Combat|space combat]], you may use the [[Space Cannon|SPACE CANNON]] of 1 of your units in the [[Activation|active system]] against your opponent's ships, without rolling additional dice.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}{{Tech|warfare}}</blockquote>
+
+==[[Zelian Purifier (UNOFFICIAL)|The Zelian Purifier]]==
+{{Tech|warfare}}  '''<big>Shard Volley</big>'''<blockquote>When 1 or more of your units produce 1 or more hits during a [[Bombardment|BOMBARDMENT]] roll against a planet, produce 1 additional hit for that roll.</blockquote><blockquote>Prerequisites: {{Tech|warfare}}</blockquote>
+
+== Discordant Stars Faction Technology Reference ==
+Does not include [[Discordant Stars Faction Specific Units (UNOFFICIAL)|Discordant Stars Unit Upgrade Technology]]
+{| class="article-table mw-collapsible mw-collapsed" width="100%"
+|'''Technology'''
+'''Type'''
+|'''Level 0'''
+|'''Level 1'''
+|'''Level 2'''
+|'''Level 3''' 
+|-
+| {{Tech|biotic}}
+|
+|
+- [[Bentor Conglomerate (UNOFFICIAL)#Faction Technologies|Broker Network]]<br>
+- [[Free Systems Compact (UNOFFICIAL)#Faction Technologies|Envoy Network]]<br>
+- [[Ghoti Wayfarers (UNOFFICIAL)#Faction Technologies|Networked Command]]<br>
+- [[Berserkers of Kjalengard (UNOFFICIAL)#Faction Technologies|Zhrgar Stimulants]]<br>
+|
+- [[Florzen Profiteers (UNOFFICIAL)#Faction Technologies|Blackmail Programs]]<br>
+- [[Monks of Kolume (UNOFFICIAL)#Faction Technologies|Applied Biothermics]]<br>
+- [[Kortali Tribunal (UNOFFICIAL)#Faction Technologies|Tempest Drive]]<br>
+- [[Kyro Sodality (UNOFFICIAL)#Faction Technologies|Indoctrination Team]]<br>
+- [[L'tokk Khrask (UNOFFICIAL)#Faction Technologies|Stone's Embrace]]<br>
+- [[Myko-Mentori (UNOFFICIAL)#Faction Technologies|Psychoactive Armaments]]<br>
+|
+- [[Edyn Mandate (UNOFFICIAL)#Faction Technologies|Unity Algorithm]]<br>
+- [[Ghemina Raiders (UNOFFICIAL)#Faction Technologies|War Song Implants]]<br>
+- [[Augurs of Ilyxum (UNOFFICIAL)#Faction Technologies|Psychographics]]<br>
+|-
+|{{Tech|propulsion}}
+|
+|
+- [[Shipwrights of Axis (UNOFFICIAL)#Faction Technologies|Rift Engines]]<br>
+- [[Kollecc Society (UNOFFICIAL)#Faction Technologies|Shrouded Skirmishers]]<br>
+- [[Olradin League (UNOFFICIAL)#Faction Technologies|Geosympathic Impeller]]<br>
+- [[Vaden Banking Clans (UNOFFICIAL)#Faction Technologies|Midas Turbine]]<br>
+|
+- [[Lanefir Remnants (UNOFFICIAL)#Faction Technologies|Spark Thrusters]]<br>
+- [[Li-Zho Dynasty (UNOFFICIAL)#Faction Technologies|Wraith Engine]]<br>
+- [[Zealots of Rhodun (UNOFFICIAL)#Faction Technologies|Pilgrimage Beacons]]<br>
+| - [[Gledge Union (UNOFFICIAL)#Faction Technologies|Lightning Drives]]<br>
+|-
+|{{Tech|cybernetic}}
+|
+|
+- [[Savages of Cymiae (UNOFFICIAL)#Faction Technologies|Recursive Worm]]<br>
+- [[Ghoti Wayfarers (UNOFFICIAL)#Faction Technologies|Parallel Production]]<br>
+- [[Kyro Sodality (UNOFFICIAL)#Faction Technologies|Vector Program]]<br>
+- [[Nivyn Star Kings (UNOFFICIAL)#Faction Technologies|Voidwake Missiles]]<br>
+- [[Tnelis Syndicate (UNOFFICIAL)#Faction Technologies|Daedalon Flight System]]<br>
+|
+- [[Bentor Conglomerate (UNOFFICIAL)#Faction Technologies|Merged Replicators]]<br>
+- [[Dih-Mohn Flotilla (UNOFFICIAL)#Faction Technologies|Impressment Programs]]<br>
+- [[Edyn Mandate (UNOFFICIAL)#Faction Technologies|Encrypted Trade Hub]]<br>
+- [[Free Systems Compact (UNOFFICIAL)#Faction Technologies|Covert Strike Teams]]<br>
+- [[Augurs of Ilyxum (UNOFFICIAL)#Faction Technologies|Sentient Datapool]]<br>
+- [[Kollecc Society (UNOFFICIAL)#Faction Technologies|Seeker Drones]]<br>
+- [[Glimmer of Mortheus (UNOFFICIAL)#Faction Technologies|Fabrication Grid]]<br>
+- [[Nokar Sellships (UNOFFICIAL)#Faction Technologies|Local Contracts]]<br>
+- [[Roh'Dhna Mechatronics (UNOFFICIAL)#Faction Technologies|Contractual Obligations]]<br>
+- [[Vaden Banking Clans (UNOFFICIAL)#Faction Technologies|Krovoz Strike Teams]]<br>
+|
+- [[Shipwrights of Axis (UNOFFICIAL)#Faction Technologies|Emergency Deployment]]<br>
+- [[Zealots of Rhodun (UNOFFICIAL)#Faction Technologies|Sanctification Field]]<br>
+|-
+|{{Tech|warfare}}
+|
+|
+- [[Olradin League (UNOFFICIAL)#Faction Technologies|False Flag Operations]]<br>
+- [[Vaylerian Scourge (UNOFFICIAL)#Faction Technologies|Scavenger Exos]]<br>
+- [[Zelian Purifier (UNOFFICIAL)#Faction Technologies|Shard Volley]]<br>
+|
+- [[Celdauri Trade Confederation (UNOFFICIAL)#Faction Technologies|Emergency Mobilization Protocols]]<br>
+- [[Cheiran Hordes (UNOFFICIAL)#Faction Technologies|Brood Pod]]<br>
+- [[Kortali Tribunal (UNOFFICIAL)#Faction Technologies|Deliverance Engine]]<br>
+- [[Lanefir Remnants (UNOFFICIAL)#Faction Technologies|ATS Armaments]]<br>
+- [[Mirveda Protectorate (UNOFFICIAL)#Faction Technologies|Orbital Defense Grid]]<br>
+- [[Glimmer of Mortheus (UNOFFICIAL)#Faction Technologies|Fractal Plating]]<br>
+- [[Veldyr Sovereignty (UNOFFICIAL)#Faction Technologies|SEIDR Project]]<br>
+|
+- [[Monks of Kolume (UNOFFICIAL)#Faction Technologies|Omniscience Field]]<br>
+|}
+[[Category:Discordant Stars]]
+[[Category:Factions and Races]]
+[[Category:Technologies]]
+[[Category:Unofficial Expansions]]

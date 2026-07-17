@@ -1,0 +1,364 @@
+{{DISPLAYTITLE:Warfare Technologies (Red)}}
+[[File:AIDA.png|thumb|493x493px]]
+'''Type:''' [[Technology]]
+
+'''See Also:''' [[Biotic Technologies]] | [[Cybernetic Technologies]] | [[Propulsion Technologies]]
+
+== Basic Technology ==
+
+=== Plasma Scoring ===
+''<u>[[Starting Technology|Starting Tech]]</u>: ''[[The Barony of Letnev|Barony of Letnev]], [[The Embers of Muaat|Embers of Muaat]], [[The L1Z1X Mindnet|L1Z1X Mindnet]], [[The Mentak Coalition|Mentak Coalition]], [[The Universities of Jol-Nar|Universities of Jol-Nar]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Plasma Scoring
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* When 1 or more of your units use [[Bombardment]] or [[Space Cannon]], 1 of those units may roll 1 additional die
+|-
+|
+|-
+|
+|-
+|
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+
+
+=== Magen Defense Grid ===
+''[[Starting Technology|<u>Starting Tech</u>:]] ''[[The Arborec]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Magen Defense Grid '''{{Edition|Base Game}}'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* You may exhaust this card at the start of a round of ground combat on a planet that contains 1 or more of your units that have [[Planetary Shield]]; your opponent cannot make combat rolls this combat round.
+|-
+|
+|-
+|
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Magen Defense Grid Ω <big>{{Edition|Codex I}}</big>
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* At the start of ground combat on a planet that contains 1 or more of your structures, you may produce 1 hit and assign it to 1 of your opponent's ground forces.
+|-
+|
+|-
+|
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Magen Defense Grid ΩΩ <big>{{Edition|Codex IV}}</big>
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* When any player activates a system that contains 1 or more of your structures, place 1 infantry from your reinforcements with each of those structures.
+* At the start of ground combat on a planet that contains 1 or more of your structures, produce 1 hit and assign it to 1 of your opponent's ground forces.
+|-
+|
+|-
+|
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+(Ω) indicates omega tech released in the first volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here].
+
+(ΩΩ) indicates omega tech released in the fourth volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/e9/8f/e98f4722-2f45-4328-9119-56508bf1c94b/codex_45_technology_card_updates.pdf here].
+
+=== Duranium Armor ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Duranium Armor
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* During each combat round, after you assign hits to your units, repair 1 of your damaged units that did not use [[Sustain Damage]] during this combat round.
+|-
+|
+|-
+| {{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+
+
+=== Assault Cannon ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Assault Cannon
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* At the start of a space combat in a system that contains 3 or more of your non-fighter ships, your opponent must destroy 1 of their non-fighter ships
+|-
+| {{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+
+==[[Faction Technologies|Faction Technology]]==
+
+=== [[The Barony of Letnev]] ===
+
+==== Non-Euclidean Shielding ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Non-Euclidean Shielding
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* When 1 of your units uses [[Sustain Damage]], cancel 2 hits instead of 1.
+|-
+|
+|-
+| {{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+
+=== [[The Embers of Muaat]] ===
+
+==== Magmus Reactor ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Magmus Reactor '''{{Edition|Base Game}}'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* Your ships can move into supernovas.
+* After 1 or more of your units use Production in a system that either contains a war sun or is adjacent to a supernova, gain 1 trade good.
+|-
+|
+|-
+|{{Tech|warfare}}
+|-
+|{{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Magmus Reactor Ω <big>{{Edition|Codex I}}</big>
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* Your ships can move into supernovas.
+* Each supernova that contains 1 or more of your units gains the PRODUCTION 5 ability as if it were 1 of your units.
+|-
+|
+|-
+|{{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+(Ω) indicates omega tech released in the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here]
+
+=== [[The Ghosts of Creuss]] ===
+
+==== Dimensional Splicer ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Dimensional Splicer
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* At the start of space combat in a system that contains a wormhole and 1 or more of your ships, you may produce 1 hit and assign it to 1 of your opponent's ships.
+|-
+|
+|-
+|
+|-
+| {{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}
+
+
+===[[Sardakk N'orr]]===
+
+==== Valkyrie Particle Weave ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Valkyrie Particle Weave
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* After making combat rolls during a round of ground combat, if your opponent produced 1 or more hits, you produce 1 additional hit.
+|-
+|
+|-
+|{{Tech|warfare}}
+|-
+|{{Tech|warfare}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}<br />
+
+==Technology introduced in [[Prophecy of Kings]] ==
+
+===AI Development Algorithm ===
+''[[Starting Technology|<u>Starting Tech</u>:]]'' [[The Naaz-Rokha Alliance]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+AI Development Algorithm {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* When you research a [[Unit Upgrades|unit upgrade technology]], you may exhaust this card to ignore any 1 prerequisite
+*When 1 or more of your units use [[Production]], you may exhaust this card  to reduce the combined cost of the produced units by the number of unit upgrade technologies that you own
+|-
+|
+|-
+|
+|-
+|
+|
+| style="width: 10%; text-align: right;" | {{Tech|warfare|w=32px}}
+|}<br />
+
+=== Self Assembly Routines  ===
+''[[Starting Technology|<u>Starting Tech</u>:]]'' [[The Vuil'Raith Cabal]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Self Assembly Routines {{Edition|Prophecy of Kings}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* After 1 or more of your units use PRODUCTION, you may exhaust this card to place 1 [[Mechs|mech]] from your reinforcements on a planet you control in that system
+* After 1 of your mechs is destroyed, gain 1 [[Trade Goods & Commodities|trade good]]
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare|w=32px}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}
+
+
+===[[The Naaz-Rokha Alliance]]  ===
+
+==== Supercharge ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Supercharge {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* At the start of a combat round, you may exhaust this card to apply +1 to the result of each of your unit's combat rolls during this combat round
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare|w=32px}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}
+
+
+===[[The Vuil'Raith Cabal]]===
+
+==== Vortex ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Vortex {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* ACTION: Exhaust this card to choose another player's non-structure [[Units|unit]] in a system that is adjacent to 1 or more of your [[Space Dock|space docks]]. Capture 1 unit of that type from that player's [[reinforcements]]
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare|w=32px}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}
+
+==Technology introduced in [[Thunder's Edge]] ==
+
+===[[Last Bastion]]===
+
+==== Proxima Targeting VI ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Proxima Targeting VI {{Edition|Thunder's Edge}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* Cancel 1 hit produced by [[Bombardment]] rolls made against your ground forces for each galvanized unit present. 
+* At the start of a round of combat, you may resolve [[Bombardment|BOMBARDMENT]] 8x3 against your opponents ground forces; if you do, make an identical roll against your ground forces.
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare|w=32px}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}
+
+===[[The Ral Nel Consortium]]===
+
+==== Nanomachines ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Nanomachines {{Edition|Thunder's Edge}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* ACTION: Exhaust this card to place 1 [[PDS]] on a planet you control.
+* ACTION: Exhaust this card to repair all of your [[Sustain Damage|damaged]] units.
+* ACTION: Exhaust this card and discard 1 action card to draw 1 [[Action Cards|action card]].
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare|w=32px}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|warfare|w=32px}}
+|}
+
+== [[FAQ]] ==
+'''Q: '''Does each [[Units|unit]] participating in [[Bombardment]] or [[Space Cannon]] roll an additional die for the Plasma Scoring technology?
+
+'''A: '''No. “Plasma Scoring” only grants one additional die for each “Bombardment” or “Space Cannon” roll, and the unit benefiting from this technology must be decided before rolling.
+
+
+'''Q''': If a player has multiple planets with [[PDS]] that are being invaded in a single system, does the “Plasma Scoring” technology add one die to each planet’s [[Space Cannon|space cannon]] roll or for only one planet’s space cannon roll?
+
+'''A''': The “Plasma Scoring” technology adds one die for each planet’s “Space Cannon” roll.
+
+{{Technologies}}

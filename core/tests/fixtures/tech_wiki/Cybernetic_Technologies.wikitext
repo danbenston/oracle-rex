@@ -1,0 +1,464 @@
+{{DISPLAYTITLE:Cybernetic Technologies (Yellow)}}
+[[File:PredictiveIntelligence.png|thumb|482x482px]]
+'''Type:''' [[Technology]]
+
+
+'''See Also:''' [[Biotic Technologies]] | [[Propulsion Technologies]] | [[Warfare Technologies]]
+
+== Basic Technology ==
+
+=== Sarween Tools ===
+''<u>[[Starting Technology|Starting Tech]]</u>:'' [[The Emirates of Hacan]], [[The Mentak Coalition]], [[The Naalu Collective]], [[The Universities of Jol-Nar]], [[The Yin Brotherhood]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Sarween Tools
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* When 1 or more of your units use [[Production]], reduce the combined cost of the produced units by 1
+|-
+| 
+|-
+| 
+|-
+| 
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== Graviton Laser System ===
+''<u>[[Starting Technology|Starting Tech]]</u>: ''[[The Xxcha Kingdom]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Graviton Laser System
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* You may exhaust this card before 1 or more of your units uses [[Space Cannon]]; hits produced by those units must be assigned to non-fighter ships if able
+|-
+| 
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== Transit Diodes ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Transit Diodes
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* You may exhaust this card at the start of your turn during the action phase; remove up to 4 of your ground forces from the game board and place them on 1 or more planets you control.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== Integrated Economy ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Integrated Economy
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you gain control of a planet, you may produce any number of units on that planet that have a combined cost equal to or less than that planet’s resource value.
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+==[[Faction Technologies|Faction Technology]]==
+
+=== [[The Barony of Letnev]] ===
+
+==== L4 Disruptors ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+L4 Disruptors
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* During an invasion, units cannot use [[Space Cannon]] against your units.
+|-
+| 
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The Emirates of Hacan]] ===
+
+==== Quantum Datahub Node ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Quantum Datahub Node
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the end of the [[Strategy Phase|strategy phase]], you may spend 1 token from your strategy pool and give another player 3 of your [[Trade Goods & Commodities|trade goods]].  If you do, give 1 of your [[Strategy Cards|strategy cards]] to that player and take 1 of their strategy cards.
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The L1Z1X Mindnet]] ===
+
+==== Inheritance Systems ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Inheritance Systems
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* You may exhaust this card and spend 2 resources when you research a technology; ignore all of that technology's prerequisites.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The Mentak Coalition]] ===
+
+==== Salvage Operations ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Salvage Operations
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you win or lose a space combat, gain 1 trade good; if you won the combat, you may also produce 1 ship in that system of any ship type that was destroyed during the combat.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+==== Mirror Computing ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Mirror Computing
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* When you spend trade goods, each trade good is worth 2 resources or influence instead of 1.
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The Universities of Jol-Nar]] ===
+
+==== E-Res Siphons ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+E-Res Siphons
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After another player activates a system that contains 1 or more of your ships, gain 4 trade goods.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The Winnu]] ===
+
+==== Hegemonic Trade Policy ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Hegemonic Trade Policy
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* Exhaust this card when 1 or more of your units use PRODUCTION; swap the resource and influence values of 1 planet you control until the end of your turn.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The Xxcha Kingdom]] ===
+
+==== Nullification Field ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Nullification Field
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After another player activates a system that contains 1 or more of your ships, you may exhaust this card and spend 1 token from your strategy pool; immediately end that player's turn.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+=== [[The Yin Brotherhood]] ===
+
+==== Impulse Core ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Impulse Core
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the start of a space combat, you may destroy 1 of your cruisers or destroyers in the active system to produce 1 hit against your opponent's ships; that hit must be assigned by your opponent to 1 of their non-fighters ships if able.
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}
+
+
+== Technology introduced in [[Prophecy of Kings]]  ==
+
+=== Scanlink Drone Network  ===
+''<u>[[Starting Technology|Starting Tech]]</u>: ''[[The Titans of Ul]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Scanlink Drone Network {{Edition|Prophecy of Kings}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* When you activate a system, you may explore 1 planet in that system which contains 1 or more of your units
+|-
+| 
+|-
+| 
+|-
+| 
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}<nowiki/><br />
+
+=== Predictive Intelligence  ===
+''<u>[[Starting Technology|Starting Tech]]</u>: ''[[The Mahact Gene Sorcerers|The Mahact Gene-Sorcerers]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Predictive Intelligence {{Edition|Prophecy of Kings}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the end of your turn, you may exhaust this card to redistribute your command tokens
+* When you cast votes during the agenda phase, you may cast 3 additional votes; if you do, and the outcome you voted for is not resolved, exhaust this card 
+|-
+| 
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|cybernetic|w=32px}}
+|}<br />
+
+=== [[The Nomad]]  ===
+
+==== Temporal Command Suite ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Temporal Command Suite {{Edition|Prophecy of Kings}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After any player's agent becomes exhausted, you may exhaust this card to ready that agent; if you ready another player's agent, you may perform a transaction with that player
+|-
+| 
+|-
+| 
+|-
+| {{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}
+
+
+===[[The Argent Flight]]  ===
+
+==== Aerie Hololattice ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Aerie Hololattice {{Edition|Prophecy of Kings}}  
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* Other players cannot move ships through systems that contain your structures
+* Each planet that contains 1 or more of your structures gains the [[Production|PRODUCTION]] 1 ability as if it were a unit
+|-
+| 
+|-
+| 
+|-
+|{{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}
+
+
+== Technology introduced in [[Codex#Volume III (Vigil)|The Codex Volume III: Vigil]] ==
+
+=== [[The Council Keleres]] ===
+
+==== I.I.H.Q Modernization ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+I.I.H.Q Modernization {{Edition|Codex III}}   
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* You are [[neighbors]] with all players that have units or control planets in or adjacent to the Mecatol Rex system.
+* Gain the [[Planets and Systems#The Codex|Custodia Vigilia]] planet card and its legendary planet ability card. You cannot lose these cards, and this card cannot have an X or Y assimilator token placed on it.
+|-
+| 
+|-
+| 
+|-
+|{{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}<br />
+
+==== Agency Supply Network ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Agency Supply Network {{Edition|Codex III}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* Whenever you resolve one of your [[Production|PRODUCTION]] abilities, you may resolve an additional one of your PRODUCTION abilities in any system; the additional use does not trigger this ability.
+|-
+| 
+|-
+|{{Tech|cybernetic}}
+|-
+|{{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}
+
+== Technology introduced in [[Thunder's Edge]]  ==
+
+=== [[The Crimson Rebellion]] ===
+
+==== Subatomic Splicer ====
+{| class="article-table" style="width: 500px;"
+! colspan="4" style="text-align:center;" |
+Subatomic Splicer {{Edition|Thunder's Edge}}  
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* When one of your ships is destroyed, you may [[Production|produce]] a ship of the same type at a [[Space Dock|space dock]] in your [[Home Systems|home system]].
+|-
+| 
+|-
+| 
+|-
+|{{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}
+
+=== [[The Firmament / The Obsidian]] ===
+
+==== Planet Splitter ====
+{| class="article-table" style="width: 500px;"
+! colspan="4" style="text-align:center;" |
+Planet Splitter (Firmament) {{Edition|Thunder's Edge}}  
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* When you gain this card put [[Thunder's Edge#The Fracture|The Fracture]] into play. 
+* Flip this card if The Obsidian faction is in play.
+|-
+| 
+|-
+|{{Tech|cybernetic}}
+|-
+|{{Tech|cybernetic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}
+
+{| class="article-table" style="width: 500px;"
+! colspan="4" style="text-align:center;" |
+Planet Splitter (Obsidian) {{Edition|Thunder's Edge}}  
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* At the start of your strategic action, you may move an ingress token into a system that contains or is adjacent to your units. 
+* This technology cannot be researched.
+|-
+| 
+|-
+|
+|-
+|
+|
+| style="width: 10%; text-align: right;" |{{Tech|cybernetic|w=32px}}
+|}
+
+{{Technologies}}

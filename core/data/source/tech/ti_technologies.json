@@ -1,0 +1,2712 @@
+{
+  "provenance": {
+    "source": "Twilight Imperium 4E technology cards, transcribed via the TI4 Fandom wiki",
+    "source_url": "https://twilight-imperium.fandom.com/wiki/Technology",
+    "retrieved": "2026-07-16",
+    "pages": [
+      "Biotic Technologies",
+      "Cybernetic Technologies",
+      "Discordant Stars Faction Specific Units (UNOFFICIAL)",
+      "Discordant Stars Faction Technologies (UNOFFICIAL)",
+      "Discordant Stars Starting Technology (UNOFFICIAL)",
+      "Exhaustible Technologies",
+      "Faction Technologies",
+      "Propulsion Technologies",
+      "Starting Technology",
+      "Unit Upgrade Technologies",
+      "Warfare Technologies"
+    ],
+    "excluded_editions": [
+      "Thunder's Edge"
+    ],
+    "wiki_license": "Fandom content is CC-BY-SA 3.0; attribution retained here.",
+    "ip_note": "Mechanical card text is Fantasy Flight Games / Asmodee IP, vendored for a free fan tool (RAG grounding / citations), same basis as the LRR corpus.",
+    "unofficial_note": "Discordant Stars is a fan-made expansion, not FFG-published; its entries carry set='discordant_stars'."
+  },
+  "technologies": [
+    {
+      "id": "applied_biothermics",
+      "name": "Applied Biothermics",
+      "base_name": "Applied Biothermics",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Monks of Kolume",
+      "exhaustible": false,
+      "text": "When you pass, you may gain 1 commodity for each other player who has passed. ACTION: Exhaust this card.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "bio_stims",
+      "name": "Bio-Stims",
+      "base_name": "Bio-Stims",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": true,
+      "text": "You may exhaust this card at the end of your turn to ready 1 of your planets that has a technology specialty or 1 of your other technologies",
+      "starting_for": [
+        "The Zealots of Rhodun"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "bioplasmosis",
+      "name": "Bioplasmosis",
+      "base_name": "Bioplasmosis",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Arborec",
+      "exhaustible": false,
+      "text": "At the end of the status phase, you may remove any number of infantry from planets you control and place them on 1 or more planets you control in the same or adjacent systems",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "blackmail_programs",
+      "name": "Blackmail Programs",
+      "base_name": "Blackmail Programs",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Florzen Profiteers",
+      "exhaustible": false,
+      "text": "When a player would perform a strategic action, you may exhaust this card and spend 1 token from your strategy pool to end that player's turn; the strategic action is not resolved and the strategy card is not exhausted.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "broker_network",
+      "name": "Broker Network",
+      "base_name": "Broker Network",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Bentor Conglomerate",
+      "exhaustible": false,
+      "text": "Each planet you control that has a technology specialty or an attachment gains the PRODUCTION 1 ability as if it were a unit.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "dacxive_animators",
+      "name": "Dacxive Animators",
+      "base_name": "Dacxive Animators",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "After you win a ground combat, you may place 1 infantry from your reinforcements on that planet",
+      "starting_for": [
+        "The Nekro Virus"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "envoy_network",
+      "name": "Envoy Network",
+      "base_name": "Envoy Network",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Free Systems Compact",
+      "exhaustible": false,
+      "text": "At the start of the agenda phase, you may choose and exhaust 1 cultural, 1 hazardous, and 1 industrial planet. When you cast 1 or more votes, if you exhaust at least 1 cultural, 1 hazardous, and 1 industrial planet to cast votes, you may cast 4 additional votes.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "hyper_metabolism",
+      "name": "Hyper Metabolism",
+      "base_name": "Hyper Metabolism",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "During the status phase, gain 3 command tokens instead of 2",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "indoctrination_team",
+      "name": "Indoctrination Team",
+      "base_name": "Indoctrination Team",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Kyro Sodality",
+      "exhaustible": false,
+      "text": "During the agenda phase, after an outcome you voted for is resolved, place 2 infantry from your reinforcements on a planet you control.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "instinct_training",
+      "name": "Instinct Training",
+      "base_name": "Instinct Training",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Xxcha Kingdom",
+      "exhaustible": true,
+      "text": "You may exhaust this card and spend 1 token from your strategy pool when another player plays an action card; cancel that action card",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "mageon_implants",
+      "name": "Mageon Implants",
+      "base_name": "Mageon Implants",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Yssaril Tribes",
+      "exhaustible": true,
+      "text": "ACTION: Exhaust this card to look at another player's hand of action cards. Choose 1 of those cards and add it to your hand",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "networked_command",
+      "name": "Networked Command",
+      "base_name": "Networked Command",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Ghoti Wayfarers",
+      "exhaustible": false,
+      "text": "Up to 3 ships in your home system do not count against your fleet pool. When you cast 1 or more votes, you may exhaust this card to cast an additional number of votes equal to the number of command tokens in your fleet pool.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "neural_motivator",
+      "name": "Neural Motivator",
+      "base_name": "Neural Motivator",
+      "color": "biotic",
+      "prerequisites": [],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "During the status phase, draw 2 action cards instead of 1.",
+      "starting_for": [
+        "The Federation of Sol",
+        "The L1Z1X Mindnet",
+        "The Naalu Collective",
+        "The Universities of Jol-Nar",
+        "The Yssaril Tribes",
+        "The Savages of Cymiae",
+        "The Florzen Profiteers",
+        "The Vaylerian Scourge"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "neuroglaive",
+      "name": "Neuroglaive",
+      "base_name": "Neuroglaive",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Naalu Collective",
+      "exhaustible": false,
+      "text": "After another player activates a system that contains 1 or more of your ships, that player removes 1 token from their fleet pool and returns it to their reinforcements",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "pre_fab_arcologies",
+      "name": "Pre-Fab Arcologies",
+      "base_name": "Pre-Fab Arcologies",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "pok",
+      "faction": "The Naaz-Rokha Alliance",
+      "exhaustible": false,
+      "text": "After you explore a planet, ready that planet",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "production_biomes",
+      "name": "Production Biomes",
+      "base_name": "Production Biomes",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Emirates of Hacan",
+      "exhaustible": true,
+      "text": "ACTION: Exhaust this card and spend 1 token from your strategy pool to gain 4 trade goods and choose 1 other player; that player gains 2 trade goods",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "psychoactive_armaments",
+      "name": "Psychoactive Armaments",
+      "base_name": "Psychoactive Armaments",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Myko-Mentori",
+      "exhaustible": false,
+      "text": "After your opponent makes a combat roll, you may exhaust this card. If you do, for each of their units that did not produce a hit, you may reroll that unit's combat roll; any hits that roll produces are produced against your opponent's units instead.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "psychoarchaeology",
+      "name": "Psychoarchaeology",
+      "base_name": "Psychoarchaeology",
+      "color": "biotic",
+      "prerequisites": [],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": false,
+      "text": "You can use technology specialties on planets you control without exhausting them, even if those planets are exhausted During the Action Phase, you can exhaust planets you control that have technology specialties to gain 1 Trade Good",
+      "starting_for": [
+        "The Naaz-Rokha Alliance",
+        "The Free Systems Compact",
+        "The Ghemina Raiders",
+        "The Kortali Tribunal",
+        "The Li-Zho Dynasty",
+        "The Olradin League",
+        "Roh'Dhna Mechatronics"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "psychographics",
+      "name": "Psychographics",
+      "base_name": "Psychographics",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Augurs of Ilyxum",
+      "exhaustible": false,
+      "text": "During the status phase, you may score 1 additional public objective instead of a secret objective.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "stone_s_embrace",
+      "name": "Stone's Embrace",
+      "base_name": "Stone's Embrace",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The L'tokk Khrask",
+      "exhaustible": false,
+      "text": "When you would spend a token from your strategy pool, you may exhaust 1 planet you control to spend 1 token from your reinforcements instead.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "tempest_drive",
+      "name": "Tempest Drive",
+      "base_name": "Tempest Drive",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Kortali Tribunal",
+      "exhaustible": false,
+      "text": "After you win a combat in a system, you may exhaust this card to remove 1 command token from that system.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "transparasteel_plating",
+      "name": "Transparasteel Plating",
+      "base_name": "Transparasteel Plating",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Yssaril Tribes",
+      "exhaustible": false,
+      "text": "During your turn of the action phase, players that have passed cannot play action cards",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "unity_algorithm",
+      "name": "Unity Algorithm",
+      "base_name": "Unity Algorithm",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Edyn Mandate",
+      "exhaustible": false,
+      "text": "Once per agenda phase, after an agenda is revealed, you may predict aloud an outcome of that agenda. If your prediction is correct, you may score 1 public objective if you fulfill its requirements; each other player who voted for that outcome draws 1 secret objective.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "voidwatch",
+      "name": "Voidwatch",
+      "base_name": "Voidwatch",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "pok",
+      "faction": "The Empyrean",
+      "exhaustible": false,
+      "text": "After a player moves ships into a system that contains 1 or more of your units, they must give you 1 promissory note from their hand, if able",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "war_song_implants",
+      "name": "War Song Implants",
+      "base_name": "War Song Implants",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Ghemina Raiders",
+      "exhaustible": false,
+      "text": "After you win a space combat, you may ready 1 planet you control.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "x_89_bacterial_weapon",
+      "name": "X-89 Bacterial Weapon",
+      "base_name": "X-89 Bacterial Weapon",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": true,
+      "text": "ACTION: Exhaust this card and choose 1 planet in a system that contains 1 or more of your ships that have BOMBARDMENT; destroy all infantry on that planet",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "x_89_bacterial_weapon_omega",
+      "name": "X-89 Bacterial Weapon Ω",
+      "base_name": "X-89 Bacterial Weapon",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "codex_i",
+      "faction": null,
+      "exhaustible": false,
+      "text": "After 1 or more of your units use BOMBARDMENT against a planet, if at least 1 of your opponent's infantry was destroyed, you may destroy all of your opponent's infantry on that planet.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "x_89_bacterial_weapon_omega_omega",
+      "name": "X-89 Bacterial Weapon ΩΩ",
+      "base_name": "X-89 Bacterial Weapon",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic",
+        "biotic"
+      ],
+      "set": "codex_iv",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Double the hits produced by your units' BOMBARDMENT and ground combat rolls. Exhaust each planet you use BOMBARDMENT against.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "yin_spinner",
+      "name": "Yin Spinner",
+      "base_name": "Yin Spinner",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Yin Brotherhood",
+      "exhaustible": false,
+      "text": "After 1 or more of your units use PRODUCTION, place 1 infantry from your reinforcements on a planet you control in that system",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "yin_spinner_omega",
+      "name": "Yin Spinner Ω",
+      "base_name": "Yin Spinner",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Yin Brotherhood",
+      "exhaustible": false,
+      "text": "Ω: After you produce units, place up to 2 infantry from your reinforcements on any planet you control or in any space area that contains 1 or more of your ships",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "zhrgar_stimulants",
+      "name": "Zhrgar Stimulants",
+      "base_name": "Zhrgar Stimulants",
+      "color": "biotic",
+      "prerequisites": [
+        "biotic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Berserkers of Kjalengard",
+      "exhaustible": false,
+      "text": "Once per action, after a player produces 1 or more hits during a round of combat in a system that contains a Glory token, gain 1 trade good. After a player rolls combat dice, you may exhaust this card to allow that player to reroll any number of those dice.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "aerie_hololattice",
+      "name": "Aerie Hololattice",
+      "base_name": "Aerie Hololattice",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "pok",
+      "faction": "The Argent Flight",
+      "exhaustible": false,
+      "text": "Other players cannot move ships through systems that contain your structures. Each planet that contains 1 or more of your structures gains the PRODUCTION 1 ability as if it were a unit",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "agency_supply_network",
+      "name": "Agency Supply Network",
+      "base_name": "Agency Supply Network",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "keleres",
+      "faction": "The Council Keleres",
+      "exhaustible": false,
+      "text": "Whenever you resolve one of your PRODUCTION abilities, you may resolve an additional one of your PRODUCTION abilities in any system; the additional use does not trigger this ability.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "contractual_obligations",
+      "name": "Contractual Obligations",
+      "base_name": "Contractual Obligations",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "Roh'Dhna Mechatronics",
+      "exhaustible": false,
+      "text": "At the start of the agenda phase, for each unit upgrade technology you control, you may choose 1 player. Each of those players must produce 1 ship in a system that contains 1 or more of their space docks or war suns.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "covert_strike_teams",
+      "name": "Covert Strike Teams",
+      "base_name": "Covert Strike Teams",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Free Systems Compact",
+      "exhaustible": false,
+      "text": "At the start of a ground combat, you may roll 1 die for each of up to 2 of your ground forces on that planet. For each result equal to or greater than that unit's combat value, produce 1 hit; your opponent must assign it to 1 of their units on that planet.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "daedalon_flight_system",
+      "name": "Daedalon Flight System",
+      "base_name": "Daedalon Flight System",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Tnelis Syndicate",
+      "exhaustible": false,
+      "text": "After a round of space combat in a system that contains 1 or more of your mechs, you may have 1 of those units become damaged to produce 1 hit and assign it to a cruiser, dreadnought, or destroyer you do not control in that system.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "e_res_siphons",
+      "name": "E-Res Siphons",
+      "base_name": "E-Res Siphons",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Universities of Jol-Nar",
+      "exhaustible": false,
+      "text": "After another player activates a system that contains 1 or more of your ships, gain 4 trade goods",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "emergency_deployment",
+      "name": "Emergency Deployment",
+      "base_name": "Emergency Deployment",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Shipwrights of Axis",
+      "exhaustible": false,
+      "text": "ACTION: Exhaust this card to place or move 1 of your space docks onto a planet you control.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "encrypted_trade_hub",
+      "name": "Encrypted Trade Hub",
+      "base_name": "Encrypted Trade Hub",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Edyn Mandate",
+      "exhaustible": false,
+      "text": "You may exhaust this card to allow a player to exchange 1 of their relics or agendas as part of a transaction. You always vote last during the agenda phase. When an outcome you voted for or predicted is resolved, each player who voted for that outcome gains 1 commodity.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "fabrication_grid",
+      "name": "Fabrication Grid",
+      "base_name": "Fabrication Grid",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Glimmer of Mortheus",
+      "exhaustible": false,
+      "text": "Each system that contains 1 or more of your ships and no planets gains PRODUCTION 2 as if it were a unit you control.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "graviton_laser_system",
+      "name": "Graviton Laser System",
+      "base_name": "Graviton Laser System",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": true,
+      "text": "You may exhaust this card before 1 or more of your units uses Space Cannon; hits produced by those units must be assigned to non-fighter ships if able",
+      "starting_for": [
+        "The Xxcha Kingdom"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "hegemonic_trade_policy",
+      "name": "Hegemonic Trade Policy",
+      "base_name": "Hegemonic Trade Policy",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Winnu",
+      "exhaustible": true,
+      "text": "Exhaust this card when 1 or more of your units use PRODUCTION; swap the resource and influence values of 1 planet you control during that use of Production",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "i_i_h_q_modernization",
+      "name": "I.I.H.Q. Modernization",
+      "base_name": "I.I.H.Q. Modernization",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "keleres",
+      "faction": "The Council Keleres",
+      "exhaustible": false,
+      "text": "(Moved to Breakthrough in Thunder's Edge Expansion) You are neighbors with all players that have units or control planets in or adjacent to the Mecatol Rex system. Gain the Custodia Vigilia planet card and its legendary planet ability card. You cannot lose these cards, and this card cannot have an X or Y assimilator token placed on it.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "impressment_programs",
+      "name": "Impressment Programs",
+      "base_name": "Impressment Programs",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Dih-Mohn Flotilla",
+      "exhaustible": false,
+      "text": "When you explore a planet, you may produce 1 ship in that planet's system. ACTION: Exhaust this card and 1 planet you control to explore that planet.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "impulse_core",
+      "name": "Impulse Core",
+      "base_name": "Impulse Core",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Yin Brotherhood",
+      "exhaustible": false,
+      "text": "At the start of a space combat, you may destroy 1 of your cruisers or destroyers in the active system to produce 1 hit against your opponent's ships; that hit must be assigned by your opponent to 1 of their non-fighters ships if able",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "inheritance_systems",
+      "name": "Inheritance Systems",
+      "base_name": "Inheritance Systems",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The L1Z1X Mindnet",
+      "exhaustible": true,
+      "text": "You may exhaust this card and spend 2 resources when you research a technology; ignore all of that technology's prerequisites",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "integrated_economy",
+      "name": "Integrated Economy",
+      "base_name": "Integrated Economy",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "After you gain control of a planet, you may produce any number of units on that planet that have a combined cost equal to or less than that planet's resource value.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "krovoz_strike_teams",
+      "name": "Krovoz Strike Teams",
+      "base_name": "Krovoz Strike Teams",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Vaden Banking Clans",
+      "exhaustible": false,
+      "text": "After another player's unit uses SUSTAIN DAMAGE to cancel a hit produced by your units or abilities, you may exhaust this card to destroy that unit. After you produce 1 or more hits during a round of combat, you may spend 1 trade good to produce 1 additional hit.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "l4_disruptors",
+      "name": "L4 Disruptors",
+      "base_name": "L4 Disruptors",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Barony of Letnev",
+      "exhaustible": false,
+      "text": "During an invasion, units cannot use SPACE CANNON against your units",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "local_contracts",
+      "name": "Local Contracts",
+      "base_name": "Local Contracts",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Nokar Sellships",
+      "exhaustible": false,
+      "text": "During the action phase: You may exhaust this card to use the PRODUCTION ability of 1 of your units. Then, place 1 command token from your reinforcements in that unit's system.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "merged_replicators",
+      "name": "Merged Replicators",
+      "base_name": "Merged Replicators",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Bentor Conglomerate",
+      "exhaustible": false,
+      "text": "When 1 or more of your units use PRODUCTION, you may exhaust this card to swap 1 of those unit's PRODUCTION with another on the game board, or apply +2 to the total PRODUCTION value of those units.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "mirror_computing",
+      "name": "Mirror Computing",
+      "base_name": "Mirror Computing",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Mentak Coalition",
+      "exhaustible": false,
+      "text": "When you spend trade goods, each trade good is worth 2 resources or influence instead of 1",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "nullification_field",
+      "name": "Nullification Field",
+      "base_name": "Nullification Field",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Xxcha Kingdom",
+      "exhaustible": true,
+      "text": "After another player activates a system that contains 1 or more of your ships, you may exhaust this card and spend 1 token from your strategy pool; immediately end that player's turn",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "parallel_production",
+      "name": "Parallel Production",
+      "base_name": "Parallel Production",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Ghoti Wayfarers",
+      "exhaustible": false,
+      "text": "When you produce 1 or more units, you may produce 1 additional unit in each of 2 systems that contain 1 or more of your ships and 1 of your command tokens.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "predictive_intelligence",
+      "name": "Predictive Intelligence",
+      "base_name": "Predictive Intelligence",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": true,
+      "text": "At the end of your turn, you may exhaust this card to redistribute your command tokens When you cast votes during the agenda phase, you may cast 3 additional votes; if you do, and the outcome you voted for is not resolved, exhaust this card",
+      "starting_for": [
+        "The Mahact Gene-Sorcerers",
+        "The Myko-Mentori"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "quantum_datahub_node",
+      "name": "Quantum Datahub Node",
+      "base_name": "Quantum Datahub Node",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Emirates of Hacan",
+      "exhaustible": false,
+      "text": "At the end of the strategy phase, you may spend 1 token from your strategy pool and give another player 3 of your trade goods. If you do, give 1 of your strategy cards to that player and take 1 of their strategy cards",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "recursive_worm",
+      "name": "Recursive Worm",
+      "base_name": "Recursive Worm",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Savages of Cymiae",
+      "exhaustible": false,
+      "text": "At the start of your turn, you may exhaust this card to choose 1 non-home system other than Mecatol Rex that contains 1 or more of your units; place 1 other player's command token from their reinforcements in that system.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "salvage_operations",
+      "name": "Salvage Operations",
+      "base_name": "Salvage Operations",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Mentak Coalition",
+      "exhaustible": false,
+      "text": "After you win or lose a space combat, gain 1 trade good; if you won the combat, you may also produce 1 ship in that system of any ship type that was destroyed during the combat",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "sanctification_field",
+      "name": "Sanctification Field",
+      "base_name": "Sanctification Field",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Zealots of Rhodun",
+      "exhaustible": false,
+      "text": "When you activate a system, or a system that contains 1 or more of your units is activated, you may choose 1 technology or non-fighter, non-structure unit upgrade technology another player controls; until the end of this tactical action, that card is treated as though it had no ability text.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "sarween_tools",
+      "name": "Sarween Tools",
+      "base_name": "Sarween Tools",
+      "color": "cybernetic",
+      "prerequisites": [],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "When 1 or more of your units use Production, reduce the combined cost of the produced units by 1",
+      "starting_for": [
+        "The Emirates of Hacan",
+        "The Mentak Coalition",
+        "The Naalu Collective",
+        "The Universities of Jol-Nar",
+        "The Yin Brotherhood",
+        "The Shipwrights of Axis",
+        "The Glimmer of Mortheus",
+        "Roh'Dhna Mechatronics"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "scanlink_drone_network",
+      "name": "Scanlink Drone Network",
+      "base_name": "Scanlink Drone Network",
+      "color": "cybernetic",
+      "prerequisites": [],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": false,
+      "text": "When you activate a system, you may explore 1 planet in that system which contains 1 or more of your units",
+      "starting_for": [
+        "The Titans of Ul",
+        "The Dih-Mohn Flotilla",
+        "The Florzen Profiteers",
+        "The Augurs of Ilyxum",
+        "The Kollecc Society",
+        "The L'tokk Khrask",
+        "The Olradin League"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "seeker_drones",
+      "name": "Seeker Drones",
+      "base_name": "Seeker Drones",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Kollecc Society",
+      "exhaustible": false,
+      "text": "ACTION: Exhaust this card to choose 1 of your neighbors that has 1 or more relic fragments. That player gains 2 trade goods and must give you 1 of those relic fragments of your choice",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "sentient_datapool",
+      "name": "Sentient Datapool",
+      "base_name": "Sentient Datapool",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Augurs of Ilyxum",
+      "exhaustible": false,
+      "text": "At the start of the status phase, you may spend 3 trade goods to research 1 technology.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "temporal_command_suite",
+      "name": "Temporal Command Suite",
+      "base_name": "Temporal Command Suite",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "pok",
+      "faction": "The Nomad",
+      "exhaustible": true,
+      "text": "After any player's agent becomes exhausted, you may exhaust this card to ready that agent; if you ready another player's agent you may perform a transaction with that player",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "transit_diodes",
+      "name": "Transit Diodes",
+      "base_name": "Transit Diodes",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": true,
+      "text": "You may exhaust this card at the start of your turn during the action phase; remove up to 4 of your ground forces from the game board and place them on 1 or more planets you control.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "vector_program",
+      "name": "Vector Program",
+      "base_name": "Vector Program",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Kyro Sodality",
+      "exhaustible": false,
+      "text": "At the start of the strategy phase, you may place any number of your trade goods on any combination of strategy cards. Then, place 2 trade goods from the supply on 1 strategy card",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "voidwake_missiles",
+      "name": "Voidwake Missiles",
+      "base_name": "Voidwake Missiles",
+      "color": "cybernetic",
+      "prerequisites": [
+        "cybernetic"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Nivyn Star Kings",
+      "exhaustible": false,
+      "text": "After 1 or more of your units with SUSTAIN DAMAGE makes a combat roll, you may choose 1 of those units to become damaged to reroll its combat roll.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "aetherstream",
+      "name": "Aetherstream",
+      "base_name": "Aetherstream",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "pok",
+      "faction": "The Empyrean",
+      "exhaustible": false,
+      "text": "After you or one of your neighbors activates a system that is adjacent to an anomaly, you may apply +1 to the move value of all of that player's ships during this tactical action",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "antimass_deflectors",
+      "name": "Antimass Deflectors",
+      "base_name": "Antimass Deflectors",
+      "color": "propulsion",
+      "prerequisites": [],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Your ships can move into and through asteroid fields When other players' units use SPACE CANNON against your units, apply -1 to the result of each die roll",
+      "starting_for": [
+        "The Barony of Letnev",
+        "The Clan of Saar",
+        "The Emirates of Hacan",
+        "The Federation of Sol",
+        "The Universities of Jol-Nar",
+        "The Titans of Ul",
+        "The Li-Zho Dynasty",
+        "The Zelian Purifier"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "chaos_mapping",
+      "name": "Chaos Mapping",
+      "base_name": "Chaos Mapping",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Clan of Saar",
+      "exhaustible": false,
+      "text": "Other players cannot activate asteroid fields that contain 1 or more of your ships. At the start of your turn during the action phase, you may produce 1 unit in a system that contains at least 1 of your units that has Production",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "dark_energy_tap",
+      "name": "Dark Energy Tap",
+      "base_name": "Dark Energy Tap",
+      "color": "propulsion",
+      "prerequisites": [],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": false,
+      "text": "After you perform a tactical action in a system that contains a frontier token, if you have 1 or more ships in that system, explore that token Your ships can retreat into adjacent systems that do not contain other players' units, even if you do not have units or control planets in that system.",
+      "starting_for": [
+        "The Empyrean",
+        "The Dih-Mohn Flotilla",
+        "The Ghemina Raiders",
+        "The Glimmer of Mortheus",
+        "The Nivyn Star Kings",
+        "The Vaylerian Scourge",
+        "The Veldyr Sovereignty"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "fleet_logistics",
+      "name": "Fleet Logistics",
+      "base_name": "Fleet Logistics",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "During each of your turns of the action phase, you may perform 2 actions instead of 1",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "geosympathic_impeller",
+      "name": "Geosympathic Impeller",
+      "base_name": "Geosympathic Impeller",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Olradin League",
+      "exhaustible": false,
+      "text": "After you activate a system, you may exhaust a planet you control of the same type as a planet in that system to apply +1 to the move value of each of your ships during this tactical action.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "gravity_drive",
+      "name": "Gravity Drive",
+      "base_name": "Gravity Drive",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "After you activate a system, apply +1 to the move value of 1 of your ships during this tactical action",
+      "starting_for": [
+        "The Ghosts of Creuss"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "lazax_gate_folding",
+      "name": "Lazax Gate Folding",
+      "base_name": "Lazax Gate Folding",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Winnu",
+      "exhaustible": true,
+      "text": "During your tactical actions, if you do not control Mecatol Rex, treat its system as if it contains both an alpha and beta wormhole. ACTION: If you control Mecatol Rex, exhaust this card to place 1 infantry from your reinforcements on Mecatol Rex",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "light_wave_deflector",
+      "name": "Light/Wave Deflector",
+      "base_name": "Light/Wave Deflector",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Your ships can move through systems that contain other players' ships",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "lightning_drives",
+      "name": "Lightning Drives",
+      "base_name": "Lightning Drives",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The GLEdge Union",
+      "exhaustible": false,
+      "text": "During movement, you may increase the move value of each of your non-fighter ships not transporting fighters or infantry by 1.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "midas_turbine",
+      "name": "Midas Turbine",
+      "base_name": "Midas Turbine",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Vaden Banking Clans",
+      "exhaustible": false,
+      "text": "After you activate a system, you may exhaust this card and spend any number of trade goods; for each trade good you spent, apply +1 to the move value of 1 non-fighter ship you control.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "pilgrimage_beacons",
+      "name": "Pilgrimage Beacons",
+      "base_name": "Pilgrimage Beacons",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Zealots of Rhodun",
+      "exhaustible": false,
+      "text": "Once during your turn, when you exhaust 1 or more planets you control that have a technology specialty, you may produce 1 ship in 1 system that contains 1 of those planets.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "rift_engines",
+      "name": "Rift Engines",
+      "base_name": "Rift Engines",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Shipwrights of Axis",
+      "exhaustible": false,
+      "text": "After you activate a system, you may exhaust this card to choose 1 ship you control and roll a die. On a result of 1-3, remove that ship from the game board; on a result of 4-10, apply +2 to that ship's move value during this tactical action.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "shrouded_skirmishers",
+      "name": "Shrouded Skirmishers",
+      "base_name": "Shrouded Skirmishers",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Kollecc Society",
+      "exhaustible": false,
+      "text": "At the start of a space combat, you may choose 1 of your ships in the active system that did not begin this action in that system; roll a die. On a result equal to or greater than that ship's combat value, produce 1 hit; your opponent must assign it to 1 of their ships.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "sling_relay",
+      "name": "Sling Relay",
+      "base_name": "Sling Relay",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion"
+      ],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": true,
+      "text": "ACTION: Exhaust this card to produce 1 ship in any system that contains 1 of your space docks",
+      "starting_for": [
+        "The Nomad"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "spacial_conduit_cylinder",
+      "name": "Spacial Conduit Cylinder",
+      "base_name": "Spacial Conduit Cylinder",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Universities of Jol-Nar",
+      "exhaustible": true,
+      "text": "You may exhaust this card after you activate a system that contains 1 or more of your units; that system is adjacent to all other systems that contain 1 or more of your units during this activation",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "spark_thrusters",
+      "name": "Spark Thrusters",
+      "base_name": "Spark Thrusters",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Lanefir Remnants",
+      "exhaustible": false,
+      "text": "ACTION: Spend 1 command token from your strategy pool or purge 1 relic fragment to move 1 of your ships to an adjacent system that contains no other player's ships. If you spent a command token, exhaust this card.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "wormhole_generator",
+      "name": "Wormhole Generator",
+      "base_name": "Wormhole Generator",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Ghosts of Creuss",
+      "exhaustible": false,
+      "text": "At the start of the status phase, place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "wormhole_generator_omega",
+      "name": "Wormhole Generator Ω",
+      "base_name": "Wormhole Generator",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Ghosts of Creuss",
+      "exhaustible": true,
+      "text": "ACTION: Exhaust this card to place or move a Creuss wormhole token into either a system that contains a planet you control or a non-home system that does not contain another player's ships",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "wraith_engine",
+      "name": "Wraith Engine",
+      "base_name": "Wraith Engine",
+      "color": "propulsion",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Li-Zho Dynasty",
+      "exhaustible": false,
+      "text": "After you activate a non-home system, you may exhaust this card to choose 1 ship you control; you may treat that ship as adjacent to the active system until the end of this tactical action.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "advanced_carrier_ii",
+      "name": "Advanced Carrier II",
+      "base_name": "Advanced Carrier II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Federation of Sol",
+      "exhaustible": false,
+      "text": "Advanced Carrier II is a carrier unit upgrade. Attributes: cost 3, combat 9, move 2, capacity 8. Abilities: Sustain Damage. Sustain Damage.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "carrier",
+        "cost": 3,
+        "combat": 9,
+        "move": 2,
+        "capacity": 8,
+        "abilities": [
+          "sustain damage"
+        ]
+      }
+    },
+    {
+      "id": "aegis_i",
+      "name": "Aegis I",
+      "base_name": "Aegis I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Dih-Mohn Flotilla",
+      "exhaustible": false,
+      "text": "Aegis I is a dreadnought unit upgrade (Discordant Stars). 4.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "dreadnought",
+        "abilities": []
+      }
+    },
+    {
+      "id": "blockade_runner_i",
+      "name": "Blockade Runner I",
+      "base_name": "Blockade Runner I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Tnelis Syndicate",
+      "exhaustible": false,
+      "text": "Blockade Runner I is a destroyer unit upgrade (Discordant Stars). 1.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "destroyer",
+        "abilities": []
+      }
+    },
+    {
+      "id": "carrier_ii",
+      "name": "Carrier II",
+      "base_name": "Carrier II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "propulsion",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Carrier II is a carrier unit upgrade. Attributes: cost 3, combat 9, move 2, capacity 6.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "carrier",
+        "cost": 3,
+        "combat": 9,
+        "move": 2,
+        "capacity": 6,
+        "abilities": []
+      }
+    },
+    {
+      "id": "chitin_hulk_i",
+      "name": "Chitin Hulk I",
+      "base_name": "Chitin Hulk I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Cheiran Hordes",
+      "exhaustible": false,
+      "text": "Chitin Hulk I is a dreadnought unit upgrade (Discordant Stars). 4.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "dreadnought",
+        "abilities": []
+      }
+    },
+    {
+      "id": "combat_transport_i",
+      "name": "Combat Transport I",
+      "base_name": "Combat Transport I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Ghemina Raiders",
+      "exhaustible": false,
+      "text": "Combat Transport I is a carrier unit upgrade (Discordant Stars). 3.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "carrier",
+        "abilities": []
+      }
+    },
+    {
+      "id": "corsair_i",
+      "name": "Corsair I",
+      "base_name": "Corsair I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Florzen Profiteers",
+      "exhaustible": false,
+      "text": "Corsair I is a fighter unit upgrade (Discordant Stars). 1 (x2).",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "fighter",
+        "abilities": []
+      }
+    },
+    {
+      "id": "crimson_legionnaire_ii",
+      "name": "Crimson Legionnaire II",
+      "base_name": "Crimson Legionnaire II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "pok",
+      "faction": "The Mahact Gene Sorcerers",
+      "exhaustible": false,
+      "text": "Crimson Legionnaire II is a infantry unit upgrade. Attributes: combat 7. After this unit is destroyed, gain 1 commodity or convert 1 of your commodities to a trade good. Then, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "infantry",
+        "combat": 7,
+        "abilities": []
+      }
+    },
+    {
+      "id": "cruiser_ii",
+      "name": "Cruiser II",
+      "base_name": "Cruiser II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "cybernetic",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Cruiser II is a cruiser unit upgrade. Attributes: cost 2, combat 6, move 3, capacity 1.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "cruiser",
+        "cost": 2,
+        "combat": 6,
+        "move": 3,
+        "capacity": 1,
+        "abilities": []
+      }
+    },
+    {
+      "id": "destroyer_ii",
+      "name": "Destroyer II",
+      "base_name": "Destroyer II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Destroyer II is a destroyer unit upgrade. Attributes: cost 1, combat 8, move 2. Abilities: Anti-Fighter Barrage. Anti-Fighter Barrage 6 (x3).",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "destroyer",
+        "cost": 1,
+        "combat": 8,
+        "move": 2,
+        "abilities": [
+          "anti-fighter barrage"
+        ]
+      }
+    },
+    {
+      "id": "dimensional_tear_ii",
+      "name": "Dimensional Tear II",
+      "base_name": "Dimensional Tear II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "pok",
+      "faction": "The Vuil'Raith Cabal",
+      "exhaustible": false,
+      "text": "Dimensional Tear II is a space dock unit upgrade. This system is a gravity rift; your ships do not roll for this gravity rift.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "space_dock",
+        "abilities": []
+      }
+    },
+    {
+      "id": "dreadnought_ii",
+      "name": "Dreadnought II",
+      "base_name": "Dreadnought II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "propulsion",
+        "propulsion",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Dreadnought II is a dreadnought unit upgrade. Attributes: cost 4, combat 5, move 2, capacity 1. This unit cannot be destroyed by \"Direct Hit\" action cards.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "dreadnought",
+        "cost": 4,
+        "combat": 5,
+        "move": 2,
+        "capacity": 1,
+        "abilities": []
+      }
+    },
+    {
+      "id": "exotrireme_ii",
+      "name": "Exotrireme II",
+      "base_name": "Exotrireme II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "propulsion",
+        "propulsion",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "Sardakk N'orr",
+      "exhaustible": false,
+      "text": "Exotrireme II is a dreadnought unit upgrade. Attributes: cost 4, combat 5, move 2, capacity 1. This unit cannot be destroyed by \"Direct Hit\" action cards.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "dreadnought",
+        "cost": 4,
+        "combat": 5,
+        "move": 2,
+        "capacity": 1,
+        "abilities": []
+      }
+    },
+    {
+      "id": "fighter_ii",
+      "name": "Fighter II",
+      "base_name": "Fighter II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Fighter II is a fighter unit upgrade. Attributes: combat 8, move 2. This unit may move without being transported.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "fighter",
+        "combat": 8,
+        "move": 2,
+        "abilities": []
+      }
+    },
+    {
+      "id": "floating_factory_ii",
+      "name": "Floating Factory II",
+      "base_name": "Floating Factory II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The Clan of Saar",
+      "exhaustible": false,
+      "text": "Floating Factory II is a space dock unit upgrade. Attributes: move 2, capacity 5. This unit is placed in the space area instead of on a planet.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "space_dock",
+        "move": 2,
+        "capacity": 5,
+        "abilities": []
+      }
+    },
+    {
+      "id": "gauss_cannon_i",
+      "name": "Gauss Cannon I",
+      "base_name": "Gauss Cannon I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Mirveda Protectorate",
+      "exhaustible": false,
+      "text": "Gauss Cannon I is a pds unit upgrade (Discordant Stars). -.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "pds",
+        "abilities": []
+      }
+    },
+    {
+      "id": "heavy_bomber_i",
+      "name": "Heavy Bomber I",
+      "base_name": "Heavy Bomber I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Li-Zho Dynasty",
+      "exhaustible": false,
+      "text": "Heavy Bomber I is a fighter unit upgrade (Discordant Stars). 1 (x2).",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "fighter",
+        "abilities": []
+      }
+    },
+    {
+      "id": "hel_titan_ii",
+      "name": "Hel Titan II",
+      "base_name": "Hel Titan II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "warfare",
+        "cybernetic"
+      ],
+      "set": "pok",
+      "faction": "The Titans of Ul",
+      "exhaustible": false,
+      "text": "Hel Titan II is a pds unit upgrade. Attributes: combat 6. This unit is treated as both a structure and a ground force. It cannot be transported.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "pds",
+        "combat": 6,
+        "abilities": []
+      }
+    },
+    {
+      "id": "hybrid_crystal_fighter_ii",
+      "name": "Hybrid Crystal Fighter II",
+      "base_name": "Hybrid Crystal Fighter II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "propulsion"
+      ],
+      "set": "base",
+      "faction": "The Naalu Collective",
+      "exhaustible": false,
+      "text": "Hybrid Crystal Fighter II is a fighter unit upgrade. Attributes: combat 7, move 2. This unit may move without being transported.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "fighter",
+        "combat": 7,
+        "move": 2,
+        "abilities": []
+      }
+    },
+    {
+      "id": "impactor_i",
+      "name": "Impactor I",
+      "base_name": "Impactor I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Zelian Purifier",
+      "exhaustible": false,
+      "text": "Impactor I is a infantry unit upgrade (Discordant Stars). 1 (x2).",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "infantry",
+        "abilities": []
+      }
+    },
+    {
+      "id": "infantry_ii",
+      "name": "Infantry II",
+      "base_name": "Infantry II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Infantry II is a infantry unit upgrade. Attributes: combat 7. After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "infantry",
+        "combat": 7,
+        "abilities": []
+      }
+    },
+    {
+      "id": "lancer_dreadnought_i",
+      "name": "Lancer Dreadnought I",
+      "base_name": "Lancer Dreadnought I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Veldyr Sovereignty",
+      "exhaustible": false,
+      "text": "Lancer Dreadnought I is a dreadnought unit upgrade (Discordant Stars). 4.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "dreadnought",
+        "abilities": []
+      }
+    },
+    {
+      "id": "letani_warrior_ii",
+      "name": "Letani Warrior II",
+      "base_name": "Letani Warrior II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Arborec",
+      "exhaustible": false,
+      "text": "Letani Warrior II is a infantry unit upgrade. Attributes: combat 7. After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "infantry",
+        "combat": 7,
+        "abilities": []
+      }
+    },
+    {
+      "id": "level_0",
+      "name": "Level 0",
+      "base_name": "Level 0",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "Discordant Stars Unit Upgrade Reference",
+      "exhaustible": false,
+      "text": "Level 0 is a unknown unit upgrade (Discordant Stars). Level 1.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "unknown",
+        "abilities": []
+      }
+    },
+    {
+      "id": "memoria_ii",
+      "name": "Memoria II",
+      "base_name": "Memoria II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "propulsion",
+        "cybernetic"
+      ],
+      "set": "pok",
+      "faction": "The Nomad",
+      "exhaustible": false,
+      "text": "Memoria II is a flagship unit upgrade. Attributes: cost 8, move 2, capacity 6.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "flagship",
+        "cost": 8,
+        "move": 2,
+        "capacity": 6,
+        "abilities": []
+      }
+    },
+    {
+      "id": "mycelium_ring_i",
+      "name": "Mycelium Ring I",
+      "base_name": "Mycelium Ring I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Myko-Mentori",
+      "exhaustible": false,
+      "text": "Mycelium Ring I is a space dock unit upgrade (Discordant Stars). Planetary Shield.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "space_dock",
+        "abilities": []
+      }
+    },
+    {
+      "id": "orion_platform_i",
+      "name": "Orion Platform I",
+      "base_name": "Orion Platform I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The GLEdge Union",
+      "exhaustible": false,
+      "text": "Orion Platform I is a pds unit upgrade (Discordant Stars). Planetary Shield.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "pds",
+        "abilities": []
+      }
+    },
+    {
+      "id": "pds_ii",
+      "name": "PDS II",
+      "base_name": "PDS II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "warfare",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "PDS II is a pds unit upgrade. You may use this unit's SPACE CANNON against ships that are adjacent to this unit's system.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "pds",
+        "abilities": []
+      }
+    },
+    {
+      "id": "prototype_war_sun_ii",
+      "name": "Prototype War Sun II",
+      "base_name": "Prototype War Sun II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "cybernetic",
+        "warfare",
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": "The Embers of Muaat",
+      "exhaustible": false,
+      "text": "Prototype War Sun II is a war sun unit upgrade. Attributes: cost 10, move 3, capacity 6. Abilities: Planetary Shield.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "war_sun",
+        "cost": 10,
+        "move": 3,
+        "capacity": 6,
+        "abilities": [
+          "planetary shield"
+        ]
+      }
+    },
+    {
+      "id": "raider_i",
+      "name": "Raider I",
+      "base_name": "Raider I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Vaylerian Scourge",
+      "exhaustible": false,
+      "text": "Raider I is a cruiser unit upgrade (Discordant Stars). 2.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "cruiser",
+        "abilities": []
+      }
+    },
+    {
+      "id": "sabre_i",
+      "name": "Sabre I",
+      "base_name": "Sabre I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Nokar Sellships",
+      "exhaustible": false,
+      "text": "Sabre I is a destroyer unit upgrade (Discordant Stars). 1.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "destroyer",
+        "abilities": []
+      }
+    },
+    {
+      "id": "saturn_engine_ii",
+      "name": "Saturn Engine II",
+      "base_name": "Saturn Engine II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "cybernetic",
+        "warfare"
+      ],
+      "set": "pok",
+      "faction": "The Titans of Ul",
+      "exhaustible": false,
+      "text": "Saturn Engine II is a cruiser unit upgrade. Attributes: cost 2, combat 6, move 3, capacity 2. Abilities: Sustain Damage. Sustain Damage.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "cruiser",
+        "cost": 2,
+        "combat": 6,
+        "move": 3,
+        "capacity": 2,
+        "abilities": [
+          "sustain damage"
+        ]
+      }
+    },
+    {
+      "id": "shattered_sky_i",
+      "name": "Shattered Sky I",
+      "base_name": "Shattered Sky I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The L'tokk Khrask",
+      "exhaustible": false,
+      "text": "Shattered Sky I is a cruiser unit upgrade (Discordant Stars). 2.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "cruiser",
+        "abilities": []
+      }
+    },
+    {
+      "id": "space_dock_ii",
+      "name": "Space Dock II",
+      "base_name": "Space Dock II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "cybernetic",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "Space Dock II is a space dock unit upgrade. This unit's PRODUCTION value is equal to 4 more than the resource value of this planet.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "space_dock",
+        "abilities": []
+      }
+    },
+    {
+      "id": "spec_ops_ii",
+      "name": "Spec Ops II",
+      "base_name": "Spec Ops II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "biotic",
+        "biotic"
+      ],
+      "set": "base",
+      "faction": "The Federation of Sol",
+      "exhaustible": false,
+      "text": "Spec Ops II is a infantry unit upgrade. Attributes: combat 6. After this unit is destroyed, roll 1 die. If the result is 5 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "infantry",
+        "combat": 6,
+        "abilities": []
+      }
+    },
+    {
+      "id": "star_dragon_i",
+      "name": "Star Dragon I",
+      "base_name": "Star Dragon I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Berserkers of Kjalengard",
+      "exhaustible": false,
+      "text": "Star Dragon I is a carrier unit upgrade (Discordant Stars). 3.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "carrier",
+        "abilities": []
+      }
+    },
+    {
+      "id": "strike_wing_alpha_ii",
+      "name": "Strike Wing Alpha II",
+      "base_name": "Strike Wing Alpha II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "pok",
+      "faction": "The Argent Flight",
+      "exhaustible": false,
+      "text": "Strike Wing Alpha II is a destroyer unit upgrade. Attributes: cost 1, combat 7, move 2, capacity 1. Abilities: Anti-Fighter Barrage. When this unit uses ANTI-FIGHTER BARRAGE, each result of 9 or 10 also destroys 1 of your opponents infantry in the space area of the active system.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "destroyer",
+        "cost": 1,
+        "combat": 7,
+        "move": 2,
+        "capacity": 1,
+        "abilities": [
+          "anti-fighter barrage"
+        ]
+      }
+    },
+    {
+      "id": "super_dreadnought_ii",
+      "name": "Super-Dreadnought II",
+      "base_name": "Super-Dreadnought II",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "propulsion",
+        "propulsion",
+        "cybernetic"
+      ],
+      "set": "base",
+      "faction": "The L1Z1X Mindnet",
+      "exhaustible": false,
+      "text": "Super-Dreadnought II is a dreadnought unit upgrade. Attributes: cost 4, combat 4, move 2, capacity 2. This unit cannot be destroyed by \"Direct Hit\" action cards.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "dreadnought",
+        "cost": 4,
+        "combat": 4,
+        "move": 2,
+        "capacity": 2,
+        "abilities": []
+      }
+    },
+    {
+      "id": "terrafactory_i",
+      "name": "Terrafactory I",
+      "base_name": "Terrafactory I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "Roh'Dhna Mechatronics",
+      "exhaustible": false,
+      "text": "Terrafactory I is a war sun unit upgrade (Discordant Stars). -.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "war_sun",
+        "abilities": []
+      }
+    },
+    {
+      "id": "trade_port_i",
+      "name": "Trade Port I",
+      "base_name": "Trade Port I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Celdauri Trade Confederation",
+      "exhaustible": false,
+      "text": "Trade Port I is a space dock unit upgrade (Discordant Stars). Anti-Fighter Barrage 6 (x2).",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "space_dock",
+        "abilities": []
+      }
+    },
+    {
+      "id": "unholy_abomination_i",
+      "name": "Unholy Abomination I",
+      "base_name": "Unholy Abomination I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Savages of Cymiae",
+      "exhaustible": false,
+      "text": "Unholy Abomination I is a infantry unit upgrade (Discordant Stars). 1.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "infantry",
+        "abilities": []
+      }
+    },
+    {
+      "id": "voidflare_warden_i",
+      "name": "Voidflare Warden I",
+      "base_name": "Voidflare Warden I",
+      "color": "unit_upgrade",
+      "prerequisites": [],
+      "set": "discordant_stars",
+      "faction": "The Nivyn Star Kings",
+      "exhaustible": false,
+      "text": "Voidflare Warden I is a mech unit upgrade (Discordant Stars). 2.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "mech",
+        "abilities": []
+      }
+    },
+    {
+      "id": "war_sun",
+      "name": "War Sun",
+      "base_name": "War Sun",
+      "color": "unit_upgrade",
+      "prerequisites": [
+        "cybernetic",
+        "warfare",
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "War Sun is a war sun unit upgrade. Attributes: cost 12, move 2, capacity 6. Abilities: Planetary Shield.",
+      "starting_for": [],
+      "unit_upgrade": {
+        "unit": "war_sun",
+        "cost": 12,
+        "move": 2,
+        "capacity": 6,
+        "abilities": [
+          "planetary shield"
+        ]
+      }
+    },
+    {
+      "id": "ai_development_algorithm",
+      "name": "AI Development Algorithm",
+      "base_name": "AI Development Algorithm",
+      "color": "warfare",
+      "prerequisites": [],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": true,
+      "text": "When you research a unit upgrade technology, you may exhaust this card to ignore any 1 prerequisite When 1 or more of your units use Production, you may exhaust this card to reduce the combined cost of the produced units by the number of unit upgrade technologies that you own",
+      "starting_for": [
+        "The Naaz-Rokha Alliance",
+        "The Shipwrights of Axis",
+        "The Savages of Cymiae",
+        "The Augurs of Ilyxum",
+        "The Mirveda Protectorate",
+        "The Veldyr Sovereignty",
+        "The Zelian Purifier"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "ats_armaments",
+      "name": "ATS Armaments",
+      "base_name": "ATS Armaments",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Lanefir Remnants",
+      "exhaustible": false,
+      "text": "After you explore, or purge 1 or more relic fragments, place 1 commodity token on this card. At the start of a round of combat, remove any number of tokens from this card to reroll up to that many of your dice during this round of combat.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "assault_cannon",
+      "name": "Assault Cannon",
+      "base_name": "Assault Cannon",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "At the start of a space combat in a system that contains 3 or more of your non-fighter ships, your opponent must destroy 1 of their non-fighter ships",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "brood_pod",
+      "name": "Brood Pod",
+      "base_name": "Brood Pod",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Cheiran Hordes",
+      "exhaustible": false,
+      "text": "After another player activates a system that contains 1 of your structures, you may exhaust this card to produce 1 ship in the active system. For each of your structures in the active system, you may remove that unit from the game board to reduce the cost of the produced ship by 3.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "deliverance_engine",
+      "name": "Deliverance Engine",
+      "base_name": "Deliverance Engine",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Kortali Tribunal",
+      "exhaustible": false,
+      "text": "Once per space combat, after 1 of your non-fighter ships is destroyed, you may produce 1 hit and assign it to 1 of your opponent's non-carrier ships.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "dimensional_splicer",
+      "name": "Dimensional Splicer",
+      "base_name": "Dimensional Splicer",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "base",
+      "faction": "The Ghosts of Creuss",
+      "exhaustible": false,
+      "text": "At the start of space combat in a system that contains a wormhole and 1 or more of your ships, you may produce 1 hit and assign it to 1 of your opponent's ships",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "duranium_armor",
+      "name": "Duranium Armor",
+      "base_name": "Duranium Armor",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "During each combat round, after you assign hits to your units, repair 1 of your damaged units that did not use Sustain Damage during this combat round.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "emergency_mobilization_protocols",
+      "name": "Emergency Mobilization Protocols",
+      "base_name": "Emergency Mobilization Protocols",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Celdauri Trade Confederation",
+      "exhaustible": false,
+      "text": "At the end of your turn, you may exhaust this card and spend 1 token from your strategy pool to remove a command token from a system that contains 1 or more of your space docks.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "false_flag_operations",
+      "name": "False Flag Operations",
+      "base_name": "False Flag Operations",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Olradin League",
+      "exhaustible": false,
+      "text": "At the start of your turn, you may exhaust this card and 1 planet you control to ready 1 non-home planet other than Mecatol Rex.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "fractal_plating",
+      "name": "Fractal Plating",
+      "base_name": "Fractal Plating",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Glimmer of Mortheus",
+      "exhaustible": false,
+      "text": "After a unit you control in a system is destroyed, you may exhaust this card to place 1 unit of that type from your reinforcements in the space area of a system adjacent to that system that contains 1 or more of your ships.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "magen_defense_grid",
+      "name": "Magen Defense Grid",
+      "base_name": "Magen Defense Grid",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "base",
+      "faction": null,
+      "exhaustible": true,
+      "text": "You may exhaust this card at the start of a round of ground combat on a planet that contains 1 or more of your units that have Planetary Shield; your opponent cannot make combat rolls this combat round.",
+      "starting_for": [
+        "The Arborec"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "magen_defense_grid_omega",
+      "name": "Magen Defense Grid Ω",
+      "base_name": "Magen Defense Grid",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "codex_i",
+      "faction": null,
+      "exhaustible": false,
+      "text": "At the start of ground combat on a planet that contains 1 or more of your structures, you may produce 1 hit and assign it to 1 of your opponent's ground forces.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "magen_defense_grid_omega_omega",
+      "name": "Magen Defense Grid ΩΩ",
+      "base_name": "Magen Defense Grid",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "codex_iv",
+      "faction": null,
+      "exhaustible": false,
+      "text": "When any player activates a system that contains 1 or more of your structures, place 1 infantry from your reinforcements with each of those structures. At the start of ground combat on a planet that contains 1 or more of your structures, produce 1 hit and assign it to 1 of your opponent's ground forces.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "magmus_reactor",
+      "name": "Magmus Reactor",
+      "base_name": "Magmus Reactor",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": "The Embers of Muaat",
+      "exhaustible": false,
+      "text": "Your ships can move into supernovas. After 1 or more of your units use Production in a system that either contains a war sun or is adjacent to a supernova, gain 1 trade good",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "magmus_reactor_omega",
+      "name": "Magmus Reactor Ω",
+      "base_name": "Magmus Reactor",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": "The Embers of Muaat",
+      "exhaustible": false,
+      "text": "Your ships can move into supernovas. Each supernova that contains 1 or more of your units gains the PRODUCTION 5 ability as if it were 1 of your units",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "non_euclidean_shielding",
+      "name": "Non-Euclidean Shielding",
+      "base_name": "Non-Euclidean Shielding",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": "The Barony of Letnev",
+      "exhaustible": false,
+      "text": "When 1 of your units uses SUSTAIN DAMAGE, cancel 2 hits instead of 1",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "omniscience_field",
+      "name": "Omniscience Field",
+      "base_name": "Omniscience Field",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Monks of Kolume",
+      "exhaustible": false,
+      "text": "After a system is activated, you may exhaust this card to choose 1 player. Apply +1 or -1 to all rolls that player makes during this tactical action.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "orbital_defense_grid",
+      "name": "Orbital Defense Grid",
+      "base_name": "Orbital Defense Grid",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Mirveda Protectorate",
+      "exhaustible": false,
+      "text": "At the start of invasion, choose up to 1 unit you control in the active system; that unit gains PLANETARY SHIELD. When a player commits a unit to land on a planet you control, you may exhaust this card to destroy that unit.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "plasma_scoring",
+      "name": "Plasma Scoring",
+      "base_name": "Plasma Scoring",
+      "color": "warfare",
+      "prerequisites": [],
+      "set": "base",
+      "faction": null,
+      "exhaustible": false,
+      "text": "When 1 or more of your units use Bombardment or Space Cannon, 1 of those units may roll 1 additional die",
+      "starting_for": [
+        "The Barony of Letnev",
+        "The Embers of Muaat",
+        "The L1Z1X Mindnet",
+        "The Mentak Coalition",
+        "The Universities of Jol-Nar",
+        "The Kortali Tribunal",
+        "The L'tokk Khrask",
+        "The Nivyn Star Kings"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "seidr_project",
+      "name": "SEIDR Project",
+      "base_name": "SEIDR Project",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Veldyr Sovereignty",
+      "exhaustible": false,
+      "text": "At the end of each round of space combat, you may use the SPACE CANNON of 1 of your units in the active system against your opponent's ships, without rolling additional dice.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "scavenger_exos",
+      "name": "Scavenger Exos",
+      "base_name": "Scavenger Exos",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Vaylerian Scourge",
+      "exhaustible": false,
+      "text": "Once per action, after you win a ground combat, you may draw 1 action card.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "self_assembly_routines",
+      "name": "Self Assembly Routines",
+      "base_name": "Self Assembly Routines",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "pok",
+      "faction": null,
+      "exhaustible": true,
+      "text": "After 1 or more of your units use PRODUCTION, you may exhaust this card to place 1 mech from your reinforcements on a planet you control in that system After 1 of your mechs is destroyed, gain 1 trade good",
+      "starting_for": [
+        "The Vuil'Raith Cabal"
+      ],
+      "unit_upgrade": null
+    },
+    {
+      "id": "shard_volley",
+      "name": "Shard Volley",
+      "base_name": "Shard Volley",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "discordant_stars",
+      "faction": "The Zelian Purifier",
+      "exhaustible": false,
+      "text": "When 1 or more of your units produce 1 or more hits during a BOMBARDMENT roll against a planet, produce 1 additional hit for that roll.",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "supercharge",
+      "name": "Supercharge",
+      "base_name": "Supercharge",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "pok",
+      "faction": "The Naaz-Rokha Alliance",
+      "exhaustible": true,
+      "text": "At the start of a combat round, you may exhaust this card to apply +1 to the result of each of your unit's combat rolls during this combat round",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "valkyrie_particle_weave",
+      "name": "Valkyrie Particle Weave",
+      "base_name": "Valkyrie Particle Weave",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare",
+        "warfare"
+      ],
+      "set": "base",
+      "faction": "Sardakk N'orr",
+      "exhaustible": false,
+      "text": "After making combat rolls during a round of ground combat, if your opponent produced 1 or more hits, you produce 1 additional hit",
+      "starting_for": [],
+      "unit_upgrade": null
+    },
+    {
+      "id": "vortex",
+      "name": "Vortex",
+      "base_name": "Vortex",
+      "color": "warfare",
+      "prerequisites": [
+        "warfare"
+      ],
+      "set": "pok",
+      "faction": "The Vuil'Raith Cabal",
+      "exhaustible": true,
+      "text": "ACTION: Exhaust this card to choose another player's non-structure unit in a system that is adjacent to 1 or more of your space docks. Capture 1 unit of that type from that player's reinforcements",
+      "starting_for": [],
+      "unit_upgrade": null
+    }
+  ]
+}

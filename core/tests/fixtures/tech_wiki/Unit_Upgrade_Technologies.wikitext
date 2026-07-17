@@ -1,0 +1,701 @@
+[[File:Arborec Space Dock.png|thumb|[[File:Spacedock2.jpg|thumb|290x290px]]|288x288px]]
+'''Type:''' [[Technology]]
+
+Some technologies are unit upgrade technologies. Unit upgrades technologies match a [[Units|unit]] on a player’s faction sheet. When a player gains a unit upgrade technology, they place its card over the corresponding unit on their faction sheet. 
+
+When a unit is upgraded, all the player’s units of that type (both on the game board and in their [[Player Components#reinforcements|reinforcements]]) immediately have the attributes shown on the unit upgrade technology. 
+
+Unit upgrade technologies, unlike other technologies, may have prerequisites composed of multiple colors. Additionally, unit upgrade technologies do not satisfy prerequisites when researching technology.
+
+Some factions have special [[Faction Specific Units|unit upgrade technologies]]. These count as Faction technologies (For example for the purpose of the [[Objectives#Secret Objectives|"Adapt New Strategies" Secret Objective]]).
+
+<br />
+
+==[[Carrier]]==
+Upgraded Carriers are faster and have larger capacity.
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Carrier II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" |
+|-
+|
+|-
+|
+|-
+|-
+| {{Tech|propulsion}}
+| '''3'''
+| '''9'''
+| '''2'''
+| '''6'''
+|-
+| {{Tech|propulsion}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+==== Advanced Carrier II ([[The Federation of Sol]]) ====
+Upgraded Sol Carriers have greater capacity compared to regular upgraded Carriers and gain [[Sustain Damage]].
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Advanced Carrier II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | '''Sustain Damage'''
+|-
+|
+|-
+|
+|-
+|-
+| {{Tech|propulsion}}
+| '''3'''
+| '''9'''
+| '''2'''
+| '''8'''
+|-
+| {{Tech|propulsion}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+
+==[[Cruiser]]==
+Upgraded Cruisers are faster, perform better in combat and gain capacity. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Cruiser II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" |
+|-
+|
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|cybernetic}}
+| '''2'''
+| '''6'''
+| '''3'''
+| '''1'''
+|-
+| {{Tech|warfare}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+==== Saturn Engine II ([[The Titans of Ul]]) ====
+Upgraded Titans of Ul Cruisers have more capacity compared to regular upgraded Cruisers and gain [[Sustain Damage]]. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Saturn Engine II''' 
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | '''Sustain Damage'''
+|-
+|
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|cybernetic}}
+|'''2'''
+|'''6'''
+|'''3'''
+|'''2'''
+|-
+|{{Tech|warfare}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+
+==[[Destroyer]]==
+Upgraded Destroyers are better in combat and have significantly improved [[Anti-Fighter Barrage]]. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Destroyer II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | '''Anti-Fighter Barrage 6 (x3)'''
+|-
+|
+|-
+|
+|-
+| {{Tech|warfare}}
+| '''1'''
+| '''8'''
+| '''2'''
+|
+|-
+| {{Tech|warfare}}
+| Cost
+| Combat
+| Move
+|
+|}
+
+==== Strike Wing Alpha II ([[The Argent Flight]]) ====
+Upgraded Argent Destroyers perform better in combat, have capacity, and can destroy Infantry in space with [[Anti-Fighter Barrage]] rolls of 9 or 10. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Strike Wing Alpha II'''  
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | When this unit uses ANTI-FIGHTER BARRAGE, each result of 9 or 10 also destroys 1 of your opponents infantry in the space area of the active system.
+'''Anti-Fighter Barrage 6 (x3)'''
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|'''1'''
+|'''7'''
+|'''2'''
+|'''1'''
+|-
+|{{Tech|warfare}}
+| Cost
+| Combat
+| Move
+|Capacity
+|}
+
+
+==[[Dreadnought]]==
+Upgraded Dreadnoughts are faster and cannot be targeted by [[Action Cards|Direct Hit]] action cards. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Dreadnought II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit cannot be destroyed by "Direct Hit" action cards.
+
+'''Sustain Damage'''
+
+'''Bombardment 5'''
+|-
+|
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+| '''4'''
+| '''5'''
+| '''2'''
+| '''1'''
+|-
+| {{Tech|cybernetic}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+==== Super-Dreadnought II ([[The L1Z1X Mindnet]]) ====
+Upgraded L1Z1X Dreadnoughts are stronger than regular Dreadnoughts, have greater capacity, and better [[Bombardment]]. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Super-Dreadnought II''' 
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit cannot be destroyed by "Direct Hit" action cards.
+
+'''Sustain Damage'''
+
+'''Bombardment 4'''
+|-
+|
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+| '''4'''
+| '''4'''
+| '''2'''
+| '''2'''
+|-
+| {{Tech|cybernetic}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+==== Exotrireme II ([[Sardakk N'orr|Sardakk N’orr]]) ====
+Upgraded Sardakk N'orr Dreadnoughts have better bombardment than all other Dreadnoughts and gain the ability to directly destroy ships after a round of space combat. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" |'''Exotrireme II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit cannot be destroyed by "Direct Hit" action cards. 
+After a round of space combat, you may destroy this unit to destroy up to 2 ships in this system.
+
+'''Sustain Damage'''
+
+'''Bombardment 4 (x2)'''
+|-
+|
+|-
+| {{Tech|propulsion}}
+|-
+| {{Tech|propulsion}}
+| '''4'''
+| '''5'''
+| '''2'''
+| '''1'''
+|-
+| {{Tech|cybernetic}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+
+==[[Fighter]]==
+Upgraded Fighters are better in combat and gain the ability to move without being transported. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Fighter II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit may move without being transported. 
+Fighters in excess of your ships' capacity count against your fleet pool
+|-
+|
+|-
+|
+|-
+| {{Tech|biotic}}
+| '''1 (x2)'''
+| '''8'''
+| '''2'''
+|
+|-
+| {{Tech|propulsion}}
+| Cost
+| Combat
+| Move
+|
+|}
+
+==== Hybrid Crystal Fighter II ([[The Naalu Collective]]) ====
+Upgraded Naalu Fighters are better in combat compared to regular upgraded Fighters and only count as 1/2 to the fleet supply if not transported. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Hybrid Crystal Fighter II''' 
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit may move without being transported.  
+Each fighter in excess of your ships' capacity counts as 1/2 of a ship against your fleet pool.
+|-
+|
+|-
+|
+|-
+| {{Tech|biotic}}
+| '''1 (x2)'''
+| '''7'''
+| '''2'''
+|
+|-
+| {{Tech|propulsion}}
+| Cost
+| Combat
+| Move
+|
+|}
+
+
+==[[Infantry]]==
+Upgraded Infantry are more effective at ground combat and gain the ability to return to a player's home system at the start of their next turn when they are destroyed. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Infantry II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system
+|-
+|
+|-
+|
+|-
+| {{Tech|biotic}}
+| '''1 (x2)'''
+| '''7'''
+|
+|
+|-
+| {{Tech|biotic}}
+| Cost
+| Combat
+|
+|
+|}
+
+==== Spec Ops II ([[The Federation of Sol]]) ====
+Upgraded Sol Infantry are stronger than regular upgraded Infantry and have a higher likelihood of returning back to the player's home system. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Spec Ops II'''  
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | After this unit is destroyed, roll 1 die. If the result is 5 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system
+|-
+|
+|-
+|
+|-
+| {{Tech|biotic}}
+| '''1 (x2)'''
+| '''6'''
+|
+|
+|-
+| {{Tech|biotic}}
+| Cost
+| Combat
+|
+|
+|}
+
+==== Letani Warrior II ([[The Arborec]]) ====
+Upgraded Arborec Infantry gain extra production value and are better in combat compared to the non-upgraded variant. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Letani Warrior II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | After this unit is destroyed, roll 1 die. If the result is 6 or greater, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system
+'''Production 2'''
+|-
+|
+|-
+|
+|-
+| {{Tech|biotic}}
+| '''1 (x2)'''
+| '''7'''
+|
+|
+|-
+| {{Tech|biotic}}
+| Cost
+| Combat
+|
+|
+|}
+
+==== Crimson Legionnaire II ([[The Mahact Gene Sorcerers]]) ====
+Upgraded Mahact Infantry automatically return to the home system the next turn after being destroyed. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Crimson Legionnaire II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" |After this unit is destroyed, gain 1 commodity or convert 1 of your commodities to a trade good. Then, place the unit on this card. At the start of your next turn, place each unit that is on this card on a planet you control in your home system
+|-
+|
+|-
+|
+|-
+|{{Tech|biotic}}
+|'''1 (x2)'''
+|'''7'''
+|
+|
+|-
+|{{Tech|biotic}}
+| Cost
+| Combat
+|
+|
+|}
+
+
+==[[PDS]]==
+Upgraded PDS have improved Space Cannon and are able to fire into adjacent systems.
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''PDS II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | You may use this unit's SPACE CANNON against ships that are adjacent to this unit's system
+'''Planetary Shield'''
+
+'''Space Cannon 5'''
+|-
+|
+|-
+|
+|-
+| {{Tech|warfare}}
+|
+|
+|
+|-
+| {{Tech|cybernetic}}
+|
+|
+|
+|
+|}
+
+==== Hel Titan II ([[The Titans of Ul]]) ====
+Upgraded Titans of Ul PDS have improved [[Space Cannon]] and are able to fire into adjacent systems.
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Hel Titan II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit is treated as both a structure and a ground force. It cannot be transported
+You may use this unit's SPACE CANNON against ships that are adjacent to this unit's system
+
+'''Planetary Shield'''
+
+'''Space Cannon 5'''
+
+'''Sustain Damage''' 
+
+'''Production 1'''
+|-
+|
+|-
+|
+|-
+|{{Tech|warfare}}
+|'''6'''
+|
+|
+|-
+|{{Tech|cybernetic}}
+|Combat 
+|
+|
+|
+|}
+
+
+==[[Space Dock]]==
+Upgraded Space Docks have a higher [[Production]] value and allow up to 3 Fighters (per Space Dock) to remain with them in excess of the system's capacity. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Space Dock II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit's PRODUCTION value is equal to 4 more than the resource value of this planet.
+Up to 3 fighters in this system do not count towards your ships' capacity.
+
+'''Production X'''
+|-
+|
+|-
+|
+|-
+| {{Tech|cybernetic}} 
+|
+|
+|
+|
+|-
+| {{Tech|cybernetic}} 
+|
+|
+|
+|
+|}
+
+==== Floating Factory II ([[The Clan of Saar]]) ====
+Upgraded Saar Space Docks are faster, have more capacity, and are able to produce more units. 
+[[Category:Units]]
+
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Floating Factory II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit is placed in the space area instead of on a planet.
+This unit can move and retreat as if it were a ship.
+
+If this unit is blockaded, it is destroyed
+
+<nowiki/>'''Production 7'''
+|-
+|
+|-
+|
+|-
+| {{Tech|cybernetic}}
+| 
+| 
+| '''2'''
+| '''5'''
+|-
+| {{Tech|cybernetic}}
+| 
+| 
+| Move
+| Capacity
+|}
+
+==== Dimensional Tear II ([[The Vuil'Raith Cabal]]) ====
+Upgraded Vuil'Raith Space Docks have increased [[Production]] and allow double the amount of Fighters in the system to be in excess of capacity. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Dimensional Tear II'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This system is a gravity rift; your ships do not roll for this gravity rift.
+Place a dimensional tear token beneath this unit as a reminder.
+
+Up to 12 fighters in this system do not count against your ships' capacity.
+
+'''Production 7'''
+
+|-
+|
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|
+|
+|
+|
+|-
+|{{Tech|cybernetic}}
+|
+|
+|
+|
+|}
+
+==== 4x41C "Helios" V2 ([[Last Bastion]]) ====
+Upgraded Last Bastion Space Docks have increased [[Production]] and increase the resource value of the planet they are on by 2. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''4x41C "Helios" V2'''
+|-
+| style="width: 10%; height: 80%;" | Req.
+| colspan="4" rowspan="3" | This unit's PRODUCTION value is equal to 4 more than the resource value of this planet.
+The resource value of this planet is increased by 2
+
+Up to 3 fighters in this system do not count against your ships' capacity.
+
+'''Production X'''
+
+|-
+|
+|-
+|
+|-
+|{{Tech|cybernetic}}
+|
+|
+|
+|
+|-
+|{{Tech|cybernetic}}
+|
+|
+|
+|
+|}
+
+
+==[[War Sun]]==
+
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''War Sun'''
+|-
+| style="width: 10%; height: 80%;" | Cost
+| colspan="4" rowspan="3" | Other players' units in this system lose their Planetary Shield Ability.
+
+'''Sustain Damage'''
+
+'''Bombardment 3 (x3)'''
+|-
+|-  
+| {{Tech|cybernetic}}
+|-
+| {{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+| '''12'''
+| '''3 (x3)'''
+| '''2'''
+| '''6'''
+|-
+| {{Tech|warfare}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+==== Prototype War Sun II ([[The Embers of Muaat]]) ====
+Upgraded Muaat War Suns are faster and cheaper than regular War Suns. 
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Prototype War Sun II''' 
+|-
+| style="width: 10%; height: 80%;" | Cost
+| colspan="4" rowspan="3" | Other players' units in this system lose their Planetary Shield Ability.
+'''Sustain Damage'''
+
+'''Bombardment 3 (x3)'''
+|-
+| {{Tech|cybernetic}}
+|-
+| {{Tech|warfare}}
+|-
+| {{Tech|warfare}}
+| '''10'''
+| '''3 (x3)'''
+| '''3'''
+| '''6'''
+|-
+| {{Tech|warfare}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+
+== [[Flagship]] ==
+
+==== Memoria II ([[The Nomad]]) ====
+The Nomad is the only faction capable of upgrading their [[Flagship]]. When upgraded it gains improved speed, combat performance, capacity, and better [[Anti-Fighter Barrage|Anti-Fighter Barrage.]]
+{| class="article-table" style="width: 100%; text-align:center;"
+! colspan="5" style="text-align:center;" | '''Memoria II''' 
+|-
+| style="width: 10%; height: 80%;" | Cost
+| colspan="4" rowspan="3" | You may treat this unit as if it were adjacent to systems that contain one or more of your mechs
+'''Sustain Damage'''
+
+'''Anti-Fighter Barrage 5 (x3)'''<br />
+|-
+|
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|propulsion}}
+|'''8'''
+|'''5 (x2)'''
+|'''2'''
+|'''6'''
+|-
+|{{Tech|cybernetic}}
+| Cost
+| Combat
+| Move
+| Capacity
+|}
+
+
+== Gallery ==
+<gallery>
+Carrier2.jpg
+Cruiser2.jpg
+Destroyer2.jpg
+Dreadnought2.jpg 
+Fighter2.jpg
+Infantry2.jpg
+Pds2.jpg
+Spacedock2.jpg
+Warsun2.jpg
+</gallery>
+
+{{Technologies}}

@@ -1,0 +1,489 @@
+{{DISPLAYTITLE:Biotic Technologies (Green)}}
+[[File:BioStims.png|thumb|455x455px]]
+'''Type:''' [[Technology]]
+
+'''See Also:''' [[Cybernetic Technologies]] | [[Propulsion Technologies]] | [[Warfare Technologies]]
+
+== Basic Technology ==
+
+=== Neural Motivator ===
+''<u>[[Starting Technology|Starting Tech]]</u>:'' [[The Federation of Sol|Federation of Sol]], [[The L1Z1X Mindnet|L1Z1X Mindnet]], [[The Naalu Collective|Naalu Collective]], [[The Universities of Jol-Nar|Universities of Jol-Nar]], [[The Yssaril Tribes|Yssaril Tribes]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Neural Motivator
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* During the status phase, draw 2 action cards instead of 1.
+|-
+| 
+|-
+| 
+|-
+| 
+|
+| style="width: 10%; text-align: right; " | {{Tech|biotic|w=32px}}
+|}
+
+
+=== Dacxive Animators ===
+''[[Starting Technology|<u>Starting Tech</u>:]] ''[[The Nekro Virus|Nekro Virus]]
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Dacxive Animators
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you win a ground combat, you may place 1 infantry from your reinforcements on that planet
+|-
+| 
+|-
+| 
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+=== Hyper Metabolism ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Hyper Metabolism
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* During the status phase, gain 3 command tokens instead of 2
+|-
+| 
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+=== X-89 Bacterial Weapon ===
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+X-89 Bacterial Weapon '''{{Edition|Base Game}}'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* ACTION: Exhaust this card and choose 1 planet in a system that contains 1 or more of your ships that have [[Bombardment|BOMBARDMENT]]; destroy all infantry on that planet
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+X-89 Bacterial Weapon Ω ''<big>{{Edition|Codex I}}</big>''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After 1 or more of your units use [[Bombardment|BOMBARDMENT]] against a planet, if at least 1 of your opponent's infantry was destroyed, you may destroy all of your opponent's infantry on that planet.
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+X-89 Bacterial Weapon ΩΩ <big>{{Edition|Codex IV}}</big>
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* Double the hits produced by your units' [[Bombardment|BOMBARDMENT]] and ground combat rolls.
+* Exhaust each planet you use [[Bombardment|BOMBARDMENT]] against.
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+(Ω) indicates omega tech released in the first volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here].
+
+(ΩΩ) indicates omega tech released in the fourth volume of the Twilight Imperium [[Codex]] found [https://images-cdn.fantasyflightgames.com/filer_public/e9/8f/e98f4722-2f45-4328-9119-56508bf1c94b/codex_45_technology_card_updates.pdf here].
+
+==[[Faction Technologies|Faction Technology]]==
+
+=== [[The Arborec]] ===
+
+==== Bioplasmosis ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Bioplasmosis
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the end of the status phase, you may remove any number of infantry from planets you control and place them on 1 or more planets you control in the same or adjacent systems.
+|-
+| 
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+=== [[The Emirates of Hacan]] ===
+
+==== Production Biomes ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Production Biomes
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* ACTION: Exhaust this card and spend 1 token from your strategy pool to gain 4 trade goods and choose 1 other player; that player gains 2 trade goods.
+|-
+| 
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+=== [[The Naalu Collective]] ===
+
+==== Neuroglaive ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Neuroglaive
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After another player activates a system that contains 1 or more of your ships, that player removes 1 token from their fleet pool and returns it to their reinforcements.
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+=== [[The Xxcha Kingdom]] ===
+
+==== Instinct Training ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Instinct Training
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* You may exhaust this card and spend 1 token from your strategy pool when another player plays an action card; cancel that action card.
+|-
+| 
+|-
+| 
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+=== [[The Yin Brotherhood]] ===
+
+==== Yin Spinner ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Yin Spinner '''{{Edition|Base Game}}'''
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After 1 or more of your units use [[Production]], place 1 infantry from your reinforcements on a planet you control in that system.
+|-
+| 
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Yin Spinner '''Ω''' {{Edition|Codex I}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you produce units, place up to 2 infantry from your reinforcements on any planet you control or in any space area that contains 1 or more of your ships
+|-
+| 
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+(Ω) indicates omega tech released in the Twilight Imperium [[Codex]], found [https://images-cdn.fantasyflightgames.com/filer_public/94/c5/94c59830-533e-47aa-a708-25634575161b/twilight_codex_v1-compressed.pdf here].
+
+
+=== [[The Yssaril Tribes]] ===
+
+==== Transparasteel Plating ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Transparasteel Plating
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* During your turn of the action phase, players that have passed cannot play action cards.
+|-
+| 
+|-
+| 
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+==== Mageon Implants ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Mageon Implants
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* ACTION: Exhaust this card to look at another player's hand of action cards.  Choose 1 of those cards and add it to your hand.
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|-
+| {{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" | {{Tech|biotic|w=32px}}
+|}
+
+
+== Technology introduced in [[Prophecy of Kings]] ==
+
+=== Psychoarchaeology ===
+''<u>[[Starting Technology|Starting Tech]]</u>: ''[[The Naaz-Rokha Alliance]] 
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Psychoarchaeology {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+*You can use technology specialties on planets you control without exhausting them, even if those planets are [[Readied and Exhausted|exhausted]]
+*During the [[Action Phase]], you can exhaust planets you control that have technology specialties to gain 1 [[Trade Goods & Commodities|Trade Good]] 
+|-
+| 
+|-
+| 
+|-
+| 
+|
+| style="width: 10%; text-align: right; " |{{Tech|biotic|w=32px}}
+|}
+
+
+=== Bio-Stims ===
+''[[Starting Technology|<u>Starting Tech</u>:]] ''[[The Mahact Gene Sorcerers|The Mahact Gene-Sorcerers]] 
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Bio-Stims {{Edition|Prophecy of Kings}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* You may exhaust this card at the end of your turn to ready 1 of your planets that has a technology specialty or 1 of your other technologies
+|-
+| 
+|-
+| 
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+See [[Exhaustible Technologies]] for a list of technologies that can be refreshed with the use of Bio-Stims 
+
+
+=== [[The Empyrean]] ===
+
+==== Voidwatch ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Voidwatch {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After a player moves ships into a system that contains 1 or more of your units, they must give you 1 promissory note from their hand, if able
+|-
+| 
+|-
+| 
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+
+=== [[The Mahact Gene Sorcerers|The Mahact Gene-Sorcerers]] ===
+
+==== Genetic Recombination ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Genetic Recombination {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" |
+* You may exhaust this card before a player casts votes; that player must cast at least 1 vote for an outcome of your choice or remove 1 token from their fleet pool and return it to their reinforcements
+|-
+| 
+|-
+| 
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+
+===[[The Naaz-Rokha Alliance]] ===
+
+==== Pre-Fab Arcologies ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Pre-Fab Arcologies {{Edition|Prophecy of Kings}}
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* After you explore a planet, ready that planet 
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+== Technology introduced in [[Thunder's Edge]] ==
+
+===[[The Deepwrought Scholarate]] ===
+
+==== Radical Advancement ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Radical Advancement {{Edition|Thunder's Edge}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the start of the [[Status Phase|status phase]], you may replace one of your non-unit upgrade technologies with a technology of the same color that has exactly 1 more prerequisite. 
+|-
+|
+|-
+|
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+==== Hydrothermal Mining ====
+{| class="article-table" style="width: 500px;"
+! colspan="3" style="text-align:center;" |
+Hydrothermal Mining {{Edition|Thunder's Edge}} 
+|-
+| style="width: 10%;" | Req.
+| colspan="2" rowspan="3" | 
+* At the start of the [[Status Phase|status phase]], gain 1 trade good for each ocean card in play. 
+|-
+|
+|-
+|
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+=== [[The Firmament / The Obsidian]] ===
+
+==== Neural Parasite ====
+{| class="article-table" style="width: 500px;"
+! colspan="4" style="text-align:center;" |
+Neural Parasite (Firmament) {{Edition|Thunder's Edge}}
+|-
+| style="width: 10%;" |Req.
+| colspan="2" rowspan="3" |
+* At the start of the status phase you may place 1 infantry from your reinforcements on a planet you control in your home system.
+* Flip this card if The Obsidian faction is in play.
+|-
+|
+|-
+|{{Tech|biotic}}
+|-
+|{{Tech|biotic}}
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+{| class="article-table" style="width: 500px;"
+! colspan="4" style="text-align:center;" |
+Neural Parasite (Obsidian) {{Edition|Thunder's Edge}}
+|-
+| style="width: 10%;" |Req.
+| colspan="2" rowspan="3" |
+* At the start of your turn destroy one of another player's infantry in or adjacent to a system that contains your infantry.
+* This technology cannot be researched.
+|-
+|
+|-
+|
+|-
+|
+|
+| style="width: 10%; text-align: right;" |{{Tech|biotic|w=32px}}
+|}
+
+
+== FAQ ==
+'''Q''': Does the “[[Biotic Technologies#Neural Motivator|Neural Motivator”]] technology give an additional action card for both the standard status phase draw as well as the “Minister of Policy” [[Agenda Cards|agenda]]? What about the Yssaril’s “[[Faction Abilities#The Yssaril Tribes|Scheming]]” faction ability?
+
+'''A''': No. “Neural Motivator” gives only one action card in addition to the standard <u>status phase draw</u>. It is not triggered additional times by other abilities. The Yssaril’s “Scheming” ability, however, is triggered each time that action cards are drawn.
+
+
+'''Q''': When you gain trade goods from multiple planets using the Psychoarchaeology technology, do you gain them 1 at a time or as a group?
+
+'''A''': You gain them one at a time.
+
+
+'''Q''': Can I use Psychoarchaeology to interrupt another ability since the timing is “during the action phase”?
+
+'''A''': No, any ability that is used “during the action phase” cannot be resolved unless there are no other abilities currently being resolved.{{Technologies}}
